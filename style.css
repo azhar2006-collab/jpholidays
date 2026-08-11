@@ -665,6 +665,7 @@ section { position: relative; }
 
 /* ===== PACKAGES ===== */
 .packages { padding: 100px 0; background: var(--off-white); }
+.packages .container { max-width: 1420px; }
 .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .package-card {
   border-radius: var(--radius); overflow: hidden;
@@ -682,7 +683,7 @@ section { position: relative; }
 .package-card:hover .package-img img { transform: scale(1.08); }
 .package-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(9,19,31,0.75), transparent);
+  background: transparent;
   display: flex; align-items: flex-end; padding: 20px;
 }
 .package-duration {
