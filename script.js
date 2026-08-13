@@ -226,6 +226,280 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ----- Tour Data & Details Modal ----- */
   const tourData = {
+    "srilanka-pdf": {
+      title: "Sri Lanka Escape",
+      badge: "HILLS & BEACHES • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=80",
+      price: "₹25,450",
+      unit: "Per Person",
+      phone: "7200669293",
+      route: "Kandy (1N Hotel Devon) → Nuwara Eliya (1N Sarlsburg) → Bentota (1N Hibiscus) → Colombo (1N Nally Marin)",
+      itinerary: [
+        { day: "Day 1", desc: "Arrival Bandaranaike Airport → Kandy. Pinnawala Elephant Orphanage, Spice Garden, Gem Museum, Temple of Sacred Tooth Relic, Royal Botanical Garden & Kandyan Cultural Dance Show. Overnight Kandy." },
+        { day: "Day 2", desc: "Kandy → Nuwara Eliya. Scenic mountain drive, Ramboda Waterfalls, Tea Plantation & Tea Factory Tour with tasting, Seetha Amman Temple & Hanuman Temple. Overnight Nuwara Eliya." },
+        { day: "Day 3", desc: "Nuwara Eliya → Bentota. Madu River Boat Safari, Turtle Hatchery visit, optional water sports & leisure at Bentota Beach. Overnight Bentota." },
+        { day: "Day 4", desc: "Bentota → Colombo. Local market shopping, Gangaramaya Temple, Independence Square & Galle Face Green promenade. Overnight Colombo." },
+        { day: "Day 5", desc: "Departure – Breakfast, check-out & transfer to Bandaranaike International Airport." }
+      ],
+      inclusions: [
+        "4 Nights Accommodation in 3★ Hotels (Devon, Sarlsburg, Hibiscus Beach, Nally Marin)",
+        "Daily Breakfast & Daily Dinner (4 Breakfasts + 4 Dinners)",
+        "Private Air-Conditioned Comfortable Van throughout tour",
+        "Gem Museum & Spice Garden Guided Visits",
+        "Tea Factory Visit & Ceylon Tea Tasting",
+        "Kandyan Cultural Dance Show Entrance"
+      ]
+    },
+    "bhutan-pdf": {
+      title: "Bhutan – Land of the Thunder Dragon",
+      badge: "HIMALAYAN ESCAPE • 6 NIGHTS / 7 DAYS",
+      img: "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=1200&q=80",
+      price: "₹26,560",
+      unit: "Per Person (Based on 6 Adults)",
+      phone: "7200669293",
+      route: "Bagdogra → Phuentsholing (2N Hotel Damcen) → Thimphu (3N Hotel Lotus) → Punakha → Paro (1N Hotel Ratna Samphel)",
+      itinerary: [
+        { day: "Day 1", desc: "Bagdogra Airport → Phuentsholing. Check in & evening at leisure. Overnight Phuentsholing." },
+        { day: "Day 2", desc: "Phuentsholing → Thimphu. Complete immigration formalities, visit Milarepa Gonpa, Gedu Stupas & scenic waterfalls. Overnight Thimphu." },
+        { day: "Day 3", desc: "Thimphu Sightseeing. Buddha Dordenma statue, Durga/Shiva Temple, Simply Bhutan Living Museum, National Postal Museum, Takin Preservation Centre & Kaja Throm. Overnight Thimphu." },
+        { day: "Day 4", desc: "Punakha Excursion. Scenic drive via Dochula Pass, Punakha Dzong, Bhutan's longest suspension bridge, return to Thimphu." },
+        { day: "Day 5", desc: "Thimphu → Paro. Trek to world-famous Tiger's Nest Monastery (Taktsang), optional traditional Hot Stone Bath. Overnight Paro." },
+        { day: "Day 6", desc: "Paro → Phuentsholing. National Museum, Nemazampa, Paro Airport View Point & drive back to Phuentsholing." },
+        { day: "Day 7", desc: "Departure – Exit immigration formalities & transfer to Bagdogra Airport." }
+      ],
+      inclusions: [
+        "6 Nights Premium 3★ Accommodation (Phuentsholing, Thimphu, Paro)",
+        "Twin/Double Sharing Rooms with Daily Breakfast & Dinner",
+        "Comfortable Toyota Hiace Van throughout Bhutan",
+        "Private Bagdogra–Phuentsholing–Bagdogra Airport Transfers",
+        "Licensed English-Speaking Bhutanese Guide",
+        "Bhutan Immigration & Permit Assistance + 1 Tourist SIM Card for Group Leader"
+      ]
+    },
+    "thailand-pdf": {
+      title: "Thailand Islands & City Escape",
+      badge: "ISLANDS & CITY • 6 NIGHTS / 7 DAYS",
+      img: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+      price: "₹37,470",
+      unit: "Per Person (2 Adults) | ₹31,340 Extra Bed",
+      phone: "7200669293",
+      route: "Phuket (1N Ashlee Hub Patong 3★) → Koh Samui (1N Chaweng Noi Pool Villa 3★) → Krabi (1N Ava Sea Resort 4★) → Pattaya (2N Seasons Pattaya 3★) → Bangkok (1N The Ecotel 3★)",
+      itinerary: [
+        { day: "Day 1", desc: "Arrival in Phuket – Private transfer to Ashlee Hub Patong Deluxe Room." },
+        { day: "Day 2", desc: "Phuket to Koh Samui – Transfer to airport, flight to Samui, check-in at Chaweng Noi Pool Villa Deluxe Room." },
+        { day: "Day 3", desc: "Koh Samui to Krabi – Flight to Krabi, transfer to Ava Sea Resort Superior Room." },
+        { day: "Day 4", desc: "Krabi to Pattaya – Flight to Bangkok, transfer to Seasons Pattaya Superior Room." },
+        { day: "Day 5", desc: "Pattaya Leisure – Full day relaxing on Pattaya beach & shopping." },
+        { day: "Day 6", desc: "Pattaya to Bangkok – Private transfer to The Ecotel Hotel Superior Room." },
+        { day: "Day 7", desc: "Departure – Hotel transfer to Bangkok Airport for return flight." }
+      ],
+      inclusions: [
+        "6 Nights Accommodation across 5 Premier Resorts (Phuket, Koh Samui, Krabi, Pattaya, Bangkok)",
+        "Daily Breakfast at all hotels",
+        "Private Airport Transfers at all destinations",
+        "Private Intercity Transfers",
+        "Confirmed entrance tickets as per itinerary"
+      ]
+    },
+    "finland-norway-pdf": {
+      title: "Finland & Norway Ultimate Arctic Luxury Escape",
+      badge: "ARCTIC LUXURY • 11 NIGHTS / 12 DAYS",
+      img: "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80",
+      price: "₹5,29,761",
+      unit: "Per Person (Incl. GST, TCS & Insurance)",
+      phone: "7200669293",
+      route: "Helsinki (4N Scandic Grand Marina) → Saariselkä (3N Kakslauttanen Luxury Glass Igloo) → Tromsø (4N Quality Hotel Grand Tromsø)",
+      itinerary: [
+        { day: "Day 1", desc: "Arrival in Helsinki – Transfer to Scandic Grand Marina, harbour & waterfront leisure." },
+        { day: "Day 2", desc: "Tallinn Ferry Cruise – Baltic Sea ferry to Tallinn (Estonia), guided UNESCO Old Town tour & return." },
+        { day: "Day 3", desc: "Helsinki to Saariselkä Arctic Resort – City tour, Flying Cinema, SkyWheel, flight to Ivalo, check-in at Kakslauttanen Glass Igloo & Aurora Quad Bike Safari." },
+        { day: "Day 4", desc: "Husky Farm & Safari – Authentic Husky farm visit, Husky cart safari & warm drinks." },
+        { day: "Day 5", desc: "Lake Inari & Horse Aurora – Great Lake Inari boat cruise & Aurora hunting by horse carriage." },
+        { day: "Days 6-9", desc: "Tromsø Arctic Fjords – Flight to Tromsø (Norway), Full-Day Arctic Fjords tour at Sommarøy Island, Kvaløya guided scenic tour, traditional Norwegian lunch, Lake Cabin hike, bonfire & evening Northern Lights tour." },
+        { day: "Days 10-11", desc: "Helsinki Linnanmäki – Return flight to Helsinki, full day at Linnanmäki Amusement Park with unlimited ride pass." },
+        { day: "Day 12", desc: "Departure – Private airport transfer for return flight." }
+      ],
+      inclusions: [
+        "11 Nights Accommodation (Scandic Grand Marina, Kakslauttanen Luxury Glass Igloo, Quality Hotel Grand Tromsø)",
+        "Daily Breakfast + Traditional Norwegian Lunch + Arctic Warm Drinks",
+        "3 Domestic Arctic Flights (Helsinki–Ivalo, Ivalo–Tromsø, Tromsø–Helsinki)",
+        "Tallinn Baltic Sea Ferry Cruise & Guided UNESCO Tour",
+        "Aurora Quad Bike Safari + Husky Cart Safari + Aurora Horse Carriage Tour",
+        "Lake Inari Boat Cruise + Arctic Fjords Tour + Linnanmäki Unlimited Ride Pass"
+      ]
+    },
+    "azerbaijan-georgia-pdf": {
+      title: "Azerbaijan & Georgia Escape – Business Meets Leisure",
+      badge: "EURASIA ESCAPE • 8 NIGHTS / 9 DAYS",
+      img: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80",
+      price: "₹65,992",
+      unit: "Per Person (Up to ₹76,371 for 4★/5★)",
+      phone: "7200669293",
+      route: "Baku (Baku Boulevard, Flame Towers, Shahdag) → Tbilisi (Narikala Fortress, Sulphur Baths) → Kakheti (KTW Wine Factory)",
+      itinerary: [
+        { day: "Day 1", desc: "Arrive Baku – Meet & greet, private transfer, check-in, free evening at Baku Boulevard & Nizami Street." },
+        { day: "Day 2", desc: "Baku City Tour – Old City (Icherisheher), Maiden Tower, Palace of Shirvanshahs, Fountain Square, Highland Park funicular, Flame Towers & Heydar Aliyev Center." },
+        { day: "Day 3", desc: "Baku Leisure – Free day for shopping, cafes or optional sightseeing." },
+        { day: "Day 4", desc: "Shahdag Mountain Resort – 2-Line Cable Car ride included, alpine coaster & flight transfer to Tbilisi." },
+        { day: "Days 5-6", desc: "Tbilisi City Tour – Narikala Fortress Cable Car, panoramic views, Sulphur Bath District, Historic Mosque, Shardeni Street & Clock Tower." },
+        { day: "Day 7", desc: "Kakheti Wine Tour – KTW Wine Factory, wine tasting, Sighnaghi, Bodbe Monastery & Tsinandali Museum." },
+        { day: "Days 8-9", desc: "Leisure & Departure – Shopping in Tbilisi & private airport transfer." }
+      ],
+      inclusions: [
+        "8 Nights Hotel Accommodation (Metro City Baku + Astoria Tbilisi or Alba/Qafqaz/Novotel)",
+        "Daily Breakfast at all hotels",
+        "Private Airport Transfers & Private Vehicle with English Speaking Driver/Guide",
+        "Highland Park Funicular Ticket + Shahdag 2-Line Cable Car Ride",
+        "Narikala Cable Car Ticket + KTW Wine Tasting in Kakheti",
+        "2 Bottles of Mineral Water Per Person Daily + All Hotel Taxes"
+      ]
+    },
+    "malaysia-pdf": {
+      title: "Kuala Lumpur Escape (Malaysia)",
+      badge: "CITY BREAK • 3 NIGHTS / 4 DAYS",
+      img: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80",
+      price: "₹18,450",
+      unit: "Per Person Double Sharing",
+      phone: "7200669293",
+      route: "Kuala Lumpur (Ramada Encore by Wyndham Chinatown 3★ Deluxe Room)",
+      itinerary: [
+        { day: "Day 1", desc: "Arrive KLIA Airport – Meet & greet, private transfer to Ramada Encore Chinatown, evening KL Night Tour." },
+        { day: "Day 2", desc: "KL City Tour & KL Tower – Half-Day KL City Tour, KL Tower Sky Deck ticket, major landmarks & shopping." },
+        { day: "Day 3", desc: "Batu Caves & Genting Highlands – Batu Caves photo stop, Two-Way Genting Skyway Cable Car ticket & Genting Highlands tour." },
+        { day: "Day 4", desc: "Putrajaya & Departure – Putrajaya City Tour, Joy Cruise experience & private transfer to KLIA." }
+      ],
+      inclusions: [
+        "3 Nights Accommodation at Ramada Encore by Wyndham Chinatown 3★ (Deluxe Room)",
+        "Daily Breakfast at hotel",
+        "Private Airport Transfers (KLIA ↔ Hotel)",
+        "Kuala Lumpur Night Tour + Half-Day KL City Tour",
+        "KL Tower Sky Deck Entrance Ticket",
+        "Two-Way Genting Skyway Cable Car Ticket + Batu Caves Photo Stop",
+        "Putrajaya City Tour + Joy Cruise Ticket"
+      ]
+    },
+    "bali-pdf": {
+      title: "Bali Escape",
+      badge: "TROPICAL LUXURY • 8 NIGHTS / 9 DAYS",
+      img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+      price: "₹43,269",
+      unit: "Per Adult",
+      phone: "7200669293",
+      route: "Ubud (3N Dedary Resort 4★ Pool Villa) → Kuta (5N Diamond Hotel 3★ Deluxe Balcony Room)",
+      itinerary: [
+        { day: "Day 1", desc: "Arrival in Bali – Airport pickup, transfer to Dedary Resort Ubud 4★ One Bedroom Villa with Private Pool & Bathtub." },
+        { day: "Day 2", desc: "Jungle Swing & Coffee – Unlimited swing experience, photo spots, local lunch, Balinese coffee & tea tasting." },
+        { day: "Day 3", desc: "Ubud Leisure – Full day relaxing in private pool villa." },
+        { day: "Day 4", desc: "ATV & Ayung Rafting – 90-min tandem ATV ride through jungle/mud tracks, Ayung River rafting with lunch, transfer to Diamond Hotel Kuta." },
+        { day: "Day 5", desc: "Nusa Penida West Island Tour – Speedboat transfer, Kelingking Beach viewpoint, Angel's Billabong, Broken Bay, Bubu Beach & local lunch." },
+        { day: "Day 6", desc: "Kuta Leisure – Beach relaxation, cafes & shopping." },
+        { day: "Day 7", desc: "Uluwatu Sunset & Kecak Dance – Uluwatu Cliff Temple sunset & Kecak Fire Dance show." },
+        { day: "Day 8", desc: "Kintamani & Mount Batur – Kintamani viewpoint, Mount & Lake Batur, Coffee Plantation, Ubud Palace & Art Market." },
+        { day: "Day 9", desc: "Departure – Breakfast, check-out & private airport transfer." }
+      ],
+      inclusions: [
+        "3 Nights Dedary Resort Ubud 4★ Private Pool Villa + 5 Nights Diamond Hotel Kuta 3★",
+        "Daily Breakfast at resorts",
+        "Private Airport Transfers + Private Sightseeing Transportation",
+        "Bali Jungle Swing + 90-Min ATV Tandem Ride + Ayung River Rafting with Lunch",
+        "Nusa Penida West Speedboat Tour with Local Lunch",
+        "Uluwatu Temple & Kecak Fire Dance Show + Kintamani Mount Batur Tour"
+      ]
+    },
+    "kenya-pdf": {
+      title: "Kenya Safari Escape",
+      badge: "WILDLIFE SAFARI • 6 NIGHTS / 7 DAYS",
+      img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
+      price: "USD 2,250",
+      unit: "Per Person (USD 2,480 for 4x4 Land Cruiser)",
+      phone: "7200669293",
+      route: "Nairobi (1N Hotel Boulevard HB) → Masai Mara (2N Drunken Elephant Camp FB) → Lake Naivasha (1N Blooming Suites FB) → Amboseli (2N Sentrim Lodge FB)",
+      itinerary: [
+        { day: "Day 1", desc: "Arrive Nairobi International Airport – Meet & greet, private transfer, dinner & overnight Hotel Boulevard." },
+        { day: "Day 2", desc: "Nairobi to Masai Mara – 07:30 AM pickup, drive to Masai Mara, lodge check-in, lunch, afternoon game drive & dinner Drunken Elephant Camp." },
+        { day: "Day 3", desc: "Full-Day Masai Mara Safari – Morning & afternoon game drives across savanna for Great Migration & Big Five with packed lunch." },
+        { day: "Day 4", desc: "Masai Mara to Lake Naivasha – Drive to Naivasha, lunch, 1-hour Lake Naivasha boat ride & dinner Blooming Suites." },
+        { day: "Days 5-6", desc: "Amboseli National Park – Drive to Amboseli, game drives with Mt. Kilimanjaro views, full-day wildlife exploration & dinner Sentrim Lodge." },
+        { day: "Day 7", desc: "Drive to Nairobi – Lunch at local restaurant, transfer to JKIA airport for departure flight." }
+      ],
+      inclusions: [
+        "Full Board Safari Accommodation (Nairobi, Masai Mara, Lake Naivasha, Amboseli)",
+        "Private Game Drives in Toyota Land Cruiser / Safari Minivan with Pop-up Roof",
+        "All National Park Entrance Fees & Government Taxes",
+        "1-Hour Lake Naivasha Boat Ride",
+        "1-Litre Mineral Water Per Person/Day in Safari Vehicle"
+      ]
+    },
+    "kashmir-pdf": {
+      title: "Grand Kashmir Tour",
+      badge: "PARADISE ON EARTH • 6 NIGHTS / 7 DAYS",
+      img: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
+      price: "₹87,450",
+      unit: "Total Package (Flights Excl.)",
+      phone: "7200669293",
+      route: "Srinagar (Hotel Kareem Residency/Leon) → Super Deluxe Houseboat (Dal Lake) → Pahalgam (Hotel Fifth Season)",
+      itinerary: [
+        { day: "Day 1", desc: "Arrival in Srinagar Airport – Private transfer to hotel, evening at leisure." },
+        { day: "Day 2", desc: "Sonamarg Excursion – Srinagar to Sonamarg day trip, Sindh river view & return." },
+        { day: "Day 3", desc: "Gulmarg Snow Point – Srinagar to Gulmarg day trip, snow view points & return." },
+        { day: "Day 4", desc: "Srinagar to Pahalgam – Drive to Pahalgam, check-in at Hotel Fifth Season & overnight." },
+        { day: "Day 5", desc: "Pahalgam to Srinagar – Return drive to Srinagar & leisure day." },
+        { day: "Day 6", desc: "Srinagar & Houseboat – Srinagar local Mughal Gardens tour & Super Deluxe Houseboat stay on Dal Lake." },
+        { day: "Day 7", desc: "Departure – Breakfast & drop at Srinagar Airport." }
+      ],
+      inclusions: [
+        "1 Night Super Deluxe Houseboat on Dal Lake + 5 Nights Hotel Stay",
+        "Daily Breakfast & Dinner",
+        "Private Innova Vehicle for all transfers & sightseeing",
+        "Complimentary Shikara Ride on Dal Lake"
+      ]
+    },
+    "vietnam-pdf": {
+      title: "Vietnam Romantic Honeymoon Escape",
+      badge: "HONEYMOON SPECIAL • 5 NIGHTS / 6 DAYS",
+      img: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+      price: "₹47,350",
+      unit: "Per Person (₹94,700 Couple)",
+      phone: "7200669293",
+      route: "Hanoi (First Eden 3★) → Ha Long Bay Cruise (Verdure Lotus 4★) → Da Nang & Hoi An (De Lamour 3★) → Ba Na Hills Golden Bridge",
+      itinerary: [
+        { day: "Day 1", desc: "Arrival in Hanoi – Transfer to First Eden Hotel, Ho Chi Minh Mausoleum, One Pillar Pagoda, Tran Quoc Pagoda & Hanoi Old Quarter Train Street." },
+        { day: "Day 2", desc: "Ha Long Bay Luxury Cruise – Scenic drive, welcome drink, Bai Tu Long Bay cruise, cave exploration, Vietnamese cooking demonstration, seafood dinner & squid fishing." },
+        { day: "Day 3", desc: "Ha Long to Da Nang – Tai Chi morning, disembark cruise, flight to Da Nang & hotel check-in." },
+        { day: "Day 4", desc: "Marble Mountain & Hoi An – Marble Mountain, Bay Mau Coconut Forest Basket Boat Ride, Hoi An Ancient Town & Japanese Covered Bridge." },
+        { day: "Day 5", desc: "Golden Bridge & Ba Na Hills – Cable car ride to Golden Bridge, Le Jardin Flower Gardens, French Village, Fantasy Park & Chua Mountain Peak." },
+        { day: "Day 6", desc: "Departure – Breakfast, free time & private airport transfer." }
+      ],
+      inclusions: [
+        "5 Nights Hotel Accommodation + 1 Night Ha Long Bay 4★ Cruise Liner",
+        "Daily Breakfast + Meals as specified on cruise",
+        "Ba Na Hills Cable Car & Golden Bridge Entrance Pass",
+        "Bay Mau Coconut Basket Boat Ride Ticket",
+        "Private Airport Transfers & English Speaking Guide"
+      ]
+    },
+    "kasol-pdf": {
+      title: "Kasol Honeymoon (Himachal Pradesh)",
+      badge: "HIMALAYAN TREK • 3 NIGHTS / 4 DAYS",
+      img: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      price: "₹35,000",
+      unit: "Per Person",
+      phone: "7200669293",
+      route: "Chandigarh Railway Station → Kasol → Manikaran Sahib → Tosh Valley → Chalal Village Trek → Chandigarh",
+      itinerary: [
+        { day: "Day 1", desc: "Chandigarh to Kasol – Pickup from Chandigarh Railway Station, drive to Kasol, check-in, evening at Kasol Market & Parvati River." },
+        { day: "Day 2", desc: "Manikaran & Tosh Excursion – Breakfast, Manikaran Sahib Hot Springs visit, drive to Tosh Valley & Tosh Village views." },
+        { day: "Day 3", desc: "Chalal Village Trek – Leisure morning, scenic forest trail trek to Chalal Village along Parvati River, cafe hopping & shopping." },
+        { day: "Day 4", desc: "Kasol to Chandigarh – Breakfast, check-out, scenic drive to Chandigarh & drop at Chandigarh Railway Station." }
+      ],
+      inclusions: [
+        "3 Nights Hotel Stay in Kasol",
+        "Daily Breakfast at Hotel",
+        "Private Transfer (Chandigarh Railway Station ↔ Kasol)",
+        "Manikaran Sahib & Tosh Valley Excursion",
+        "Guided Chalal Village Forest Trail Trek"
+      ]
+    },
     malaysia: {
       title: "Malaysia Group Tour",
       badge: "GROUP TOUR • 4 NIGHTS / 5 DAYS",
@@ -665,11 +939,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const modalBackdrop = document.getElementById('tour-modal');
-  const modalContent = document.getElementById('modal-dynamic-content');
-  const modalClose = modalBackdrop?.querySelector('.modal-close');
+  let modalBackdrop = document.getElementById('tour-modal');
+  let modalContent = document.getElementById('modal-dynamic-content');
+
+  function ensureTourModalExists() {
+    if (!document.getElementById('tour-modal')) {
+      const backdrop = document.createElement('div');
+      backdrop.className = 'modal-backdrop';
+      backdrop.id = 'tour-modal';
+      backdrop.innerHTML = `
+        <div class="modal-container">
+          <button class="modal-close" aria-label="Close modal">&times;</button>
+          <div class="modal-content" id="modal-dynamic-content"></div>
+        </div>
+      `;
+      document.body.appendChild(backdrop);
+      modalBackdrop = backdrop;
+      modalContent = document.getElementById('modal-dynamic-content');
+      
+      const closeBtn = backdrop.querySelector('.modal-close');
+      closeBtn?.addEventListener('click', closeTourModal);
+      backdrop.addEventListener('click', (e) => {
+        if (e.target === backdrop) closeTourModal();
+      });
+    } else {
+      modalBackdrop = document.getElementById('tour-modal');
+      modalContent = document.getElementById('modal-dynamic-content');
+    }
+  }
 
   function openTourModal(key) {
+    ensureTourModalExists();
     const data = tourData[key];
     if (!data || !modalContent) return;
 
@@ -686,26 +986,26 @@ document.addEventListener('DOMContentLoaded', () => {
           <div>
             <h4 class="modal-section-title">Tour Itinerary &amp; Highlights</h4>
             <div class="itinerary-list">
-              ${data.itinerary.map(item => `
+              ${data.itinerary ? data.itinerary.map(item => `
                 <div class="itinerary-item">
                   <span class="itinerary-day">${item.day}</span>
                   <span class="itinerary-desc">${item.desc}</span>
                 </div>
-              `).join('')}
+              `).join('') : '<p>Detailed itinerary available on request.</p>'}
             </div>
           </div>
           <div>
             <h4 class="modal-section-title">Package Inclusions</h4>
             <div class="inclusions-box">
               <ul>
-                ${data.inclusions.map(inc => `
+                ${data.inclusions ? data.inclusions.map(inc => `
                   <li><i class="fa-solid fa-circle-check"></i> ${inc}</li>
-                `).join('')}
+                `).join('') : '<li><i class="fa-solid fa-circle-check"></i> Standard Package Inclusions</li>'}
               </ul>
             </div>
             <div style="background:#F0E8EA; padding:15px; border-radius:12px;">
               <div style="font-size:0.78rem; color:#777; font-weight:700; text-transform:uppercase;">Tour Route / Location</div>
-              <div style="font-size:0.88rem; font-weight:600; color:#1A0A0C; margin-top:4px;">${data.route}</div>
+              <div style="font-size:0.88rem; font-weight:600; color:#1A0A0C; margin-top:4px;">${data.route || 'Worldwide'}</div>
             </div>
           </div>
         </div>
@@ -713,10 +1013,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="modal-footer-cta">
           <div class="modal-price-box">
             <span class="price-label">Starting Price</span>
-            <div class="price-val">${data.price} <small style="font-size:0.8rem; font-weight:normal; color:#666;">${data.unit}</small></div>
+            <div class="price-val">${data.price} <small style="font-size:0.8rem; font-weight:normal; color:#666;">${data.unit || ''}</small></div>
           </div>
           <div class="modal-actions">
-            <a href="tel:${data.phone}" class="btn-call"><i class="fa-solid fa-phone"></i> Call ${data.phone}</a>
+            <a href="tel:${data.phone || '9876543210'}" class="btn-call"><i class="fa-solid fa-phone"></i> Call Support</a>
             <button class="btn btn-primary btn-modal-book-now" data-place="${data.title}">Book Package Now</button>
           </div>
         </div>
@@ -728,18 +1028,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function closeTourModal() {
-    modalBackdrop?.classList.remove('open');
+    if (modalBackdrop) modalBackdrop.classList.remove('open');
     document.body.style.overflow = '';
   }
 
-  modalClose?.addEventListener('click', closeTourModal);
-  modalBackdrop?.addEventListener('click', (e) => {
-    if (e.target === modalBackdrop) closeTourModal();
+  const existingModalClose = document.querySelector('#tour-modal .modal-close');
+  existingModalClose?.addEventListener('click', closeTourModal);
+  document.getElementById('tour-modal')?.addEventListener('click', (e) => {
+    if (e.target === document.getElementById('tour-modal')) closeTourModal();
   });
 
   /* ----- Package Book / Details Buttons ----- */
-  document.querySelectorAll('.package-book:not(.open-enquiry-btn)').forEach(btn => {
-    btn.addEventListener('click', () => {
+  document.querySelectorAll('.btn-details-outline, .package-book:not(.open-enquiry-btn)').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
       const key = btn.dataset.modal;
       if (key && tourData[key]) {
         openTourModal(key);
