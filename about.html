@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About JP Holidays | South India's No.1 Travel Agency</title>
+  <meta name="description" content="Learn about JP Holidays – South India's most trusted travel brand with 15+ years of excellence, 45,000+ tours completed, and 99% customer satisfaction.">
+  <link rel="icon" href="https://img.icons8.com/color/96/airplane-take-off.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=5.0">
+  <style>
+    .page-banner { background: linear-gradient(135deg, #1A0A0C 0%, #C8102E 60%, #8B0000 100%); padding: 110px 0 60px; text-align: center; position: relative; overflow: hidden; }
+    .page-banner::before { content: ''; position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=30') center/cover no-repeat; opacity: 0.15; }
+    .page-banner h1 { font-size: 3rem; color: #fff; position: relative; font-family: 'Playfair Display', serif; margin-bottom: 12px; }
+    .page-banner h1 span { color: #FFD6DC; }
+    .breadcrumb { display: flex; align-items: center; justify-content: center; gap: 8px; color: rgba(255,255,255,0.7); font-size: 0.88rem; position: relative; }
+    .breadcrumb a { color: rgba(255,255,255,0.85); }
+    .breadcrumb i { font-size: 0.7rem; }
+
+    .about-page { padding: 80px 0; }
+    .about-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; margin-bottom: 80px; }
+    @media (max-width: 768px) { .about-intro-grid { grid-template-columns: 1fr; gap: 40px; } }
+    .about-img-wrap { position: relative; }
+    .about-img-main { border-radius: 20px; overflow: hidden; }
+    .about-img-main img { width: 100%; height: 420px; object-fit: cover; }
+    .about-float { position: absolute; bottom: -30px; right: -30px; background: #fff; border-radius: 16px; padding: 20px 28px; box-shadow: 0 12px 40px rgba(200,16,46,0.15); text-align: center; border-left: 4px solid #C8102E; }
+    .about-float .num { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; font-weight: 800; color: #C8102E; line-height: 1; }
+    .about-float .lbl { font-size: 0.75rem; color: #7A7A7A; font-weight: 600; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.1em; }
+    .about-text .subtitle-tag { font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.25em; color: #C8102E; background: rgba(200,16,46,0.08); border: 1px solid rgba(200,16,46,0.25); padding: 7px 18px; border-radius: 50px; display: inline-block; margin-bottom: 18px; }
+    .about-text h2 { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 700; color: #1A0A0C; margin-bottom: 20px; line-height: 1.25; }
+    .about-text h2 span { color: #C8102E; }
+    .about-text p { color: #7A7A7A; font-size: 0.95rem; line-height: 1.8; margin-bottom: 16px; }
+    .about-features-inline { display: flex; flex-wrap: wrap; gap: 14px; margin: 24px 0 30px; }
+    .about-feat-pill { display: flex; align-items: center; gap: 8px; background: rgba(200,16,46,0.06); border: 1px solid rgba(200,16,46,0.2); border-radius: 50px; padding: 8px 18px; font-size: 0.84rem; font-weight: 600; color: #1A0A0C; }
+    .about-feat-pill i { color: #C8102E; }
+
+    /* Stats strip */
+    .stats-strip { background: linear-gradient(135deg, #C8102E 0%, #8B0000 100%); padding: 60px 0; }
+    .stats-strip .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+    @media (max-width: 768px) { .stats-strip .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+    .stats-strip .stat-item { text-align: center; }
+    .stats-strip .stat-icon { font-size: 2rem; color: rgba(255,255,255,0.7); margin-bottom: 10px; }
+    .stats-strip .stat-number { font-family: 'Montserrat', sans-serif; font-size: 2.8rem; font-weight: 800; color: #fff; line-height: 1; margin-bottom: 6px; }
+    .stats-strip .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.8); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
+
+    /* Services */
+    .services-section { padding: 80px 0; background: #FDF5F6; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; } }
+    .service-card { background: #fff; border-radius: 16px; padding: 34px 28px; box-shadow: 0 2px 12px rgba(200,16,46,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 3px solid transparent; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(200,16,46,0.14); border-top-color: #C8102E; }
+    .service-icon { width: 64px; height: 64px; background: rgba(200,16,46,0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .service-icon i { font-size: 1.6rem; color: #C8102E; }
+    .service-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: #1A0A0C; margin-bottom: 10px; }
+    .service-card p { color: #7A7A7A; font-size: 0.88rem; line-height: 1.7; }
+
+    /* Why choose */
+    .why-section { padding: 80px 0; }
+    .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    @media (max-width: 640px) { .why-grid { grid-template-columns: 1fr; } }
+    .why-item { display: flex; gap: 18px; align-items: flex-start; padding: 24px; border-radius: 14px; background: #FDF5F6; transition: box-shadow 0.3s; }
+    .why-item:hover { box-shadow: 0 8px 28px rgba(200,16,46,0.1); }
+    .why-num { font-family: 'Montserrat', sans-serif; font-size: 2.2rem; font-weight: 800; color: rgba(200,16,46,0.15); line-height: 1; min-width: 48px; }
+    .why-text h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: #1A0A0C; margin-bottom: 6px; }
+    .why-text p { color: #7A7A7A; font-size: 0.85rem; line-height: 1.65; }
+
+    /* CTA strip */
+    .cta-strip { padding: 70px 0; background: linear-gradient(135deg, #1A0A0C 0%, #2d1013 100%); text-align: center; }
+    .cta-strip h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #fff; margin-bottom: 12px; }
+    .cta-strip p { color: rgba(255,255,255,0.7); margin-bottom: 28px; font-size: 1rem; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+          <a href="mailto:info@jpholidays.in"><i class="fa-solid fa-envelope"></i> info@jpholidays.in</a>
+          <span><i class="fa-solid fa-clock"></i> Mon – Sat: 9:00 AM – 8:00 PM</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav-wrapper">
+      <div class="container">
+        <div class="header-main">
+          <a href="index.html" class="brand-logo"><img src="logo.png" alt="JP Holidays" class="site-logo-img"></a>
+          <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="packages.html">Featured Packages</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="world-escapes.html">World Escapes</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="header-cta">
+            <div class="header-phone"><i class="fa-solid fa-headset"></i></div>
+            <button type="button" class="btn btn-primary open-enquiry-btn" data-place="Custom / Other Destination">Enquire Now</button>
+            <button class="mobile-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>About <span>JP Holidays</span></h1>
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>About Us</span></div>
+    </div>
+  </section>
+
+  <!-- About Intro -->
+  <section class="about-page">
+    <div class="container">
+      <div class="about-intro-grid">
+        <div class="about-img-wrap">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="JP Holidays travel experience">
+          </div>
+          <div class="about-float">
+            <div class="num">15+</div>
+            <div class="lbl">Years of Excellence</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="subtitle-tag">About JP Holidays</span>
+          <h2>South India's Most Trusted <span>Travel Brand</span></h2>
+          <p>Founded with a vision to make luxury and customized travel seamless and accessible to everyone, JP Holidays has evolved into a premier tour operator serving clients across South India and beyond.</p>
+          <p>Whether you're planning an intimate honeymoon getaway, a fun-filled family vacation, or a high-level corporate MICE tour, our team of dedicated travel experts crafts memorable experiences tailored to the finest detail.</p>
+          <p>With deep-rooted partnerships with international airlines, hotels, and ground operators, we guarantee you the best value, comfort, and care every step of the journey.</p>
+          <div class="about-features-inline">
+            <div class="about-feat-pill"><i class="fa-solid fa-passport"></i> Full Visa Assistance</div>
+            <div class="about-feat-pill"><i class="fa-solid fa-plane-up"></i> Flight & Hotel Deals</div>
+            <div class="about-feat-pill"><i class="fa-solid fa-headset"></i> 24/7 On-Tour Support</div>
+            <div class="about-feat-pill"><i class="fa-solid fa-shield-halved"></i> 100% Secure Booking</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Plan With Our Experts</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><div class="stat-icon"><i class="fa-solid fa-earth-americas"></i></div><div class="stat-number">3000+</div><div class="stat-label">Destinations Covered</div></div>
+        <div class="stat-item"><div class="stat-icon"><i class="fa-solid fa-suitcase-rolling"></i></div><div class="stat-number">45,000+</div><div class="stat-label">Tours Completed</div></div>
+        <div class="stat-item"><div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div><div class="stat-number">99%</div><div class="stat-label">Customer Satisfaction</div></div>
+        <div class="stat-item"><div class="stat-icon"><i class="fa-solid fa-trophy"></i></div><div class="stat-number">25+</div><div class="stat-label">Industry Awards</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Our Services</span>
+        <h2>Everything You Need for Your Dream Holiday</h2>
+        <p>From visa processing to on-ground support, we handle every detail of your journey.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon"><i class="fa-solid fa-passport"></i></div><h3>Visa Assistance</h3><p>Expert guidance and documentation support for all international visa categories – tourist, business, and transit.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fa-solid fa-plane-up"></i></div><h3>Flight Bookings</h3><p>Best fare international and domestic flight bookings with preferred airline partnerships and upgrade support.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fa-solid fa-hotel"></i></div><h3>Hotel Reservations</h3><p>Curated 3★ to 5★ hotel stays across all destinations, from luxury resorts to boutique properties.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Travel Insurance</h3><p>Comprehensive travel insurance covering medical emergencies, trip cancellation, baggage loss, and more.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fa-solid fa-coins"></i></div><h3>Forex & Currency</h3><p>Competitive exchange rates for all major world currencies with doorstep delivery in Chennai.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fa-solid fa-user-shield"></i></div><h3>Dedicated Tour Manager</h3><p>Professional tour managers accompany group tours ensuring smooth transfers, local guidance, and 24/7 care.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Why Choose Us</span>
+        <h2>The JP Holidays Advantage</h2>
+        <p>Here is why thousands of travelers make JP Holidays their first choice every year.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item"><div class="why-num">01</div><div class="why-text"><h4>Custom Itineraries</h4><p>Flexible schedules tailored to your exact pace, budget, and travel preferences with zero hassle.</p></div></div>
+        <div class="why-item"><div class="why-num">02</div><div class="why-text"><h4>Best Price Guarantee</h4><p>Direct partnerships with top international hotels and airlines ensure unbeatable rates every time.</p></div></div>
+        <div class="why-item"><div class="why-num">03</div><div class="why-text"><h4>End-to-End Support</h4><p>From visa processing & forex exchange to insurance and airport lounge access, we handle everything.</p></div></div>
+        <div class="why-item"><div class="why-num">04</div><div class="why-text"><h4>Trusted by 45,000+ Travelers</h4><p>Over a decade of delivering seamless holiday experiences to families, couples, and corporates across South India.</p></div></div>
+        <div class="why-item"><div class="why-num">05</div><div class="why-text"><h4>Award-Winning Agency</h4><p>Recognized with 25+ industry awards for excellence in travel services and customer satisfaction.</p></div></div>
+        <div class="why-item"><div class="why-num">06</div><div class="why-text"><h4>Transparent Pricing</h4><p>No hidden charges. Every package is detailed with complete inclusions and exclusions upfront.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to Start Your Journey?</h2>
+      <p>Let our experts craft your perfect holiday experience — from planning to homecoming.</p>
+      <div class="cta-btns">
+        <a href="packages.html" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Browse Packages</a>
+        <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Talk to an Expert</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="brand-logo" style="display:inline-block;margin-bottom:20px;"><img src="logo.png" alt="JP Holidays" class="site-logo-img footer-logo"></a>
+          <p>JP Holidays Private Limited – South India's premier travel management company.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Featured Packages</a></li>
+            <li><a href="destinations.html">Top Destinations</a></li>
+            <li><a href="world-escapes.html">World Escapes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="about.html">Visa Assistance</a></li>
+            <li><a href="about.html">Flight Bookings</a></li>
+            <li><a href="about.html">Hotel Reservations</a></li>
+            <li><a href="about.html">Travel Insurance</a></li>
+            <li><a href="about.html">Forex & Currency</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i><span>JP Towers, No. 45, Anna Salai, Guindy, Chennai – 600032</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>info@jpholidays.in</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong>JP Holidays Private Limited</strong>. All Rights Reserved.</div>
+        <div><a href="#">Privacy Policy</a> &bull; <a href="#">Terms & Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Escapes – International Luxury Packages | JP Holidays</title>
+  <meta name="description" content="Explore JP Holidays' curated World Escapes – Sri Lanka, Bhutan, Bali, Kenya Safari, Finland, Vietnam, and more luxury international packages.">
+  <link rel="icon" href="https://img.icons8.com/color/96/airplane-take-off.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=5.0">
+  <style>
+    .page-banner { background: linear-gradient(135deg, #1A0A0C 0%, #C8102E 60%, #8B0000 100%); padding: 110px 0 60px; text-align: center; position: relative; overflow: hidden; }
+    .page-banner::before { content: ''; position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1920&q=30') center/cover no-repeat; opacity: 0.12; }
+    .page-banner h1 { font-size: 3rem; color: #fff; position: relative; font-family: 'Playfair Display', serif; margin-bottom: 12px; }
+    .page-banner h1 span { color: #FFD6DC; }
+    .breadcrumb { display: flex; align-items: center; justify-content: center; gap: 8px; color: rgba(255,255,255,0.7); font-size: 0.88rem; position: relative; }
+    .breadcrumb a { color: rgba(255,255,255,0.85); }
+    .breadcrumb i { font-size: 0.7rem; }
+
+    .filter-bar { background: #fff; padding: 28px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.06); position: sticky; top: 70px; z-index: 50; border-bottom: 1px solid #F0E8EA; }
+    .filter-inner { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .filter-btn { padding: 9px 22px; border-radius: 50px; border: 1.5px solid #e0d0d2; background: #fff; color: #4A4A4A; font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer; transition: all 0.25s ease; }
+    .filter-btn:hover, .filter-btn.active { background: #C8102E; color: #fff; border-color: #C8102E; box-shadow: 0 4px 14px rgba(200,16,46,0.3); }
+
+    .we-page { padding: 70px 0 90px; background: #FDF5F6; }
+    .we-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    @media (max-width: 1024px) { .we-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .we-grid { grid-template-columns: 1fr; } }
+
+    .we-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(200,16,46,0.06), 0 6px 28px rgba(0,0,0,0.06); transition: transform 0.32s ease, box-shadow 0.32s ease; display: flex; flex-direction: column; }
+    .we-card:hover { transform: translateY(-8px); box-shadow: 0 14px 48px rgba(200,16,46,0.18); }
+    .we-card-img { position: relative; height: 220px; overflow: hidden; }
+    .we-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .we-card:hover .we-card-img img { transform: scale(1.07); }
+    .we-duration-tag { position: absolute; bottom: 12px; right: 12px; background: rgba(26,10,12,0.78); backdrop-filter: blur(4px); color: #fff; font-size: 0.75rem; font-weight: 600; padding: 5px 12px; border-radius: 50px; display: flex; align-items: center; gap: 5px; }
+    .we-card-body { padding: 20px 22px 22px; flex: 1; display: flex; flex-direction: column; }
+    .we-cat-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: #fff; border-radius: 50px; padding: 4px 13px; margin-bottom: 12px; }
+    .we-card-body h3 { font-family: 'Playfair Display', serif; font-size: 1.12rem; font-weight: 700; color: #1A0A0C; margin-bottom: 8px; line-height: 1.3; }
+    .we-card-body .desc { color: #7A7A7A; font-size: 0.84rem; line-height: 1.6; margin-bottom: 14px; flex: 1; }
+    .we-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 16px; }
+    .we-highlight { display: flex; align-items: center; gap: 7px; font-size: 0.78rem; color: #4A4A4A; }
+    .we-highlight i { color: #C8102E; font-size: 0.8rem; width: 14px; }
+    .we-card-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; border-top: 1px solid #F0E8EA; gap: 10px; flex-wrap: wrap; }
+    .we-price .from { font-size: 0.7rem; color: #7A7A7A; display: block; }
+    .we-price .amount { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 800; color: #C8102E; }
+    .we-btns { display: flex; gap: 8px; }
+    .btn-book { background: linear-gradient(135deg, #C8102E 0%, #8B0000 100%); color: #fff; border: none; padding: 9px 16px; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 0.73rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: flex; align-items: center; gap: 5px; cursor: pointer; transition: all 0.25s ease; white-space: nowrap; }
+    .btn-book:hover { background: #8B0000; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(200,16,46,0.4); }
+    .btn-info { background: transparent; color: #C8102E; border: 1.5px solid #C8102E; padding: 9px 14px; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 0.73rem; font-weight: 700; display: flex; align-items: center; gap: 5px; cursor: pointer; transition: all 0.25s ease; white-space: nowrap; }
+    .btn-info:hover { background: #C8102E; color: #fff; }
+    .no-results { text-align: center; padding: 60px 20px; color: #7A7A7A; display: none; }
+    .no-results i { font-size: 3rem; color: #e0d0d2; margin-bottom: 16px; display: block; }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+          <a href="mailto:info@jpholidays.in"><i class="fa-solid fa-envelope"></i> info@jpholidays.in</a>
+          <span><i class="fa-solid fa-clock"></i> Mon – Sat: 9:00 AM – 8:00 PM</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav-wrapper">
+      <div class="container">
+        <div class="header-main">
+          <a href="index.html" class="brand-logo"><img src="logo.png" alt="JP Holidays" class="site-logo-img"></a>
+          <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="packages.html">Featured Packages</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="world-escapes.html" class="active">World Escapes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="header-cta">
+            <div class="header-phone"><i class="fa-solid fa-headset"></i></div>
+            <button type="button" class="btn btn-primary open-enquiry-btn" data-place="Custom / Other Destination">Enquire Now</button>
+            <button class="mobile-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1><i class="fa-solid fa-compass" style="font-size:0.75em;"></i> World <span>Escapes</span></h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>World Escapes</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-inner">
+        <button class="filter-btn active" data-filter="all">All Packages</button>
+        <button class="filter-btn" data-filter="honeymoon">Honeymoon</button>
+        <button class="filter-btn" data-filter="adventure">Adventure</button>
+        <button class="filter-btn" data-filter="luxury">Luxury</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="family">Family</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="we-page">
+    <div class="container">
+      <div class="we-grid" id="weGrid">
+
+        <!-- 1. Sri Lanka -->
+        <div class="we-card" data-cat="family honeymoon nature">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=800&q=80" alt="Sri Lanka Escape">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 4N / 5D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#0e7490;">HILLS & BEACHES</span>
+            <h3>Sri Lanka Escape</h3>
+            <p class="desc">Where Emerald Hills Meet Golden Beaches. Kandy, Nuwara Eliya tea estates, Bentota beach & Colombo market tour.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-hotel"></i> 3★ Hotel Stay</div>
+              <div class="we-highlight"><i class="fa-solid fa-mug-hot"></i> Tea Factory Tour</div>
+              <div class="we-highlight"><i class="fa-solid fa-van-shuttle"></i> Private AC Van</div>
+              <div class="we-highlight"><i class="fa-solid fa-utensils"></i> Daily Breakfast & Dinner</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person</span><div class="amount">&#8377;25,450</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Sri Lanka Escape (4N/5D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="srilanka-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Bhutan -->
+        <div class="we-card" data-cat="adventure family nature">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=800&q=80" alt="Bhutan Thunder Dragon">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 6N / 7D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#b87d0e;">HIMALAYAN ESCAPE</span>
+            <h3>Bhutan – Land of Thunder Dragon</h3>
+            <p class="desc">Luxury Himalayan tour covering Phuentsholing, Thimphu, Punakha Dzong, Dochula Pass & Tiger's Nest Monastery trek.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-mountain"></i> Tiger's Nest Trek</div>
+              <div class="we-highlight"><i class="fa-solid fa-van-shuttle"></i> Toyota Hiace Van</div>
+              <div class="we-highlight"><i class="fa-solid fa-passport"></i> Permit Assistance</div>
+              <div class="we-highlight"><i class="fa-solid fa-user-ninja"></i> Licensed Guide</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person</span><div class="amount">&#8377;26,560</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Bhutan Thunder Dragon (6N/7D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="bhutan-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Thailand -->
+        <div class="we-card" data-cat="honeymoon family nature">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80" alt="Thailand Islands Escape">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 6N / 7D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#1a7a3c;">ISLANDS & CITY</span>
+            <h3>Thailand Islands & City Escape</h3>
+            <p class="desc">Ultimate island hopper: Phuket Patong, Koh Samui pool villa, Krabi Ava Sea resort, Pattaya & Bangkok city tour.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-hotel"></i> 3★/4★ Beach Resorts</div>
+              <div class="we-highlight"><i class="fa-solid fa-car"></i> Private Transfers</div>
+              <div class="we-highlight"><i class="fa-solid fa-umbrella-beach"></i> 5 Island Destinations</div>
+              <div class="we-highlight"><i class="fa-solid fa-utensils"></i> Daily Breakfast</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person</span><div class="amount">&#8377;37,470</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Thailand Islands Escape (6N/7D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="thailand-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Finland & Norway -->
+        <div class="we-card" data-cat="luxury honeymoon adventure">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=800&q=80" alt="Finland Norway Arctic Luxury">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 11N / 12D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#4f46e5;">ARCTIC LUXURY</span>
+            <h3>Finland & Norway Arctic Luxury</h3>
+            <p class="desc">Helsinki, Tallinn cruise, Glass Igloo stay at Kakslauttanen, Husky safari, Northern Lights tour & Tromsø Fjords.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-snowflake"></i> Glass Igloo Resort</div>
+              <div class="we-highlight"><i class="fa-solid fa-dog"></i> Husky Cart Safari</div>
+              <div class="we-highlight"><i class="fa-solid fa-plane"></i> 3 Arctic Flights</div>
+              <div class="we-highlight"><i class="fa-solid fa-ferry"></i> Tallinn Cruise</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person (Incl. GST/TCS)</span><div class="amount">&#8377;5,29,761</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Finland & Norway Arctic Luxury (11N/12D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="finland-norway-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Azerbaijan & Georgia -->
+        <div class="we-card" data-cat="adventure family">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=800&q=80" alt="Azerbaijan Georgia Escape">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 8N / 9D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#0284c7;">EURASIA ESCAPE</span>
+            <h3>Azerbaijan & Georgia Escape</h3>
+            <p class="desc">Business meets leisure in Baku & Tbilisi! Old City Baku, Shahdag mountain cable car ride & Kakheti KTW wine tasting.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-cable-car"></i> Shahdag Cable Car</div>
+              <div class="we-highlight"><i class="fa-solid fa-wine-glass"></i> Kakheti Wine Tour</div>
+              <div class="we-highlight"><i class="fa-solid fa-monument"></i> Narikala Fortress</div>
+              <div class="we-highlight"><i class="fa-solid fa-car"></i> Private Driver & Guide</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Starts From</span><div class="amount">&#8377;65,992</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Azerbaijan & Georgia Escape (8N/9D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="azerbaijan-georgia-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Kuala Lumpur -->
+        <div class="we-card" data-cat="family honeymoon">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80" alt="Kuala Lumpur Malaysia">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 3N / 4D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#e11d48;">CITY BREAK</span>
+            <h3>Kuala Lumpur Escape (Malaysia)</h3>
+            <p class="desc">3N Ramada Encore Chinatown with KL Tower Sky Deck, Batu Caves, Genting Skyway Cable Car & Putrajaya Joy Cruise.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-building-columns"></i> KL Tower Sky Deck</div>
+              <div class="we-highlight"><i class="fa-solid fa-cable-car"></i> Genting Cable Car</div>
+              <div class="we-highlight"><i class="fa-solid fa-ship"></i> Putrajaya Cruise</div>
+              <div class="we-highlight"><i class="fa-solid fa-hotel"></i> 3★ Deluxe Room</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person (Dbl Sharing)</span><div class="amount">&#8377;18,450</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Kuala Lumpur Escape (3N/4D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="malaysia-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Bali -->
+        <div class="we-card" data-cat="honeymoon adventure luxury">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali Escape">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 8N / 9D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#059669;">TROPICAL LUXURY</span>
+            <h3>Bali Escape</h3>
+            <p class="desc">3N Dedary Pool Villa Ubud + 5N Diamond Hotel Kuta with Jungle Swing, 90-Min ATV, Ayung River Rafting & Nusa Penida speedboat.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-water-ladder"></i> Private Pool Villa</div>
+              <div class="we-highlight"><i class="fa-solid fa-motorcycle"></i> 90-Min ATV Tandem</div>
+              <div class="we-highlight"><i class="fa-solid fa-ship"></i> Nusa Penida Tour</div>
+              <div class="we-highlight"><i class="fa-solid fa-fire"></i> Uluwatu Kecak Dance</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Adult</span><div class="amount">&#8377;43,269</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Bali Escape (8N/9D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="bali-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Kenya Safari -->
+        <div class="we-card" data-cat="adventure family">
+          <div class="we-card-img">
+            <img src="kenya_safari.jpg" alt="Kenya Safari Escape">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 6N / 7D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#d97706;">WILDLIFE SAFARI</span>
+            <h3>Kenya Safari Escape</h3>
+            <p class="desc">4x4 Safari Land Cruiser drives across Masai Mara, Lake Naivasha boat ride & Amboseli Mt. Kilimanjaro views with full board meals.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-hippo"></i> Big Five Safari</div>
+              <div class="we-highlight"><i class="fa-solid fa-utensils"></i> Full Board Meals</div>
+              <div class="we-highlight"><i class="fa-solid fa-van-shuttle"></i> 4x4 Land Cruiser</div>
+              <div class="we-highlight"><i class="fa-solid fa-sailboat"></i> Naivasha Boat Ride</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person</span><div class="amount">USD 2,250 <small style="font-size:0.72rem;color:#777;">(&#8377;1,88,000)</small></div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Kenya Safari Escape (6N/7D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="kenya-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Grand Kashmir -->
+        <div class="we-card" data-cat="family honeymoon nature">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80" alt="Grand Kashmir Tour">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 6N / 7D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#2563eb;">PARADISE ON EARTH</span>
+            <h3>Grand Kashmir Tour</h3>
+            <p class="desc">Srinagar, Super Deluxe Houseboat on Dal Lake, Sonamarg day trip, Gulmarg snow point, Pahalgam & private Innova vehicle.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-ship"></i> Super Deluxe Houseboat</div>
+              <div class="we-highlight"><i class="fa-solid fa-water"></i> Dal Lake Shikara Ride</div>
+              <div class="we-highlight"><i class="fa-solid fa-car"></i> Private Innova</div>
+              <div class="we-highlight"><i class="fa-solid fa-utensils"></i> Breakfast & Dinner</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Total (Flights Excl.)</span><div class="amount">&#8377;87,450</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Grand Kashmir Tour (6N/7D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="kashmir-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Vietnam -->
+        <div class="we-card" data-cat="honeymoon family">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80" alt="Vietnam Honeymoon">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 5N / 6D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#be123c;">HONEYMOON SPECIAL</span>
+            <h3>Vietnam Romantic Honeymoon Escape</h3>
+            <p class="desc">Hanoi Old Quarter, 1N Ha Long Bay 4★ Cruise with squid fishing, Hoi An Ancient Town basket boat ride & Ba Na Hills Golden Bridge.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-ship"></i> 4★ Ha Long Cruise</div>
+              <div class="we-highlight"><i class="fa-solid fa-bridge"></i> Golden Bridge Cable Car</div>
+              <div class="we-highlight"><i class="fa-solid fa-sailboat"></i> Basket Boat Ride</div>
+              <div class="we-highlight"><i class="fa-solid fa-wine-glass"></i> Cooking Demo</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person (&#8377;94,700 Couple)</span><div class="amount">&#8377;47,350</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Vietnam Honeymoon Escape (5N/6D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="vietnam-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Kasol -->
+        <div class="we-card" data-cat="honeymoon adventure nature">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" alt="Kasol Honeymoon">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 3N / 4D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#15803d;">HIMALAYAN TREK</span>
+            <h3>Kasol Honeymoon (Himachal)</h3>
+            <p class="desc">Scenic Kasol Market, Parvati River, Manikaran Sahib hot springs, Tosh Valley views & Chalal village forest trail trek.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-person-hiking"></i> Chalal Forest Trek</div>
+              <div class="we-highlight"><i class="fa-solid fa-water-ladder"></i> Manikaran Hot Springs</div>
+              <div class="we-highlight"><i class="fa-solid fa-car"></i> Chandigarh Transfer</div>
+              <div class="we-highlight"><i class="fa-solid fa-mug-hot"></i> Parvati Cafe Hopping</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person</span><div class="amount">&#8377;35,000</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Kasol Honeymoon Himachal (3N/4D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="kasol-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="no-results" id="noResults">
+        <i class="fa-solid fa-plane-slash"></i>
+        <h3>No packages found</h3>
+        <p>Try selecting a different filter category.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="brand-logo" style="display:inline-block;margin-bottom:20px;"><img src="logo.png" alt="JP Holidays" class="site-logo-img footer-logo"></a>
+          <p>JP Holidays Private Limited – South India's premier travel management company.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Featured Packages</a></li>
+            <li><a href="destinations.html">Top Destinations</a></li>
+            <li><a href="world-escapes.html">World Escapes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>World Escapes</h4>
+          <ul>
+            <li><a href="world-escapes.html">Sri Lanka Escape</a></li>
+            <li><a href="world-escapes.html">Bali Escape</a></li>
+            <li><a href="world-escapes.html">Kenya Safari</a></li>
+            <li><a href="world-escapes.html">Finland & Norway Arctic</a></li>
+            <li><a href="world-escapes.html">Vietnam Honeymoon</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i><span>JP Towers, No. 45, Anna Salai, Guindy, Chennai – 600032</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>info@jpholidays.in</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong>JP Holidays Private Limited</strong>. All Rights Reserved.</div>
+        <div><a href="#">Privacy Policy</a> &bull; <a href="#">Terms & Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="modal-backdrop" id="enquiry-modal">
+    <div class="modal-container enquiry-modal-container">
+      <button class="modal-close" id="enquiry-modal-close">&times;</button>
+      <div class="enquiry-modal-header">
+        <div class="enquiry-badge"><i class="fa-solid fa-paper-plane"></i> Quick Booking Enquiry</div>
+        <h2>Holiday Package Enquiry</h2>
+        <p>Our experts will tailor the best package for you!</p>
+      </div>
+      <form class="enquiry-form" id="enquiryForm">
+        <div class="form-grid">
+          <div class="form-group full-width"><label for="enquiry-name">👤 Your Name <span class="required">*</span></label><input type="text" id="enquiry-name" placeholder="Full name" required></div>
+          <div class="form-group"><label for="enquiry-phone">📞 Phone <span class="required">*</span></label><input type="tel" id="enquiry-phone" placeholder="+91 98765 43210" required></div>
+          <div class="form-group"><label for="enquiry-adults">👥 Adults <span class="required">*</span></label><input type="number" id="enquiry-adults" min="1" value="2" required></div>
+          <div class="form-group full-width"><label for="enquiry-place">📍 Destination <span class="required">*</span></label>
+            <select id="enquiry-place" required>
+              <option value="Sri Lanka Escape">Sri Lanka Escape (4N/5D)</option>
+              <option value="Bhutan Thunder Dragon">Bhutan Thunder Dragon (6N/7D)</option>
+              <option value="Thailand Islands Escape">Thailand Islands Escape (6N/7D)</option>
+              <option value="Finland Norway Arctic">Finland & Norway Arctic (11N/12D)</option>
+              <option value="Bali Escape">Bali Escape (8N/9D)</option>
+              <option value="Kenya Safari">Kenya Safari (6N/7D)</option>
+              <option value="Vietnam Honeymoon">Vietnam Honeymoon (5N/6D)</option>
+              <option value="Custom / Other Destination">Custom / Other Destination</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="enquiry-checkin">📅 Travel Date <span class="required">*</span></label><input type="date" id="enquiry-checkin" required></div>
+          <div class="form-group full-width">
+            <label>🏨 Hotel Category <span class="required">*</span></label>
+            <div class="hotel-category-options">
+              <label class="hotel-opt"><input type="radio" name="hotel_category" value="3★ Standard"><span class="hotel-box"><i class="fa-solid fa-star"></i> 3★</span></label>
+              <label class="hotel-opt"><input type="radio" name="hotel_category" value="4★ Deluxe" checked><span class="hotel-box"><i class="fa-solid fa-star"></i> 4★</span></label>
+              <label class="hotel-opt"><input type="radio" name="hotel_category" value="5★ Luxury"><span class="hotel-box"><i class="fa-solid fa-star"></i> 5★</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="enquiry-form-actions"><button type="submit" class="btn btn-primary btn-submit-enquiry"><i class="fa-solid fa-paper-plane"></i> Submit Enquiry</button></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+        let visible = 0;
+        document.querySelectorAll('.we-card').forEach(card => {
+          const cats = card.dataset.cat || '';
+          const show = filter === 'all' || cats.includes(filter);
+          card.style.display = show ? 'flex' : 'none';
+          if (show) visible++;
+        });
+        document.getElementById('noResults').style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

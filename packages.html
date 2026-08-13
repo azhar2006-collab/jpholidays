@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Tour Packages | JP Holidays</title>
+  <meta name="description" content="Browse JP Holidays' handcrafted signature holiday packages – cruise, safari, Europe, Maldives, Dubai and more. Book your dream holiday today.">
+  <link rel="icon" href="https://img.icons8.com/color/96/airplane-take-off.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=5.0">
+  <style>
+    /* ---- Page Banner ---- */
+    .page-banner {
+      background: linear-gradient(135deg, #1A0A0C 0%, #C8102E 60%, #8B0000 100%);
+      padding: 110px 0 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-banner::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=40') center/cover no-repeat;
+      opacity: 0.12;
+    }
+    .page-banner h1 {
+      font-size: 3rem; color: #fff; position: relative;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 12px;
+    }
+    .page-banner h1 span { color: #FFD6DC; }
+    .breadcrumb {
+      display: flex; align-items: center; justify-content: center;
+      gap: 8px; color: rgba(255,255,255,0.7); font-size: 0.88rem;
+      position: relative;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.85); }
+    .breadcrumb a:hover { color: #fff; }
+    .breadcrumb i { font-size: 0.7rem; }
+
+    /* ---- Filter Bar ---- */
+    .filter-bar {
+      background: #fff;
+      padding: 28px 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      position: sticky; top: 70px; z-index: 50;
+      border-bottom: 1px solid #F0E8EA;
+    }
+    .filter-inner {
+      display: flex; align-items: center; gap: 12px;
+      flex-wrap: wrap; justify-content: center;
+    }
+    .filter-btn {
+      padding: 9px 22px;
+      border-radius: 50px;
+      border: 1.5px solid #e0d0d2;
+      background: #fff;
+      color: #4A4A4A;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #C8102E;
+      color: #fff;
+      border-color: #C8102E;
+      box-shadow: 0 4px 14px rgba(200,16,46,0.3);
+    }
+
+    /* ---- Packages Grid ---- */
+    .packages-page { padding: 70px 0 90px; background: #FDF5F6; }
+    .pkg-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    @media (max-width: 1024px) { .pkg-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px)  { .pkg-grid { grid-template-columns: 1fr; } }
+
+    /* ---- Card ---- */
+    .pkg-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(200,16,46,0.06), 0 6px 28px rgba(0,0,0,0.06);
+      transition: transform 0.32s ease, box-shadow 0.32s ease;
+      display: flex; flex-direction: column;
+    }
+    .pkg-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 48px rgba(200,16,46,0.18);
+    }
+    .pkg-card-img {
+      position: relative;
+      height: 220px; overflow: hidden;
+    }
+    .pkg-card-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .pkg-card:hover .pkg-card-img img { transform: scale(1.07); }
+    .pkg-duration-tag {
+      position: absolute; bottom: 12px; right: 12px;
+      background: rgba(26,10,12,0.78);
+      backdrop-filter: blur(4px);
+      color: #fff; font-size: 0.75rem; font-weight: 600;
+      padding: 5px 12px; border-radius: 50px;
+      display: flex; align-items: center; gap: 5px;
+    }
+    .pkg-card-body {
+      padding: 20px 22px 22px;
+      flex: 1; display: flex; flex-direction: column;
+    }
+    .pkg-cat-badge {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.65rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.14em;
+      color: #fff; border-radius: 50px;
+      padding: 4px 13px; margin-bottom: 12px;
+    }
+    .pkg-card-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem; font-weight: 700;
+      color: #1A0A0C; margin-bottom: 8px; line-height: 1.3;
+    }
+    .pkg-card-body .desc {
+      color: #7A7A7A; font-size: 0.84rem; line-height: 1.6;
+      margin-bottom: 14px; flex: 1;
+    }
+    .pkg-highlights {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 6px; margin-bottom: 16px;
+    }
+    .pkg-highlight {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 0.78rem; color: #4A4A4A;
+    }
+    .pkg-highlight i { color: #C8102E; font-size: 0.8rem; width: 14px; }
+    .pkg-card-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-top: 14px; border-top: 1px solid #F0E8EA;
+      gap: 10px; flex-wrap: wrap;
+    }
+    .pkg-price .from { font-size: 0.7rem; color: #7A7A7A; display: block; }
+    .pkg-price .amount {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem; font-weight: 800; color: #C8102E;
+    }
+    .pkg-btns { display: flex; gap: 8px; }
+    .btn-book {
+      background: linear-gradient(135deg, #C8102E 0%, #8B0000 100%);
+      color: #fff; border: none;
+      padding: 9px 16px; border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.73rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      display: flex; align-items: center; gap: 5px;
+      cursor: pointer; transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .btn-book:hover {
+      background: #8B0000;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(200,16,46,0.4);
+    }
+    .btn-info {
+      background: transparent;
+      color: #C8102E; border: 1.5px solid #C8102E;
+      padding: 9px 14px; border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.73rem; font-weight: 700;
+      display: flex; align-items: center; gap: 5px;
+      cursor: pointer; transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .btn-info:hover { background: #C8102E; color: #fff; }
+
+    /* No results */
+    .no-results {
+      text-align: center; padding: 60px 20px;
+      color: #7A7A7A; display: none;
+    }
+    .no-results i { font-size: 3rem; color: #e0d0d2; margin-bottom: 16px; display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+          <a href="mailto:info@jpholidays.in"><i class="fa-solid fa-envelope"></i> info@jpholidays.in</a>
+          <span><i class="fa-solid fa-clock"></i> Mon – Sat: 9:00 AM – 8:00 PM</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav-wrapper">
+      <div class="container">
+        <div class="header-main">
+          <a href="index.html" class="brand-logo" title="JP Holidays">
+            <img src="logo.png" alt="JP Holidays" class="site-logo-img">
+          </a>
+          <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="packages.html" class="active">Featured Packages</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="world-escapes.html">World Escapes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="header-cta">
+            <div class="header-phone"><i class="fa-solid fa-headset"></i></div>
+            <button type="button" class="btn btn-primary open-enquiry-btn" data-place="Custom / Other Destination">Enquire Now</button>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Featured <span>Packages</span></h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Featured Packages</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FILTER BAR ===== -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-inner">
+        <button class="filter-btn active" data-filter="all">All Packages</button>
+        <button class="filter-btn" data-filter="india">India Tours</button>
+        <button class="filter-btn" data-filter="international">International</button>
+        <button class="filter-btn" data-filter="honeymoon">Honeymoon Special</button>
+        <button class="filter-btn" data-filter="europe">Europe Tours</button>
+        <button class="filter-btn" data-filter="educational">Educational</button>
+        <button class="filter-btn" data-filter="cruise">Ocean Cruise</button>
+        <button class="filter-btn" data-filter="desert">Desert &amp; Luxury</button>
+        <button class="filter-btn" data-filter="trade">Trade Expo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PACKAGES GRID ===== -->
+  <section class="packages-page">
+    <div class="container">
+      <div class="pkg-grid" id="pkgGrid">
+
+        <!-- 1. Cordelia Cruise -->
+        <div class="pkg-card" data-cat="international cruise">
+          <div class="pkg-card-img">
+            <img src="chennai_singapore_cruise.jpg" alt="Chennai to Singapore Cordelia Cruise">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 10N / 11D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#b87d0e;">OCEAN CRUISE</span>
+            <h3>Chennai – Singapore Cordelia Cruise</h3>
+            <p class="desc">Chennai → Phuket → Langkawi → Kuala Lumpur → Singapore. All meals, beverage package & 10 days of live entertainment shows!</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-ship"></i> Ocean Liner Stay</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-utensils"></i> All Meals Incl.</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-music"></i> 10 Days Live Shows</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-plane"></i> Return Flight SG-MAA</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;1,39,999*</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Chennai – Singapore Cordelia Cruise"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="cruise"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Dubai -->
+        <div class="pkg-card" data-cat="international desert">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai Luxury and Desert Safari">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 5N / 6D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#b87d0e;">DESERT & LUXURY</span>
+            <h3>Dubai Luxury & Desert Safari</h3>
+            <p class="desc">4★ Central Dubai stay with Marina Dhow Cruise dinner, 4x4 Desert Dune Bashing BBQ, Burj Khalifa 124th Floor & Abu Dhabi day tour.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-building"></i> Burj Khalifa 124F</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-car-side"></i> Dune Bashing & BBQ</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-ship"></i> Marina Dhow Cruise</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-mosque"></i> Abu Dhabi Tour</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;54,999</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Dubai Luxury & Desert Safari"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="dubai"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Hong Kong & Macau -->
+        <div class="pkg-card" data-cat="international popular">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=800&q=80" alt="Hong Kong and Macau Highlights">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 7N / 8D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#0284c7;">POPULAR TOUR</span>
+            <h3>Hong Kong & Macau Highlights</h3>
+            <p class="desc">2N Regency Art Macau + 5N Harbour Plaza Metropolis HK with Hong Kong Disneyland, Ocean Park, Star Ferry & Victoria Peak.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-hotel"></i> Superior 4★ Rooms</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-ferry"></i> HK-Macau Ferry</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-ticket"></i> Disneyland & Ocean Park</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-cable-car"></i> Ngong Ping 360</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;1,00,000</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Hong Kong & Macau Special"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="hk-macau"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Canton Fair -->
+        <div class="pkg-card" data-cat="international trade">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80" alt="China Canton Fair Business Tour">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> Canton Fair 2026</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#475569;">TRADE EXPO</span>
+            <h3>China Canton Fair Business Tour</h3>
+            <p class="desc">Connect, Source & Grow in Guangzhou! Includes 4★ Hotel, daily BBF, HKG-GDH Ferry tickets, Expo Shuttle & 144-Hr Visa assistance.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-hotel"></i> 4★ Hotel Stay</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-bus"></i> Free Expo Shuttles</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-ferry"></i> Ferry Tickets Incl.</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-passport"></i> 144-Hr Visa Support</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">$675 <small style="font-size:0.72rem;color:#777;">(&#8377;56,500)</small></div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="China Canton Fair Business Tour"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="canton"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Europe 5-Country -->
+        <div class="pkg-card" data-cat="international europe">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80" alt="Europe 5-Country Grand Tour">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 9N / 10D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#4f46e5;">GRAND INTERNATIONAL</span>
+            <h3>Europe 5-Country Grand Tour</h3>
+            <p class="desc">Paris Eiffel Tower & Seine Cruise, Brussels, Amsterdam Canal Cruise, Cologne Cathedral & Mt. Titlis Rotair Cable Car in Switzerland.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-tower-observation"></i> Eiffel Tower 2nd Lvl</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-sailboat"></i> Seine & Amsterdam Cruise</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-mountain"></i> Mt. Titlis Cable Car</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-utensils"></i> Indian Dinners Incl.</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;1,85,000</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Europe 5-Country Grand Tour"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="europe"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Maldives -->
+        <div class="pkg-card" data-cat="international honeymoon island">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Maldives Overwater Resort">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 4N / 5D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#0284c7;">ISLAND PARADISE</span>
+            <h3>Maldives Overwater Resort Special</h3>
+            <p class="desc">2N Beach Villa + 2N Water Villa at 5★ island resort with all-inclusive food & drinks, speedboat transfer & sunset dolphin watching cruise.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-umbrella-beach"></i> 5★ Lagoon Resort</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-utensils"></i> All-Inclusive Meals</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-sailboat"></i> Dolphin Cruise</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-person-swimming"></i> Free Snorkeling</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;89,999</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Maldives Luxury Resort"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="maldives"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Kerala Backwaters (India) -->
+        <div class="pkg-card" data-cat="india domestic">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala Backwaters Houseboat Tour">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 4N / 5D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#1a7a3c;">INDIA TOUR</span>
+            <h3>Kerala Backwaters &amp; Houseboat Escape</h3>
+            <p class="desc">Alleppey houseboat stay on the backwaters, Munnar tea plantations, Periyar Wildlife Sanctuary &amp; Kochi Fort heritage walk.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-ship"></i> Houseboat Stay</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-leaf"></i> Tea Plantation Tour</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-paw"></i> Wildlife Safari</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-umbrella-beach"></i> Kovalam Beach</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;22,999</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Kerala Backwaters &amp; Houseboat Escape"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="kerala"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Rajasthan Royal Heritage (India) -->
+        <div class="pkg-card" data-cat="india domestic">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80" alt="Rajasthan Royal Heritage Tour">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 7N / 8D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#b87d0e;">INDIA HERITAGE</span>
+            <h3>Rajasthan Royal Heritage Circuit</h3>
+            <p class="desc">Jaipur Pink City, Jodhpur Blue City, Udaipur Lake Palace, Jaisalmer Desert Camp &amp; Pushkar camel fair grounds.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-fort-awesome"></i> Amber Fort Jeep Ride</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-moon"></i> Desert Camp Stay</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-water"></i> Lake Palace Dinner</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-horse"></i> Camel Safari</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;34,999</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Rajasthan Royal Heritage Circuit"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="rajasthan"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Kashmir Paradise (India) -->
+        <div class="pkg-card" data-cat="india domestic">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80" alt="Grand Kashmir Tour">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 6N / 7D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#0284c7;">INDIA – KASHMIR</span>
+            <h3>Grand Kashmir Tour – Paradise on Earth</h3>
+            <p class="desc">Dal Lake Super Deluxe Houseboat, Shikara ride, Gulmarg Gondola Cable Car, Pahalgam Lidder Valley &amp; Sonamarg glacier views.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-house-flood-water"></i> Dal Lake Houseboat</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-cable-car"></i> Gulmarg Gondola</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-sailboat"></i> Shikara Ride</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-mountain-snow"></i> Sonamarg Glacier</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Total Package</span>
+                <div class="amount">&#8377;87,450</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Grand Kashmir Tour"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="kashmir-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Andaman Family Tour (India) -->
+        <div class="pkg-card" data-cat="india domestic">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?auto=format&fit=crop&w=800&q=80" alt="Andaman Family Island Tour">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 4N / 5D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#1a7a3c;">INDIA – ANDAMAN</span>
+            <h3>Andaman Family Island Tour</h3>
+            <p class="desc">Cellular Jail Light &amp; Sound show, Radhanagar Beach sunset, Havelock Island snorkeling &amp; Neil Island ferry ride in crystal blue waters.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-water"></i> Radhanagar Beach</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-person-swimming"></i> Snorkeling Session</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-ship"></i> Catamaran Ferry</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-landmark"></i> Cellular Jail Visit</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;29,999</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Andaman Family Island Tour"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="andaman"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Golden Triangle Heritage (India) -->
+        <div class="pkg-card" data-cat="india domestic">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80" alt="Golden Triangle Heritage Tour">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 4N / 5D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#b87d0e;">INDIA – HERITAGE</span>
+            <h3>Golden Triangle Family Heritage Tour</h3>
+            <p class="desc">Delhi Lotus Temple &amp; India Gate, Taj Mahal sunrise at Agra, Amber Fort jeep ride in Jaipur &amp; royal Rajasthani cultural heritage.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-mosque"></i> Taj Mahal Sunrise</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-fort-awesome"></i> Amber Fort Jeep Ride</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-monument"></i> India Gate Delhi</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-car"></i> Private AC Vehicle</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;24,999</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Golden Triangle Family Heritage Tour"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="goldentriangle"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Vietnam Honeymoon -->
+        <div class="pkg-card" data-cat="honeymoon international">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80" alt="Vietnam Honeymoon Escape">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 5N / 6D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#ec4899;">HONEYMOON</span>
+            <h3>Vietnam Romantic Honeymoon Escape</h3>
+            <p class="desc">Hanoi to Ha Long Bay luxury cruise, Da Nang Golden Bridge &amp; Hoi An Ancient Town lantern-lit streets for couples.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-ship"></i> Ha Long Bay Cruise</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-bridge"></i> Golden Bridge Visit</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-heart"></i> Couple Activities</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-utensils"></i> Candlelight Dinner</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Couple</span>
+                <div class="amount">&#8377;94,700</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Vietnam Romantic Honeymoon Escape"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="vietnam-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. Switzerland (Europe) -->
+        <div class="pkg-card" data-cat="international europe honeymoon">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" alt="Switzerland Alpine Dream">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 6N / 7D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#4f46e5;">EUROPE</span>
+            <h3>Switzerland Alpine Dream Expedition</h3>
+            <p class="desc">Zurich Lake cruise, Jungfraujoch Top of Europe by cogwheel train, Mt. Titlis Rotair 360 Cable Car &amp; Lucerne Chapel Bridge.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-mountain"></i> Jungfraujoch Top</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-cable-car"></i> Mt. Titlis Cable Car</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-train"></i> Swiss Travel Pass</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-snowflake"></i> Glacier Cave</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;1,42,000</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Switzerland Alpine Dream Expedition"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="switzerland"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Educational - Bhutan -->
+        <div class="pkg-card" data-cat="educational international">
+          <div class="pkg-card-img">
+            <img src="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=800&q=80" alt="Bhutan Educational Tour">
+            <div class="pkg-duration-tag"><i class="fa-solid fa-clock"></i> 6N / 7D</div>
+          </div>
+          <div class="pkg-card-body">
+            <span class="pkg-cat-badge" style="background:#7c3aed;">EDUCATIONAL</span>
+            <h3>Bhutan – Land of the Thunder Dragon</h3>
+            <p class="desc">Tiger's Nest Monastery trek, Buddha Dordenma statue, Simply Bhutan Living Museum &amp; Punakha Dzong – a perfect educational escape.</p>
+            <div class="pkg-highlights">
+              <div class="pkg-highlight"><i class="fa-solid fa-mountain"></i> Tiger's Nest Trek</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-landmark"></i> Punakha Dzong</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-book"></i> Living Museum</div>
+              <div class="pkg-highlight"><i class="fa-solid fa-dove"></i> Himalayan Culture</div>
+            </div>
+            <div class="pkg-card-footer">
+              <div class="pkg-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;26,560</div>
+              </div>
+              <div class="pkg-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Bhutan Educational Tour"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="bhutan-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="no-results" id="noResults">
+        <i class="fa-solid fa-plane-slash"></i>
+        <h3>No packages found</h3>
+        <p>Try selecting a different filter category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="brand-logo" style="display:inline-block;margin-bottom:20px;">
+            <img src="logo.png" alt="JP Holidays" class="site-logo-img footer-logo">
+          </a>
+          <p>JP Holidays Private Limited – South India's premier travel management company, specializing in custom international tours, honeymoon packages, and family vacations.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Featured Packages</a></li>
+            <li><a href="destinations.html">Top Destinations</a></li>
+            <li><a href="world-escapes.html">World Escapes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Packages</h4>
+          <ul>
+            <li><a href="packages.html">Chennai–Singapore Cruise</a></li>
+            <li><a href="packages.html">Kenya Masai Mara Safari</a></li>
+            <li><a href="packages.html">Hong Kong & Macau Special</a></li>
+            <li><a href="packages.html">Europe 5-Country Grand Tour</a></li>
+            <li><a href="world-escapes.html">Bali Escape</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i><span>JP Towers, No. 45, Anna Salai, Guindy, Chennai – 600032</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>info@jpholidays.in</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong>JP Holidays Private Limited</strong>. All Rights Reserved.</div>
+        <div><a href="#">Privacy Policy</a> &bull; <a href="#">Terms & Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Enquiry Modal -->
+  <div class="modal-backdrop" id="enquiry-modal">
+    <div class="modal-container enquiry-modal-container">
+      <button class="modal-close" aria-label="Close modal" id="enquiry-modal-close">&times;</button>
+      <div class="enquiry-modal-header">
+        <div class="enquiry-badge"><i class="fa-solid fa-paper-plane"></i> Quick Booking Enquiry</div>
+        <h2>Holiday Package Enquiry</h2>
+        <p>Our tour experts will tailor the best package & rates for you!</p>
+      </div>
+      <form class="enquiry-form" id="enquiryForm">
+        <div class="form-grid">
+          <div class="form-group full-width">
+            <label for="enquiry-name">👤 Your Name <span class="required">*</span></label>
+            <input type="text" id="enquiry-name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="enquiry-phone">📞 Phone / WhatsApp <span class="required">*</span></label>
+            <input type="tel" id="enquiry-phone" placeholder="e.g. +91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label for="enquiry-adults">👥 No. of Adults <span class="required">*</span></label>
+            <input type="number" id="enquiry-adults" min="1" max="100" value="2" required>
+          </div>
+          <div class="form-group full-width">
+            <label for="enquiry-place">📍 Place of Visit <span class="required">*</span></label>
+            <select id="enquiry-place" required>
+              <option value="Chennai – Singapore Cordelia Cruise">Chennai – Singapore Cordelia Cruise</option>
+              <option value="Dubai Luxury & Desert Safari">Dubai Luxury & Desert Safari</option>
+              <option value="Hong Kong & Macau Special">Hong Kong & Macau Special</option>
+              <option value="China Canton Fair Business Tour">China Canton Fair Business Tour</option>
+              <option value="Europe 5-Country Grand Tour">Europe 5-Country Grand Tour</option>
+              <option value="Maldives Luxury Resort">Maldives Luxury Resort</option>
+              <option value="Custom / Other Destination">Custom / Other Destination</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="enquiry-checkin">📅 Travel Date <span class="required">*</span></label>
+            <input type="date" id="enquiry-checkin" required>
+          </div>
+          <div class="form-group full-width">
+            <label>🏨 Preferred Hotel Category <span class="required">*</span></label>
+            <div class="hotel-category-options">
+              <label class="hotel-opt"><input type="radio" name="hotel_category" value="3★ Standard"><span class="hotel-box"><i class="fa-solid fa-star"></i> 3★ Standard</span></label>
+              <label class="hotel-opt"><input type="radio" name="hotel_category" value="4★ Deluxe" checked><span class="hotel-box"><i class="fa-solid fa-star"></i> 4★ Deluxe</span></label>
+              <label class="hotel-opt"><input type="radio" name="hotel_category" value="5★ Luxury"><span class="hotel-box"><i class="fa-solid fa-star"></i> 5★ Luxury</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="enquiry-form-actions">
+          <button type="submit" class="btn btn-primary btn-submit-enquiry"><i class="fa-solid fa-paper-plane"></i> Submit Enquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Filter logic – matches data-cat words exactly
+    function applyFilter(filterKey) {
+      const filter = (filterKey || 'all').toLowerCase().trim();
+      let visible = 0;
+      document.querySelectorAll('.pkg-card').forEach(card => {
+        const cats = (card.dataset.cat || '').toLowerCase().split(/\s+/);
+        const show = filter === 'all' || cats.includes(filter);
+        card.style.display = show ? 'flex' : 'none';
+        if (show) visible++;
+      });
+      const noRes = document.getElementById('noResults');
+      if (noRes) noRes.style.display = visible === 0 ? 'block' : 'none';
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        applyFilter(this.dataset.filter);
+      });
+    });
+
+    // Handle ?category= URL param from homepage category cards
+    const urlParams = new URLSearchParams(window.location.search);
+    const catParam = urlParams.get('category');
+    if (catParam) {
+      const matchBtn = Array.from(document.querySelectorAll('.filter-btn'))
+        .find(b => b.dataset.filter.toLowerCase() === catParam.toLowerCase());
+      if (matchBtn) {
+        // Visually activate the button
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        matchBtn.classList.add('active');
+        applyFilter(matchBtn.dataset.filter);
+      } else {
+        applyFilter(catParam);
+      }
+      // Scroll to packages grid after short delay (allow DOM to settle)
+      setTimeout(() => {
+        const grid = document.getElementById('pkgGrid');
+        if (grid) {
+          const top = grid.getBoundingClientRect().top + window.scrollY - 120;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 300);
+    }
+  </script>
+</body>
+</html>
