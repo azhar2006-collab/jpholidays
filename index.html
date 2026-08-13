@@ -52,45 +52,12 @@
           </a>
 
           <nav class="main-nav">
-            <a href="#hero" class="active">Home</a>
-
-            <!-- Destinations Dropdown -->
-            <div class="nav-item dropdown">
-              <a href="#destinations" class="dropdown-link">Destinations <i class="fa-solid fa-angle-down dropdown-arrow"></i></a>
-              <div class="dropdown-menu single-col">
-                <a href="#destinations"><i class="fa-solid fa-ship"></i> Chennai – Singapore Cruise</a>
-                <a href="#destinations"><i class="fa-solid fa-hippo"></i> Kenya Masai Mara Safari</a>
-                <a href="#destinations"><i class="fa-solid fa-city"></i> Hong Kong &amp; Macau Special</a>
-                <a href="#destinations"><i class="fa-solid fa-briefcase"></i> China Canton Fair Business Tour</a>
-              </div>
-            </div>
-
-            <!-- Packages Dropdown -->
-            <div class="nav-item dropdown">
-              <a href="#packages" class="dropdown-link">Packages <i class="fa-solid fa-angle-down dropdown-arrow"></i></a>
-              <div class="dropdown-menu single-col">
-                <a href="#packages"><i class="fa-solid fa-anchor"></i> Cordelia Luxury Cruise (11 Days)</a>
-                <a href="#packages"><i class="fa-solid fa-paw"></i> Kenya Wildlife Safari (7 Days)</a>
-                <a href="#packages"><i class="fa-solid fa-gem"></i> Hong Kong &amp; Macau Explorer (8 Days)</a>
-                <a href="#packages"><i class="fa-solid fa-building"></i> Canton Fair Trade Fair Tour</a>
-              </div>
-            </div>
-
-            <!-- Services Dropdown -->
-            <div class="nav-item dropdown">
-              <a href="#why-choose" class="dropdown-link">Services <i class="fa-solid fa-angle-down dropdown-arrow"></i></a>
-              <div class="dropdown-menu single-col">
-                <a href="#why-choose"><i class="fa-solid fa-passport"></i> Visa Assistance</a>
-                <a href="#why-choose"><i class="fa-solid fa-plane-up"></i> Flight Bookings</a>
-                <a href="#why-choose"><i class="fa-solid fa-hotel"></i> Hotel Reservations</a>
-                <a href="#why-choose"><i class="fa-solid fa-shield-halved"></i> Travel Insurance</a>
-                <a href="#why-choose"><i class="fa-solid fa-coins"></i> Forex &amp; Currency</a>
-              </div>
-            </div>
-
-            <a href="#about">About</a>
-            <a href="#testimonials">Reviews</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="packages.html">Featured Packages</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="world-escapes.html"><i class="fa-solid fa-compass"></i> World Escapes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
           </nav>
 
           <div class="header-cta">
@@ -203,20 +170,76 @@
         <i class="fa-solid fa-magnifying-glass"></i> Search Packages
       </button>
     </form>
+  <!-- ===== TOUR CATEGORIES SECTION (OPTIONS ABOVE FEATURED CARDS) ===== -->
+  <section class="tour-categories" id="tour-categories">
+    <div class="container">
+      <div class="categories-grid-wrapper">
+        <!-- Top Row: 2 Cards -->
+        <div class="categories-row categories-row-top">
+          <a href="packages.html?category=india" class="cat-card reveal">
+            <img src="cat_india.jpg" alt="India Tour Packages" class="cat-card-img">
+            <div class="cat-card-overlay"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-title">India Tour Packages</h3>
+              <span class="cat-card-badge">5 PACKAGES</span>
+            </div>
+          </a>
+          <a href="packages.html?category=international" class="cat-card reveal">
+            <img src="cat_international.jpg" alt="International Tour Packages" class="cat-card-img">
+            <div class="cat-card-overlay"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-title">International Tour Packages</h3>
+              <span class="cat-card-badge">9 PACKAGES</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Bottom Row: 3 Cards -->
+        <div class="categories-row categories-row-bottom">
+          <a href="packages.html?category=honeymoon" class="cat-card reveal">
+            <img src="cat_honeymoon.jpg" alt="International Honeymoon Packages" class="cat-card-img">
+            <div class="cat-card-overlay"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-title">International Honeymoon Packages</h3>
+              <span class="cat-card-badge">3 PACKAGES</span>
+            </div>
+          </a>
+          <a href="packages.html?category=europe" class="cat-card reveal">
+            <img src="cat_europe.jpg" alt="Europe Tour Packages" class="cat-card-img">
+            <div class="cat-card-overlay"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-title">Europe Tour Packages</h3>
+              <span class="cat-card-badge">2 PACKAGES</span>
+            </div>
+          </a>
+          <a href="packages.html?category=educational" class="cat-card reveal">
+            <img src="cat_educational.jpg" alt="Educational Tour Packages" class="cat-card-img">
+            <div class="cat-card-overlay"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-title">Educational Tour Packages</h3>
+              <span class="cat-card-badge">1 PACKAGE</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ===== FEATURED PACKAGES (PRIMARY SHOWCASE) ===== -->
-  <section class="packages" id="packages" style="padding-top: 80px;">
+  <section class="packages" id="packages" style="padding-top: 50px;">
     <div class="container">
       <div class="section-header reveal">
         <span class="subtitle">Featured Packages</span>
         <h2>Handcrafted Signature Holiday Packages</h2>
         <p>Curated premium holiday packages with flight options, top 4/5-star resort stays, and daily guided sightseeing.</p>
       </div>
+      <div style="text-align:center;margin-bottom:40px;">
+        <a href="packages.html" class="btn btn-primary"><i class="fa-solid fa-compass"></i> View All Packages</a>
+      </div>
 
       <div class="packages-grid">
-        <!-- Package 1: Cordelia Cruise -->
-        <div class="package-card reveal" data-package="cruise" data-keywords="chennai singapore cordelia cruise phuket langkawi kuala lumpur ocean voyage luxury" data-type="cruise family group" data-duration="10+">
+        <!-- Card 1: Chennai – Singapore Cordelia Cruise -->
+        <div class="package-card reveal" data-package="cruise">
           <div class="package-img">
             <img src="chennai_singapore_cruise.jpg" alt="Chennai to Singapore Cordelia Cruise Ship">
             <div class="package-overlay">
@@ -245,38 +268,40 @@
           </div>
         </div>
 
-        <!-- Package 2: Kenya Safari -->
-        <div class="package-card reveal" data-package="kenya" data-keywords="kenya masai mara safari wildlife africa amboseli lake naivasha big five" data-type="adventure group family" data-duration="6-9">
+    
+
+        <!-- Card 3: Kenya Safari Escape -->
+        <div class="package-card reveal" data-package="kenya-pdf">
           <div class="package-img">
-            <img src="kenya_safari.jpg" alt="Kenya Masai Mara Wildlife Safari">
+            <img src="kenya_safari.jpg" alt="Kenya Safari Escape">
             <div class="package-overlay">
               <div class="package-duration"><i class="fa-solid fa-clock"></i> 6 Nights / 7 Days</div>
             </div>
           </div>
           <div class="package-body">
-            <h3>Kenya Highlights &amp; Wildlife Safari</h3>
-            <p class="desc">Witness the Great Migration &amp; Big Five in Masai Mara, boat ride at Lake Naivasha &amp; Amboseli Mt. Kilimanjaro game drives.</p>
+            <h3>Kenya Safari Escape</h3>
+            <p class="desc">4x4 Safari Land Cruiser drives across Masai Mara, Lake Naivasha boat ride &amp; Amboseli Mt. Kilimanjaro views with full board meals.</p>
             <div class="package-details">
               <div class="package-detail"><i class="fa-solid fa-hippo"></i> Big Five Safari</div>
-              <div class="package-detail"><i class="fa-solid fa-hotel"></i> 4&#9733; Safari Lodges</div>
-              <div class="package-detail"><i class="fa-solid fa-utensils"></i> All Meals</div>
-              <div class="package-detail"><i class="fa-solid fa-van-shuttle"></i> Private 4x4 Safari</div>
+              <div class="package-detail"><i class="fa-solid fa-utensils"></i> Full Board Meals</div>
+              <div class="package-detail"><i class="fa-solid fa-van-shuttle"></i> 4x4 Land Cruiser</div>
+              <div class="package-detail"><i class="fa-solid fa-sailboat"></i> Naivasha Boat Ride</div>
             </div>
             <div class="package-footer">
               <div class="package-price">
                 <span class="from">Per Person</span>
-                <div class="amount">&#8377;1,45,000</div>
+                <div class="amount">USD 2,250 <small style="font-size:0.75rem; color:#777;">(&#8377;1,88,000)</small></div>
               </div>
               <div class="card-action-btns">
-                <button class="package-book open-enquiry-btn" data-place="Kenya Masai Mara Safari"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-                <button class="btn-details-outline" data-modal="kenya"><i class="fa-solid fa-circle-info"></i> View Details</button>
+                <button class="package-book open-enquiry-btn" data-place="Kenya Safari Escape (6N/7D)"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
+                <button class="btn-details-outline" data-modal="kenya-pdf"><i class="fa-solid fa-circle-info"></i> View Details</button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Package 3: Hong Kong & Macau -->
-        <div class="package-card reveal" data-package="hk-macau" data-keywords="hong kong macau disneyland ocean park star ferry victoria peak china" data-type="family honeymoon group" data-duration="6-9">
+        <!-- Card 4: Hong Kong & Macau -->
+        <div class="package-card reveal" data-package="hk-macau">
           <div class="package-img">
             <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=800&q=80" alt="Hong Kong and Macau Highlights">
             <div class="package-overlay">
@@ -304,9 +329,8 @@
             </div>
           </div>
         </div>
-
-        <!-- Package 4: China Canton Fair 2026 -->
-        <div class="package-card reveal" data-package="canton" data-keywords="china canton canton fair guangzhou business trade fair expo trade" data-type="group business all" data-duration="3-5 6-9">
+            <!-- Card 2: China Canton Fair 2026 -->
+        <div class="package-card reveal" data-package="canton">
           <div class="package-img">
             <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80" alt="China Canton Fair 2026 Business Tour">
             <div class="package-overlay">
@@ -335,229 +359,68 @@
           </div>
         </div>
 
-        <!-- Package 5: Bali Tropical Luxury Escape -->
-        <div class="package-card reveal" data-package="bali" data-keywords="bali Indonesia tropical beach honeymoon villa kuta ubud swing water sports" data-type="honeymoon family adventure" data-duration="6-9">
+        <!-- Card 5: Europe 5-Country Grand Tour -->
+        <div class="package-card reveal" data-package="europe">
           <div class="package-img">
-            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali Tropical Luxury Escape">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80" alt="Europe 5-Country Grand Tour">
+            <div class="package-overlay">
+              <div class="package-duration"><i class="fa-solid fa-clock"></i> 9 Nights / 10 Days</div>
+            </div>
+          </div>
+          <div class="package-body">
+            <h3>Europe 5-Country Grand Tour</h3>
+            <p class="desc">Paris Eiffel Tower &amp; Seine Cruise, Brussels, Amsterdam Canal Cruise, Cologne Cathedral &amp; Mt. Titlis Rotair Cable Car in Switzerland.</p>
+            <div class="package-details">
+              <div class="package-detail"><i class="fa-solid fa-tower-observation"></i> Eiffel Tower 2nd Level</div>
+              <div class="package-detail"><i class="fa-solid fa-sailboat"></i> Seine &amp; Amsterdam Cruise</div>
+              <div class="package-detail"><i class="fa-solid fa-mountain"></i> Mt. Titlis Cable Car</div>
+              <div class="package-detail"><i class="fa-solid fa-utensils"></i> Indian Dinners Included</div>
+            </div>
+            <div class="package-footer">
+              <div class="package-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;1,85,000</div>
+              </div>
+              <div class="card-action-btns">
+                <button class="package-book open-enquiry-btn" data-place="Europe 5-Country Grand Tour"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
+                <button class="btn-details-outline" data-modal="europe"><i class="fa-solid fa-circle-info"></i> View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Dubai Luxury & Desert Safari -->
+        <div class="package-card reveal" data-package="dubai">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai Luxury and Desert Safari">
             <div class="package-overlay">
               <div class="package-duration"><i class="fa-solid fa-clock"></i> 5 Nights / 6 Days</div>
             </div>
           </div>
           <div class="package-body">
-            <h3>Bali Tropical Luxury Escape</h3>
-            <p class="desc">3N Kuta Beach Resort + 2N Private Pool Villa Ubud with Nusa Penida speedboat tour, Tegallalang Rice Swing &amp; Tanah Lot temple sunset.</p>
+            <h3>Dubai Luxury &amp; Desert Safari</h3>
+            <p class="desc">4★ Central Dubai stay with Marina Dhow Cruise dinner, 4x4 Desert Dune Bashing BBQ, Burj Khalifa 124th Floor &amp; Abu Dhabi day tour.</p>
             <div class="package-details">
-              <div class="package-detail"><i class="fa-solid fa-water-ladder"></i> Private Pool Villa</div>
-              <div class="package-detail"><i class="fa-solid fa-spa"></i> Balinese Spa Included</div>
-              <div class="package-detail"><i class="fa-solid fa-ship"></i> Nusa Penida Tour</div>
-              <div class="package-detail"><i class="fa-solid fa-heart"></i> Candlelight Dinner</div>
+              <div class="package-detail"><i class="fa-solid fa-building"></i> Burj Khalifa 124th Floor</div>
+              <div class="package-detail"><i class="fa-solid fa-car-side"></i> 4x4 Dune Bashing &amp; BBQ</div>
+              <div class="package-detail"><i class="fa-solid fa-ship"></i> Marina Dhow Cruise</div>
+              <div class="package-detail"><i class="fa-solid fa-mosque"></i> Abu Dhabi City Tour</div>
             </div>
             <div class="package-footer">
               <div class="package-price">
                 <span class="from">Per Person</span>
-                <div class="amount">&#8377;45,999</div>
+                <div class="amount">&#8377;54,999</div>
               </div>
               <div class="card-action-btns">
-                <button class="package-book open-enquiry-btn" data-place="Bali Tropical Escape"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-                <button class="btn-details-outline" data-modal="bali"><i class="fa-solid fa-circle-info"></i> View Details</button>
+                <button class="package-book open-enquiry-btn" data-place="Dubai Luxury & Desert Safari"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
+                <button class="btn-details-outline" data-modal="dubai"><i class="fa-solid fa-circle-info"></i> View Details</button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Package 6: Maldives Overwater Resort Special -->
-        <div class="package-card reveal" data-package="maldives" data-keywords="maldives overwater villa luxury island resort honeymoon beach paradise all inclusive" data-type="honeymoon luxury cruise" data-duration="3-5">
-          <div class="package-img">
-            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Maldives Overwater Resort Special">
-            <div class="package-overlay">
-              <div class="package-duration"><i class="fa-solid fa-clock"></i> 4 Nights / 5 Days</div>
-            </div>
-          </div>
-          <div class="package-body">
-            <h3>Maldives Overwater Resort Special</h3>
-            <p class="desc">2N Beach Villa + 2N Water Villa at 5★ island resort with all-inclusive food &amp; drinks, speedboat transfer &amp; sunset dolphin watching cruise.</p>
-            <div class="package-details">
-              <div class="package-detail"><i class="fa-solid fa-umbrella-beach"></i> 5★ Lagoon Resort</div>
-              <div class="package-detail"><i class="fa-solid fa-utensils"></i> All-Inclusive Meals</div>
-              <div class="package-detail"><i class="fa-solid fa-sailboat"></i> Dolphin Cruise</div>
-              <div class="package-detail"><i class="fa-solid fa-person-swimming"></i> Free Snorkeling</div>
-            </div>
-            <div class="package-footer">
-              <div class="package-price">
-                <span class="from">Per Person</span>
-                <div class="amount">&#8377;89,999</div>
-              </div>
-              <div class="card-action-btns">
-                <button class="package-book open-enquiry-btn" data-place="Maldives Luxury Resort"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-                <button class="btn-details-outline" data-modal="maldives"><i class="fa-solid fa-circle-info"></i> View Details</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      
-  </section>
-
-  <!-- ===== POPULAR DESTINATIONS ===== -->
-  <section class="destinations" id="destinations" style="padding-top: 60px;">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="subtitle">Top Destinations</span>
-        <h2>Explore The World's Best Destinations</h2>
-        <p>From serene tropical beaches to snowy alpine peaks, choose from our top handpicked destinations.</p>
       </div>
-
-      <div class="destinations-grid">
-        <!-- Card 1: Malaysia Group Tour -->
-        <div class="dest-card reveal" data-keywords="malaysia kuala lumpur genting highlands batu caves international asia" data-type="group family" data-duration="3-5">
-          <div class="dest-card-img">
-            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80" alt="Malaysia Group Tour">
-            <span class="dest-badge">GROUP TOUR</span>
-            <button class="dest-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-card-body">
-            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> International, Malaysia</div>
-            <h3>Malaysia Group Tour</h3>
-            <p class="desc">Explore Kuala Lumpur skyline, Petronas Towers, Batu Caves &amp; Genting Highlands with luxury stay &amp; guided tours.</p>
-            <div class="dest-meta">
-              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Days – 4 Nights</div>
-              <div class="dest-price">
-                <span class="from">Starts From</span>
-                <div class="amount">&#8377;39,999</div>
-              </div>
-            </div>
-            <div class="card-action-btns">
-              <button class="package-book open-enquiry-btn" data-place="Malaysia Group Tour"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-              <button class="btn-details-outline" data-modal="malaysia"><i class="fa-solid fa-circle-info"></i> Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2: Thailand Tour -->
-        <div class="dest-card reveal" data-keywords="thailand bangkok pattaya coral island phi phi tropical beach asia" data-type="honeymoon family group" data-duration="3-5">
-          <div class="dest-card-img">
-            <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80" alt="Thailand Tour - Wat Arun Temple Bangkok">
-            <span class="dest-badge" style="background:#1a7a3c;">POPULAR TROPICAL</span>
-            <button class="dest-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-card-body">
-            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> International, Thailand</div>
-            <h3>Thailand Tour</h3>
-            <p class="desc">Experience Bangkok temples, Coral Island speedboats, Safari World Marine Park &amp; vibrant Pattaya nightlife.</p>
-            <div class="dest-meta">
-              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Days – 4 Nights</div>
-              <div class="dest-price">
-                <span class="from">Starts From</span>
-                <div class="amount">&#8377;34,999</div>
-              </div>
-            </div>
-            <div class="card-action-btns">
-              <button class="package-book open-enquiry-btn" data-place="Thailand Tour"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-              <button class="btn-details-outline" data-modal="thailand"><i class="fa-solid fa-circle-info"></i> Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3: Singapore Package -->
-        <div class="dest-card reveal" data-keywords="singapore merlion sentosa universal studios marina bay luxury city" data-type="family honeymoon cruise" data-duration="3-5">
-          <div class="dest-card-img">
-            <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80" alt="Singapore Package">
-            <span class="dest-badge" style="background:#b87d0e;">CITY &amp; LUXURY</span>
-            <button class="dest-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-card-body">
-            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> International, Singapore</div>
-            <h3>Singapore Package</h3>
-            <p class="desc">Visit Marina Bay Sands, Sentosa Cable Car, Universal Studios Singapore &amp; Jewel Changi Rain Vortex.</p>
-            <div class="dest-meta">
-              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Days – 4 Nights</div>
-              <div class="dest-price">
-                <span class="from">Starts From</span>
-                <div class="amount">&#8377;49,999</div>
-              </div>
-            </div>
-            <div class="card-action-btns">
-              <button class="package-book open-enquiry-btn" data-place="Singapore Package"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-              <button class="btn-details-outline" data-modal="singapore"><i class="fa-solid fa-circle-info"></i> Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4: Sri Lanka - Hills & Beach Group Tour -->
-        <div class="dest-card reveal" data-keywords="sri lanka colombo kandy nuwara eliya bentota elephant orphanage beach hills" data-type="group family" data-duration="6-9">
-          <div class="dest-card-img">
-            <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=800&q=80" alt="Sri Lanka - Hills &amp; Beach Group Tour">
-            <span class="dest-badge">HILLS &amp; BEACHES</span>
-            <button class="dest-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-card-body">
-            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> International, Sri Lanka</div>
-            <h3>Sri Lanka – Hills &amp; Beach Group Tour</h3>
-            <p class="desc">Explore Pinnawala elephants, Kandy tooth temple, Nuwara Eliya tea estates &amp; Bentota beach water sports.</p>
-            <div class="dest-meta">
-              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 6 Days – 5 Nights</div>
-              <div class="dest-price">
-                <span class="from">Starts From</span>
-                <div class="amount">&#8377;42,500</div>
-              </div>
-            </div>
-            <div class="card-action-btns">
-              <button class="package-book open-enquiry-btn" data-place="Sri Lanka – Hills & Beach Group Tour"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-              <button class="btn-details-outline" data-modal="srilanka"><i class="fa-solid fa-circle-info"></i> Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5: Andaman Family Tour -->
-        <div class="dest-card reveal" data-keywords="andaman nicobar islands india port blair havelock radhanagar beach neil island coral" data-type="family honeymoon adventure" data-duration="3-5">
-          <div class="dest-card-img">
-            <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?auto=format&fit=crop&w=800&q=80" alt="Andaman Family Tour - Island Beach Boats">
-            <span class="dest-badge" style="background:#1a7a3c;">ISLAND PARADISE</span>
-            <button class="dest-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-card-body">
-            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Andaman And Nicobar Islands, India</div>
-            <h3>Andaman Family Tour</h3>
-            <p class="desc">Experience Cellular Jail Light Show, Radhanagar Beach sunsets, Havelock Island snorkeling &amp; Neil Island ferry ride.</p>
-            <div class="dest-meta">
-              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Days – 4 Nights</div>
-              <div class="dest-price">
-                <span class="from">Starts From</span>
-                <div class="amount">&#8377;29,999</div>
-              </div>
-            </div>
-            <div class="card-action-btns">
-              <button class="package-book open-enquiry-btn" data-place="Andaman Family Tour"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-              <button class="btn-details-outline" data-modal="andaman"><i class="fa-solid fa-circle-info"></i> Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 6: Golden Triangle Family Heritage Tour -->
-        <div class="dest-card reveal" data-keywords="delhi india rajasthan uttar pradesh agra taj mahal jaipur pink city lotus temple heritage culture" data-type="family group" data-duration="3-5">
-          <div class="dest-card-img">
-            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80" alt="Golden Triangle Family Heritage Tour">
-            <span class="dest-badge" style="background:#b87d0e;">HERITAGE &amp; CULTURE</span>
-            <button class="dest-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-card-body">
-            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Delhi, India, Rajasthan, Uttar Pradesh</div>
-            <h3>Golden Triangle Family Heritage Tour</h3>
-            <p class="desc">Discover Delhi Lotus Temple, Agra Taj Mahal sunrise, Amber Fort Jaipur &amp; Royal Rajasthani cultural heritage.</p>
-            <div class="dest-meta">
-              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Days – 4 Nights</div>
-              <div class="dest-price">
-                <span class="from">Starts From</span>
-                <div class="amount">&#8377;24,999</div>
-              </div>
-            </div>
-            <div class="card-action-btns">
-              <button class="package-book open-enquiry-btn" data-place="Golden Triangle Family Heritage Tour"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-              <button class="btn-details-outline" data-modal="goldentriangle"><i class="fa-solid fa-circle-info"></i> Details</button>
-            </div>
-          </div>
-        </div>
-
+    </div>
   </section>
 
   <!-- ===== ABOUT US SECTION ===== -->
@@ -781,12 +644,13 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About JP Holidays</a></li>
-            <li><a href="#destinations">Popular Destinations</a></li>
-            <li><a href="#packages">Tour Packages</a></li>
-            <li><a href="#why-choose">Why Choose Us</a></li>
-            <li><a href="#testimonials">Customer Reviews</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About JP Holidays</a></li>
+            <li><a href="destinations.html">Popular Destinations</a></li>
+            <li><a href="packages.html">Featured Tour Packages</a></li>
+            <li><a href="world-escapes.html">World Escapes Collection</a></li>
+            <li><a href="about.html#why-choose">Why Choose Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
@@ -794,10 +658,11 @@
         <div class="footer-col">
           <h4>Top Packages</h4>
           <ul>
-            <li><a href="#packages">Chennai – Singapore Cordelia Cruise</a></li>
-            <li><a href="#packages">Kenya Masai Mara Wildlife Safari</a></li>
-            <li><a href="#packages">Hong Kong &amp; Macau Special</a></li>
-            <li><a href="#packages">China Canton Fair Business Tour</a></li>
+            <li><a href="packages.html">Chennai – Singapore Cordelia Cruise</a></li>
+            <li><a href="packages.html">Europe 5-Country Grand Tour</a></li>
+            <li><a href="packages.html">Hong Kong &amp; Macau Special</a></li>
+            <li><a href="world-escapes.html">Bali Escape (8N/9D)</a></li>
+            <li><a href="world-escapes.html">Kenya Safari Escape</a></li>
           </ul>
         </div>
 
@@ -889,21 +754,21 @@
           <div class="form-group full-width">
             <label for="enquiry-place">📍 Place of Visit <span class="required">*</span></label>
             <select id="enquiry-place" required>
-              <option value="Malaysia Group Tour">Malaysia Group Tour</option>
-              <option value="Thailand Tour">Thailand Tour</option>
-              <option value="Singapore Package">Singapore Package</option>
-              <option value="Sri Lanka – Hills & Beach Group Tour">Sri Lanka – Hills &amp; Beach Group Tour</option>
-              <option value="Andaman Family Tour">Andaman Family Tour</option>
-              <option value="Golden Triangle Family Heritage Tour">Golden Triangle Family Heritage Tour</option>
+              <option value="Sri Lanka Escape (4N/5D - ₹25,450)">Sri Lanka Escape (4N/5D - ₹25,450)</option>
+              <option value="Bhutan Thunder Dragon (6N/7D - ₹26,560)">Bhutan – Land of Thunder Dragon (6N/7D - ₹26,560)</option>
+              <option value="Thailand Islands & City Escape (6N/7D - ₹37,470)">Thailand Islands &amp; City Escape (6N/7D - ₹37,470)</option>
+              <option value="Finland & Norway Arctic Luxury (11N/12D - ₹5,29,761)">Finland &amp; Norway Arctic Luxury (11N/12D - ₹5,29,761)</option>
+              <option value="Azerbaijan & Georgia Escape (8N/9D - ₹65,992)">Azerbaijan &amp; Georgia Escape (8N/9D - ₹65,992)</option>
+              <option value="Kuala Lumpur Escape Malaysia (3N/4D - ₹18,450)">Kuala Lumpur Escape Malaysia (3N/4D - ₹18,450)</option>
+              <option value="Bali Escape (8N/9D - ₹43,269)">Bali Escape (8N/9D - ₹43,269)</option>
+              <option value="Kenya Safari Escape (6N/7D - USD 2,250)">Kenya Safari Escape (6N/7D - USD 2,250)</option>
+              <option value="Grand Kashmir Tour (6N/7D - ₹87,450)">Grand Kashmir Tour (6N/7D - ₹87,450)</option>
+              <option value="Vietnam Honeymoon Escape (5N/6D - ₹47,350)">Vietnam Romantic Honeymoon Escape (5N/6D - ₹47,350)</option>
+              <option value="Kasol Honeymoon Himachal (3N/4D - ₹35,000)">Kasol Honeymoon Himachal (3N/4D - ₹35,000)</option>
               <option value="Chennai – Singapore Cordelia Cruise">Chennai – Singapore Cordelia Cruise</option>
-              <option value="Kenya Masai Mara Safari">Kenya Masai Mara Safari</option>
               <option value="Hong Kong & Macau Special">Hong Kong &amp; Macau Special</option>
               <option value="China Canton Fair Business Tour">China Canton Fair Business Tour</option>
-              <option value="Bali Tropical Escape">Bali Tropical Escape</option>
               <option value="Maldives Luxury Resort">Maldives Luxury Resort</option>
-              <option value="Kashmir Paradise Tour">Kashmir Paradise Tour</option>
-              <option value="Dubai Luxury & Desert Safari">Dubai Luxury &amp; Desert Safari</option>
-              <option value="Honeymoon Special Package">Honeymoon Special Package</option>
               <option value="Custom / Other Destination">Custom / Other Destination</option>
             </select>
           </div>
