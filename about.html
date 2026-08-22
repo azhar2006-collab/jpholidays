@@ -20,18 +20,31 @@
     .breadcrumb a { color: rgba(255,255,255,0.85); }
     .breadcrumb i { font-size: 0.7rem; }
 
-    .about-page { padding: 80px 0; }
+    @media (max-width: 768px) {
+      .page-banner { padding: 85px 0 35px; }
+      .page-banner h1 { font-size: 2rem; }
+    }
+
+    .about-page { padding: 70px 0; }
     .about-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; margin-bottom: 80px; }
-    @media (max-width: 768px) { .about-intro-grid { grid-template-columns: 1fr; gap: 40px; } }
+    @media (max-width: 768px) {
+      .about-page { padding: 45px 0; }
+      .about-intro-grid { grid-template-columns: 1fr; gap: 35px; margin-bottom: 40px; }
+    }
     .about-img-wrap { position: relative; }
     .about-img-main { border-radius: 20px; overflow: hidden; }
     .about-img-main img { width: 100%; height: 420px; object-fit: cover; }
+    @media (max-width: 768px) { .about-img-main img { height: 260px; } }
     .about-float { position: absolute; bottom: -30px; right: -30px; background: #fff; border-radius: 16px; padding: 20px 28px; box-shadow: 0 12px 40px rgba(200,16,46,0.15); text-align: center; border-left: 4px solid #C8102E; }
+    @media (max-width: 768px) {
+      .about-float { right: 10px; bottom: -15px; padding: 12px 18px; }
+      .about-float .num { font-size: 1.8rem; }
+    }
     .about-float .num { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; font-weight: 800; color: #C8102E; line-height: 1; }
     .about-float .lbl { font-size: 0.75rem; color: #7A7A7A; font-weight: 600; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.1em; }
     .about-text .subtitle-tag { font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.25em; color: #C8102E; background: rgba(200,16,46,0.08); border: 1px solid rgba(200,16,46,0.25); padding: 7px 18px; border-radius: 50px; display: inline-block; margin-bottom: 18px; }
     .about-text h2 { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 700; color: #1A0A0C; margin-bottom: 20px; line-height: 1.25; }
-    .about-text h2 span { color: #C8102E; }
+    @media (max-width: 768px) { .about-text h2 { font-size: 1.8rem; } }
     .about-text p { color: #7A7A7A; font-size: 0.95rem; line-height: 1.8; margin-bottom: 16px; }
     .about-features-inline { display: flex; flex-wrap: wrap; gap: 14px; margin: 24px 0 30px; }
     .about-feat-pill { display: flex; align-items: center; gap: 8px; background: rgba(200,16,46,0.06); border: 1px solid rgba(200,16,46,0.2); border-radius: 50px; padding: 8px 18px; font-size: 0.84rem; font-weight: 600; color: #1A0A0C; }
@@ -40,17 +53,18 @@
     /* Stats strip */
     .stats-strip { background: linear-gradient(135deg, #C8102E 0%, #8B0000 100%); padding: 60px 0; }
     .stats-strip .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
-    @media (max-width: 768px) { .stats-strip .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) { .stats-strip .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } .stats-strip { padding: 40px 0; } }
     .stats-strip .stat-item { text-align: center; }
     .stats-strip .stat-icon { font-size: 2rem; color: rgba(255,255,255,0.7); margin-bottom: 10px; }
     .stats-strip .stat-number { font-family: 'Montserrat', sans-serif; font-size: 2.8rem; font-weight: 800; color: #fff; line-height: 1; margin-bottom: 6px; }
+    @media (max-width: 768px) { .stats-strip .stat-number { font-size: 2rem; } }
     .stats-strip .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.8); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
 
     /* Services */
-    .services-section { padding: 80px 0; background: #FDF5F6; }
+    .services-section { padding: 70px 0; background: #FDF5F6; }
     .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
     @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; gap: 20px; } .services-section { padding: 45px 0; } }
     .service-card { background: #fff; border-radius: 16px; padding: 34px 28px; box-shadow: 0 2px 12px rgba(200,16,46,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 3px solid transparent; }
     .service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(200,16,46,0.14); border-top-color: #C8102E; }
     .service-icon { width: 64px; height: 64px; background: rgba(200,16,46,0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
@@ -59,9 +73,9 @@
     .service-card p { color: #7A7A7A; font-size: 0.88rem; line-height: 1.7; }
 
     /* Why choose */
-    .why-section { padding: 80px 0; }
+    .why-section { padding: 70px 0; }
     .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    @media (max-width: 640px) { .why-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) { .why-grid { grid-template-columns: 1fr; gap: 16px; } .why-section { padding: 45px 0; } }
     .why-item { display: flex; gap: 18px; align-items: flex-start; padding: 24px; border-radius: 14px; background: #FDF5F6; transition: box-shadow 0.3s; }
     .why-item:hover { box-shadow: 0 8px 28px rgba(200,16,46,0.1); }
     .why-num { font-family: 'Montserrat', sans-serif; font-size: 2.2rem; font-weight: 800; color: rgba(200,16,46,0.15); line-height: 1; min-width: 48px; }
@@ -69,8 +83,9 @@
     .why-text p { color: #7A7A7A; font-size: 0.85rem; line-height: 1.65; }
 
     /* CTA strip */
-    .cta-strip { padding: 70px 0; background: linear-gradient(135deg, #1A0A0C 0%, #2d1013 100%); text-align: center; }
+    .cta-strip { padding: 60px 0; background: linear-gradient(135deg, #1A0A0C 0%, #2d1013 100%); text-align: center; }
     .cta-strip h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #fff; margin-bottom: 12px; }
+    @media (max-width: 768px) { .cta-strip h2 { font-size: 1.75rem; } }
     .cta-strip p { color: rgba(255,255,255,0.7); margin-bottom: 28px; font-size: 1rem; }
     .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
   </style>

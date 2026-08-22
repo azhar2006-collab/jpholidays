@@ -20,15 +20,35 @@
     .breadcrumb a { color: rgba(255,255,255,0.85); }
     .breadcrumb i { font-size: 0.7rem; }
 
-    .filter-bar { background: #fff; padding: 28px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.06); position: sticky; top: 70px; z-index: 50; border-bottom: 1px solid #F0E8EA; }
-    .filter-inner { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; }
-    .filter-btn { padding: 9px 22px; border-radius: 50px; border: 1.5px solid #e0d0d2; background: #fff; color: #4A4A4A; font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer; transition: all 0.25s ease; }
+    @media (max-width: 768px) {
+      .page-banner { padding: 85px 0 35px; }
+      .page-banner h1 { font-size: 2rem; }
+    }
+
+    .filter-bar { background: #fff; padding: 22px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.06); position: sticky; top: 70px; z-index: 50; border-bottom: 1px solid #F0E8EA; }
+    .filter-inner { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .filter-btn { padding: 9px 20px; border-radius: 50px; border: 1.5px solid #e0d0d2; background: #fff; color: #4A4A4A; font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer; transition: all 0.25s ease; white-space: nowrap; flex-shrink: 0; }
     .filter-btn:hover, .filter-btn.active { background: #C8102E; color: #fff; border-color: #C8102E; box-shadow: 0 4px 14px rgba(200,16,46,0.3); }
 
-    .we-page { padding: 70px 0 90px; background: #FDF5F6; }
+    @media (max-width: 768px) {
+      .filter-bar { padding: 12px 0; top: 60px; }
+      .filter-inner {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+        padding: 4px 16px;
+        gap: 8px;
+        scrollbar-width: none;
+      }
+      .filter-inner::-webkit-scrollbar { display: none; }
+      .filter-btn { padding: 7px 15px; font-size: 0.72rem; }
+    }
+
+    .we-page { padding: 60px 0 80px; background: #FDF5F6; }
     .we-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-    @media (max-width: 1024px) { .we-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 640px) { .we-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 1024px) { .we-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+    @media (max-width: 640px) { .we-grid { grid-template-columns: 1fr; gap: 20px; } }
 
     .we-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(200,16,46,0.06), 0 6px 28px rgba(0,0,0,0.06); transition: transform 0.32s ease, box-shadow 0.32s ease; display: flex; flex-direction: column; }
     .we-card:hover { transform: translateY(-8px); box-shadow: 0 14px 48px rgba(200,16,46,0.18); }
@@ -391,7 +411,7 @@
           <div class="we-card-body">
             <span class="we-cat-badge" style="background:#15803d;">HIMALAYAN TREK</span>
             <h3>Kasol Honeymoon (Himachal)</h3>
-            <p class="desc">Scenic Kasol Market, Parvati River, Manikaran Sahib hot springs, Tosh Valley views & Chalal village forest trail trek.</p>
+            <p class="desc">Scenic Kasol Market, Parvati River, Manikaran Sahib hot springs, Tosh Valley views &amp; Chalal village forest trail trek.</p>
             <div class="we-highlights">
               <div class="we-highlight"><i class="fa-solid fa-person-hiking"></i> Chalal Forest Trek</div>
               <div class="we-highlight"><i class="fa-solid fa-water-ladder"></i> Manikaran Hot Springs</div>
@@ -403,6 +423,111 @@
               <div class="we-btns">
                 <button class="btn-book open-enquiry-btn" data-place="Kasol Honeymoon Himachal (3N/4D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
                 <button class="btn-info btn-details-outline" data-modal="kasol-pdf"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 12. Andaman Island Escape – Standard -->
+        <div class="we-card" data-cat="honeymoon family nature">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?auto=format&fit=crop&w=800&q=80" alt="Andaman Island Escape Standard">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 4N / 5D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#1a7a3c;">ANDAMAN – STANDARD</span>
+            <h3>Andaman Island Escape – Standard</h3>
+            <p class="desc">Radhanagar Beach No. 7, Elephant Beach snorkelling, Neil Island Natural Bridge &amp; Chidiya Tapu sunset. Stays: Sundazee Beach Resort &amp; Silver Pearl Resort.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-water"></i> Radhanagar Beach No. 7</div>
+              <div class="we-highlight"><i class="fa-solid fa-person-swimming"></i> Snorkelling &amp; Reefs</div>
+              <div class="we-highlight"><i class="fa-solid fa-hotel"></i> Sundazee + Silver Pearl</div>
+              <div class="we-highlight"><i class="fa-solid fa-sun"></i> Chidiya Tapu Sunset</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person (4 Pax: ₹99,800)</span><div class="amount">&#8377;24,950</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Andaman Island Escape – Standard (4N/5D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="andaman"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12b. Andaman Island Escape – Elite -->
+        <div class="we-card" data-cat="honeymoon family luxury">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Andaman Island Escape Elite">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 4N / 5D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#0e7490;">ANDAMAN – ELITE</span>
+            <h3>Andaman Island Escape – Elite</h3>
+            <p class="desc">Radhanagar Beach No. 7, Elephant Beach snorkelling, Neil Island Natural Bridge &amp; Chidiya Tapu sunset. Premium stays: TSG Blue &amp; TSG Auro.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-water"></i> Radhanagar Beach No. 7</div>
+              <div class="we-highlight"><i class="fa-solid fa-person-swimming"></i> Snorkelling &amp; Reefs</div>
+              <div class="we-highlight"><i class="fa-solid fa-hotel"></i> TSG Blue + TSG Auro</div>
+              <div class="we-highlight"><i class="fa-solid fa-sun"></i> Chidiya Tapu Sunset</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person (4 Adults)</span><div class="amount">&#8377;29,450</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Andaman Island Escape – Elite (4N/5D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="andaman-elite"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. Luxury Char Dham Heli Yatra -->
+        <div class="we-card" data-cat="luxury family">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" alt="Luxury Char Dham Heli Yatra">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 4N / 5D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#b87d0e;">HELI YATRA • PILGRIMAGE</span>
+            <h3>Luxury Char Dham Heli Yatra</h3>
+            <p class="desc">Yamunotri, Gangotri, Kedarnath &amp; Badrinath with helicopter transfers, VIP Darshan, Palki at Yamunotri &amp; luxury stays.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-helicopter"></i> Helicopter Transfers</div>
+              <div class="we-highlight"><i class="fa-solid fa-om"></i> VIP Darshan 4 Dhams</div>
+              <div class="we-highlight"><i class="fa-solid fa-chair"></i> Yamunotri Palki</div>
+              <div class="we-highlight"><i class="fa-solid fa-mountain"></i> Mana Village Visit</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person (All Taxes Incl.)</span><div class="amount">&#8377;1,98,450</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Luxury Char Dham Heli Yatra (4N/5D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="chardham-heli"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Majestic Meghalaya -->
+        <div class="we-card" data-cat="family nature adventure">
+          <div class="we-card-img">
+            <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=800&q=80" alt="Majestic Meghalaya Tour Package">
+            <div class="we-duration-tag"><i class="fa-solid fa-clock"></i> 4N / 5D</div>
+          </div>
+          <div class="we-card-body">
+            <span class="we-cat-badge" style="background:#0e7490;">NORTHEAST NATURE</span>
+            <h3>Majestic Meghalaya Escape</h3>
+            <p class="desc">Shillong, Cherrapunji, crystal-clear Dawki River boating, Mawlynnong Asia's cleanest village &amp; Living Root Bridge.</p>
+            <div class="we-highlights">
+              <div class="we-highlight"><i class="fa-solid fa-water"></i> Dawki Clear River</div>
+              <div class="we-highlight"><i class="fa-solid fa-seedling"></i> Mawlynnong Village</div>
+              <div class="we-highlight"><i class="fa-solid fa-bridge"></i> Living Root Bridge</div>
+              <div class="we-highlight"><i class="fa-solid fa-cloud-showers-heavy"></i> Nohkalikai Falls</div>
+            </div>
+            <div class="we-card-footer">
+              <div class="we-price"><span class="from">Per Person</span><div class="amount">&#8377;22,670</div></div>
+              <div class="we-btns">
+                <button class="btn-book open-enquiry-btn" data-place="Majestic Meghalaya Tour Package (4N/5D)"><i class="fa-solid fa-calendar-check"></i> Book</button>
+                <button class="btn-info btn-details-outline" data-modal="meghalaya"><i class="fa-solid fa-circle-info"></i> Details</button>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Destinations | JP Holidays</title>
-  <meta name="description" content="Explore all world destinations with JP Holidays – Switzerland, Japan, Singapore, Kashmir, Andaman, Dubai, Europe, Bali, Maldives & more.">
+  <meta name="description" content="Explore all world destinations with JP Holidays – Japan, Singapore, Kashmir, Andaman, Dubai, Bali, Maldives, Thailand, Kenya & more.">
   <link rel="icon" href="https://img.icons8.com/color/96/airplane-take-off.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     }
     .page-banner::before {
       content: ''; position: absolute; inset: 0;
-      background: url('https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1920&q=30') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=30') center/cover no-repeat;
       opacity: 0.12;
     }
     .page-banner h1 { font-size: 3rem; color: #fff; position: relative; font-family: 'Playfair Display', serif; margin-bottom: 12px; }
@@ -28,15 +28,35 @@
     .breadcrumb a:hover { color: #fff; }
     .breadcrumb i { font-size: 0.7rem; }
 
-    .filter-bar { background: #fff; padding: 28px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.06); position: sticky; top: 70px; z-index: 50; border-bottom: 1px solid #F0E8EA; }
-    .filter-inner { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; }
-    .filter-btn { padding: 9px 22px; border-radius: 50px; border: 1.5px solid #e0d0d2; background: #fff; color: #4A4A4A; font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer; transition: all 0.25s ease; }
+    @media (max-width: 768px) {
+      .page-banner { padding: 85px 0 35px; }
+      .page-banner h1 { font-size: 2rem; }
+    }
+
+    .filter-bar { background: #fff; padding: 22px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.06); position: sticky; top: 70px; z-index: 50; border-bottom: 1px solid #F0E8EA; }
+    .filter-inner { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .filter-btn { padding: 9px 20px; border-radius: 50px; border: 1.5px solid #e0d0d2; background: #fff; color: #4A4A4A; font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer; transition: all 0.25s ease; white-space: nowrap; flex-shrink: 0; }
     .filter-btn:hover, .filter-btn.active { background: #C8102E; color: #fff; border-color: #C8102E; box-shadow: 0 4px 14px rgba(200,16,46,0.3); }
 
-    .destinations-page { padding: 70px 0 90px; background: #FDF5F6; }
+    @media (max-width: 768px) {
+      .filter-bar { padding: 12px 0; top: 60px; }
+      .filter-inner {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+        padding: 4px 16px;
+        gap: 8px;
+        scrollbar-width: none;
+      }
+      .filter-inner::-webkit-scrollbar { display: none; }
+      .filter-btn { padding: 7px 15px; font-size: 0.72rem; }
+    }
+
+    .destinations-page { padding: 60px 0 80px; background: #FDF5F6; }
     .dest-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-    @media (max-width: 1024px) { .dest-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 640px) { .dest-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 1024px) { .dest-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+    @media (max-width: 640px) { .dest-grid { grid-template-columns: 1fr; gap: 20px; } }
 
     .dest-card {
       background: #fff; border-radius: 16px; overflow: hidden;
@@ -146,32 +166,7 @@
     <div class="container">
       <div class="dest-grid" id="destGrid">
 
-        <!-- 1. Switzerland -->
-        <div class="dest-card" data-cat="international honeymoon luxury">
-          <div class="dest-card-img">
-            <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" alt="Switzerland Alpine Dream">
-            <span class="dest-img-badge" style="background:#dc2626;">ALPINES & LAKES</span>
-            <button class="dest-wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-card-body">
-            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> International, Switzerland</div>
-            <h3>Switzerland Alpine Dream Expedition</h3>
-            <p class="desc">Zurich Lake cruise, GoldenPass train, Jungfraujoch Top of Europe cogwheel train & Mt. Titlis Rotair 360 Cable Car.</p>
-            <div class="dest-meta">
-              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 7 Days – 6 Nights</div>
-              <div class="dest-price">
-                <span class="from">Starts From</span>
-                <div class="amount">&#8377;1,42,000</div>
-              </div>
-            </div>
-            <div class="dest-btns">
-              <button class="btn-book open-enquiry-btn" data-place="Switzerland Alpine Dream Expedition"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-              <button class="btn-info btn-details-outline" data-modal="switzerland"><i class="fa-solid fa-circle-info"></i> Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2. Japan -->
+        <!-- 1. Japan -->
         <div class="dest-card" data-cat="international honeymoon culture">
           <div class="dest-card-img">
             <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Japan Cherry Blossom">
@@ -246,27 +241,52 @@
           </div>
         </div>
 
-        <!-- 5. Andaman -->
+        <!-- 5. Andaman – Standard -->
         <div class="dest-card" data-cat="domestic honeymoon adventure">
           <div class="dest-card-img">
-            <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?auto=format&fit=crop&w=800&q=80" alt="Andaman Family Tour">
-            <span class="dest-img-badge" style="background:#1a7a3c;">ISLAND PARADISE</span>
+            <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?auto=format&fit=crop&w=800&q=80" alt="Andaman Island Escape Standard">
+            <span class="dest-img-badge" style="background:#1a7a3c;">ANDAMAN – STANDARD</span>
             <button class="dest-wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="dest-card-body">
-            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Andaman & Nicobar, India</div>
-            <h3>Andaman Family Tour</h3>
-            <p class="desc">Experience Cellular Jail Light Show, Radhanagar Beach sunsets, Havelock Island snorkeling & Neil Island ferry ride.</p>
+            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Andaman &amp; Nicobar, India</div>
+            <h3>Andaman Island Escape – Standard</h3>
+            <p class="desc">Radhanagar Beach No. 7, Elephant Beach snorkelling, Neil Island &amp; Chidiya Tapu sunset. Stays: Sundazee Beach Resort &amp; Silver Pearl Resort.</p>
             <div class="dest-meta">
               <div class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Days – 4 Nights</div>
               <div class="dest-price">
-                <span class="from">Starts From</span>
-                <div class="amount">&#8377;29,999</div>
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;24,950</div>
               </div>
             </div>
             <div class="dest-btns">
-              <button class="btn-book open-enquiry-btn" data-place="Andaman Family Tour"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
+              <button class="btn-book open-enquiry-btn" data-place="Andaman Island Escape – Standard"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
               <button class="btn-info btn-details-outline" data-modal="andaman"><i class="fa-solid fa-circle-info"></i> Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5b. Andaman – Elite -->
+        <div class="dest-card" data-cat="domestic honeymoon adventure luxury">
+          <div class="dest-card-img">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Andaman Island Escape Elite">
+            <span class="dest-img-badge" style="background:#0e7490;">ANDAMAN – ELITE</span>
+            <button class="dest-wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Andaman &amp; Nicobar, India</div>
+            <h3>Andaman Island Escape – Elite</h3>
+            <p class="desc">Radhanagar Beach No. 7, Elephant Beach snorkelling, Neil Island &amp; Chidiya Tapu sunset. Premium stays: TSG Blue &amp; TSG Auro.</p>
+            <div class="dest-meta">
+              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Days – 4 Nights</div>
+              <div class="dest-price">
+                <span class="from">Per Person</span>
+                <div class="amount">&#8377;29,450</div>
+              </div>
+            </div>
+            <div class="dest-btns">
+              <button class="btn-book open-enquiry-btn" data-place="Andaman Island Escape – Elite"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
+              <button class="btn-info btn-details-outline" data-modal="andaman-elite"><i class="fa-solid fa-circle-info"></i> Details</button>
             </div>
           </div>
         </div>
@@ -371,32 +391,7 @@
           </div>
         </div>
 
-        <!-- 10. Europe 5-Country -->
-        <div class="dest-card" data-cat="international luxury culture">
-          <div class="dest-card-img">
-            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80" alt="Europe 5-Country Grand Tour">
-            <span class="dest-img-badge" style="background:#4f46e5;">GRAND INTERNATIONAL</span>
-            <button class="dest-wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-card-body">
-            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> International, Europe</div>
-            <h3>Europe 5-Country Grand Tour</h3>
-            <p class="desc">Paris Eiffel Tower & Seine Cruise, Brussels, Amsterdam Canal Cruise, Cologne Cathedral & Mt. Titlis Rotair Cable Car in Switzerland.</p>
-            <div class="dest-meta">
-              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 10 Days – 9 Nights</div>
-              <div class="dest-price">
-                <span class="from">Starts From</span>
-                <div class="amount">&#8377;1,85,000</div>
-              </div>
-            </div>
-            <div class="dest-btns">
-              <button class="btn-book open-enquiry-btn" data-place="Europe 5-Country Grand Tour"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
-              <button class="btn-info btn-details-outline" data-modal="europe"><i class="fa-solid fa-circle-info"></i> Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 11. Thailand -->
+        <!-- 9. Thailand -->
         <div class="dest-card" data-cat="international honeymoon adventure">
           <div class="dest-card-img">
             <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80" alt="Thailand Islands & City Escape">
@@ -596,6 +591,56 @@
           </div>
         </div>
 
+        <!-- 19. Luxury Char Dham Heli Yatra -->
+        <div class="dest-card" data-cat="domestic luxury">
+          <div class="dest-card-img">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" alt="Luxury Char Dham Heli Yatra">
+            <span class="dest-img-badge" style="background:#b87d0e;">HELI YATRA • PILGRIMAGE</span>
+            <button class="dest-wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Uttarakhand, India</div>
+            <h3>Luxury Char Dham Heli Yatra</h3>
+            <p class="desc">Yamunotri, Gangotri, Kedarnath &amp; Badrinath with helicopter transfers, VIP Darshan, Palki at Yamunotri &amp; luxury stays.</p>
+            <div class="dest-meta">
+              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Days – 4 Nights</div>
+              <div class="dest-price">
+                <span class="from">Starts From</span>
+                <div class="amount">&#8377;1,98,450</div>
+              </div>
+            </div>
+            <div class="dest-btns">
+              <button class="btn-book open-enquiry-btn" data-place="Luxury Char Dham Heli Yatra"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
+              <button class="btn-info btn-details-outline" data-modal="chardham-heli"><i class="fa-solid fa-circle-info"></i> Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20. Majestic Meghalaya -->
+        <div class="dest-card" data-cat="domestic adventure nature">
+          <div class="dest-card-img">
+            <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=800&q=80" alt="Majestic Meghalaya Tour Package">
+            <span class="dest-img-badge" style="background:#0e7490;">NORTHEAST NATURE</span>
+            <button class="dest-wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Meghalaya, India</div>
+            <h3>Majestic Meghalaya – Scotland of the East</h3>
+            <p class="desc">Shillong, Cherrapunji, crystal-clear Dawki River boating, Mawlynnong Asia's cleanest village &amp; Living Root Bridge.</p>
+            <div class="dest-meta">
+              <div class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Days – 4 Nights</div>
+              <div class="dest-price">
+                <span class="from">Starts From</span>
+                <div class="amount">&#8377;22,670</div>
+              </div>
+            </div>
+            <div class="dest-btns">
+              <button class="btn-book open-enquiry-btn" data-place="Majestic Meghalaya Tour Package"><i class="fa-solid fa-calendar-check"></i> Book Package</button>
+              <button class="btn-info btn-details-outline" data-modal="meghalaya"><i class="fa-solid fa-circle-info"></i> Details</button>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="no-results" id="noResults">
         <i class="fa-solid fa-plane-slash"></i>
@@ -633,7 +678,7 @@
         <div class="footer-col">
           <h4>Popular Destinations</h4>
           <ul>
-            <li><a href="destinations.html">Switzerland Alpine Dream</a></li>
+            <li><a href="destinations.html">Bali Luxury Escape</a></li>
             <li><a href="destinations.html">Japan Cherry Blossom Tour</a></li>
             <li><a href="destinations.html">Singapore Package</a></li>
             <li><a href="destinations.html">Kashmir Paradise</a></li>

@@ -20,9 +20,15 @@
     .breadcrumb a { color: rgba(255,255,255,0.85); }
     .breadcrumb i { font-size: 0.7rem; }
 
-    .contact-page { padding: 80px 0 100px; background: #FDF5F6; }
+    @media (max-width: 768px) {
+      .page-banner { padding: 85px 0 35px; }
+      .page-banner h1 { font-size: 2rem; }
+    }
+
+    .contact-page { padding: 70px 0 90px; background: #FDF5F6; }
     .contact-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; align-items: start; }
-    @media (max-width: 900px) { .contact-layout { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) { .contact-layout { grid-template-columns: 1fr; gap: 35px; } }
+    @media (max-width: 768px) { .contact-page { padding: 45px 0 65px; } }
 
     /* Info Side */
     .contact-info-panel { display: flex; flex-direction: column; gap: 24px; }
@@ -45,10 +51,11 @@
 
     /* Form panel */
     .contact-form-panel { background: #fff; border-radius: 20px; padding: 40px; box-shadow: 0 4px 30px rgba(200,16,46,0.08); }
+    @media (max-width: 768px) { .contact-form-panel { padding: 22px; border-radius: 16px; } }
     .contact-form-panel h3 { font-family: 'Playfair Display', serif; font-size: 1.7rem; color: #1A0A0C; margin-bottom: 6px; }
     .contact-form-panel > p { color: #7A7A7A; font-size: 0.9rem; margin-bottom: 28px; }
     .cf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    @media (max-width: 600px) { .cf-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .cf-grid { grid-template-columns: 1fr; gap: 14px; } }
     .cf-group { display: flex; flex-direction: column; gap: 6px; }
     .cf-group.full { grid-column: 1 / -1; }
     .cf-group label { font-size: 0.82rem; font-weight: 600; color: #1A0A0C; font-family: 'Montserrat', sans-serif; }
@@ -71,6 +78,7 @@
     /* Map placeholder */
     .map-section { padding: 0 0 80px; background: #FDF5F6; }
     .map-wrap { border-radius: 20px; overflow: hidden; height: 340px; box-shadow: 0 4px 30px rgba(200,16,46,0.1); background: linear-gradient(135deg, #f0e8ea 0%, #fdf5f6 100%); display: flex; align-items: center; justify-content: center; }
+    @media (max-width: 768px) { .map-wrap { height: 250px; } .map-section { padding: 0 0 50px; } }
     .map-placeholder { text-align: center; color: #7A7A7A; }
     .map-placeholder i { font-size: 3.5rem; color: #C8102E; margin-bottom: 16px; display: block; }
     .map-placeholder h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #1A0A0C; margin-bottom: 8px; }
@@ -200,13 +208,19 @@
                 <label for="cf-dest">Interested In</label>
                 <select id="cf-dest">
                   <option value="">Select a destination...</option>
+                  <option>Luxury Char Dham Heli Yatra</option>
+                  <option>Majestic Meghalaya Tour</option>
+                  <option>Andaman Island Escape – Standard (Sundazee + Silver Pearl)</option>
+                  <option>Andaman Island Escape – Elite (TSG Blue + TSG Auro)</option>
+                  <option>Bhutan Himalayan Escape</option>
+                  <option>Finland &amp; Norway Arctic Luxury</option>
                   <option>Chennai – Singapore Cruise</option>
-                  <option>Europe 5-Country Grand Tour</option>
+                  <option>Dubai Luxury &amp; Desert Safari</option>
                   <option>Bali Escape</option>
                   <option>Kenya Safari</option>
                   <option>Vietnam Honeymoon</option>
                   <option>Maldives Resort</option>
-                  <option>Switzerland Alpine Tour</option>
+                  <option>Hong Kong &amp; Macau Special</option>
                   <option>Custom Holiday Package</option>
                 </select>
               </div>
@@ -277,7 +291,7 @@
           <h4>Top Packages</h4>
           <ul>
             <li><a href="packages.html">Chennai–Singapore Cruise</a></li>
-            <li><a href="packages.html">Europe 5-Country Tour</a></li>
+            <li><a href="packages.html">Dubai Luxury &amp; Desert Safari</a></li>
             <li><a href="world-escapes.html">Bali Escape</a></li>
             <li><a href="world-escapes.html">Kenya Safari</a></li>
             <li><a href="world-escapes.html">Vietnam Honeymoon</a></li>

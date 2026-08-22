@@ -16,10 +16,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileToggle = document.querySelector('.mobile-toggle');
   const mainNav = document.querySelector('.main-nav');
 
-  mobileToggle?.addEventListener('click', () => {
-    mobileToggle.classList.toggle('active');
-    mainNav.classList.toggle('open');
-    document.body.style.overflow = mainNav.classList.contains('open') ? 'hidden' : '';
+  const openMobileNav = () => {
+    mobileToggle?.classList.add('active');
+    mainNav?.classList.add('open');
+    header?.classList.add('nav-open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMobileNav = () => {
+    mobileToggle?.classList.remove('active');
+    mainNav?.classList.remove('open');
+    header?.classList.remove('nav-open');
+    document.body.style.overflow = '';
+  };
+
+  mobileToggle?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (mainNav?.classList.contains('open')) {
+      closeMobileNav();
+    } else {
+      openMobileNav();
+    }
   });
 
   // Mobile Dropdown Accordion
@@ -37,15 +54,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // Close nav on link click
   mainNav?.querySelectorAll('a:not(.dropdown-link)').forEach(link => {
     link.addEventListener('click', () => {
-      mainNav.classList.remove('open');
-      mobileToggle?.classList.remove('active');
-      document.body.style.overflow = '';
+      closeMobileNav();
     });
+  });
+
+  // Close nav on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mainNav?.classList.contains('open')) {
+      closeMobileNav();
+    }
   });
 
   /* ----- Hero Slider ----- */
   const slides = document.querySelectorAll('.hero-slide');
   const heroDots = document.querySelectorAll('.hero-dot');
+  const heroSlider = document.querySelector('.hero-slider');
   let currentSlide = 0;
   let slideInterval;
 
@@ -56,15 +79,47 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function nextSlide() { goToSlide((currentSlide + 1) % slides.length); }
-  function startSlider() { slideInterval = setInterval(nextSlide, 5000); }
+  function prevSlide() { goToSlide((currentSlide - 1 + slides.length) % slides.length); }
+  function startSlider() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 5000);
+  }
 
   heroDots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
-      clearInterval(slideInterval);
       goToSlide(i);
       startSlider();
     });
   });
+
+  // Touch Swipe Support for Mobile
+  if (heroSlider) {
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
+
+    heroSlider.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    heroSlider.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      touchEndY = e.changedTouches[0].screenY;
+      const diffX = touchEndX - touchStartX;
+      const diffY = touchEndY - touchStartY;
+      // Trigger only if horizontal swipe dominates and exceeds threshold
+      if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+        startSlider();
+      }
+    }, { passive: true });
+  }
 
   if (slides.length) { goToSlide(0); startSlider(); }
 
@@ -206,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
           window.scrollTo({ top, behavior: 'smooth' });
         }
       } else if (destQuery) {
-        // If custom search destination (e.g. Bali, Maldives, Europe, Kashmir) has no featured card,
+        // If custom search destination (e.g. Bali, Maldives, Singapore, Kashmir) has no featured card,
         // automatically open the Enquiry Form prefilled with their destination!
         const formattedDest = searchDestInput.value.trim();
         openEnquiryModal(formattedDest);
@@ -409,7 +464,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "kenya-pdf": {
       title: "Kenya Safari Escape",
       badge: "WILDLIFE SAFARI • 6 NIGHTS / 7 DAYS",
-      img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=1200&q=80",
       price: "USD 2,250",
       unit: "Per Person (USD 2,480 for 4x4 Land Cruiser)",
       phone: "7200669293",
@@ -594,26 +649,53 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     andaman: {
-      title: "Andaman Family Tour",
-      badge: "ISLAND PARADISE • 4 NIGHTS / 5 DAYS",
+      title: "Andaman Island Escape – Standard",
+      badge: "BEACHES & ADVENTURE • 4 NIGHTS / 5 DAYS",
       img: "https://images.unsplash.com/photo-1537956965359-7573183d1f57?auto=format&fit=crop&w=1200&q=80",
-      price: "₹29,999",
-      unit: "Per Person",
+      price: "₹24,950",
+      unit: "Per Person (₹99,800 Total for 4 Pax)",
       phone: "7200669293",
-      route: "Andaman And Nicobar Islands, India (Port Blair ↔ Havelock ↔ Neil Island)",
+      route: "Port Blair (TGS Emerald 3★) → Havelock Island (Sundazee Beach Resort) → Neil Island (Silver Pearl Resort)",
       itinerary: [
-        { day: "Day 1", desc: "Port Blair Arrival – Cellular Jail visit & Light and Sound show." },
-        { day: "Day 2", desc: "Port Blair to Havelock Island – Cruise ferry ride & Radhanagar Beach sunset." },
-        { day: "Day 3", desc: "Elephant Beach Snorkeling – Water sports & glass bottom boat ride." },
-        { day: "Day 4", desc: "Havelock to Neil Island – Bharatpur & Laxmanpur beach, return to Port Blair." },
-        { day: "Day 5", desc: "Port Blair departure airport drop." }
+        { day: "Day 1", desc: "Port Blair → Havelock Island. Airport pickup & transfer to Port Blair Harbour. Early morning cruise ferry to Havelock Island. Visit world-famous Radhanagar Beach (Beach No. 7) for swimming, sea bathing & sunset photography. Overnight at Sundazee Beach Resort, Havelock." },
+        { day: "Day 2", desc: "Havelock – Elephant Beach Excursion. Breakfast at resort, boat ride to Elephant Beach. Complimentary Snorkelling session, explore vibrant coral reefs & marine life, beach relaxation & photography. Overnight at Sundazee Beach Resort." },
+        { day: "Day 3", desc: "Havelock → Neil Island. Breakfast & check-out. High-speed ferry to Neil Island. Sightseeing covering Bharatpur Beach (water sports hub), Laxmanpur Beach & the iconic Natural Howrah Bridge rock formation. Overnight at Silver Pearl Resort." },
+        { day: "Day 4", desc: "Neil Island → Port Blair & Chidiya Tapu Sunset. Ferry transfer to Port Blair, check-in at TGS Emerald 3★. Proceed to Chidiya Tapu (Munda Pahad) for lush greenery, bird watching & a spectacular sunset over the Bay of Bengal. Overnight Port Blair." },
+        { day: "Day 5", desc: "Goodbye Andaman – Breakfast, check-out and private transfer to Port Blair Airport for onward flight. Curated specially by JP Holidays for an unforgettable island experience." }
       ],
       inclusions: [
-        "4 Nights Beach Resort Stay",
-        "Daily Breakfast at Resorts",
-        "High-Speed Catamaran Cruise Ferry Tickets (Makruzz/Green Ocean)",
-        "Complimentary Snorkeling Session at Elephant Beach",
-        "All Island Airport & Jetty Transfers"
+        "4 Nights Accommodation: TGS Emerald 3★ (Port Blair) + Sundazee Beach Resort (Havelock) + Silver Pearl Resort (Neil Island)",
+        "Daily Breakfast at all properties",
+        "Airport Pickup & Drop at Port Blair",
+        "All Inter-Island High-Speed Catamaran Ferry Tickets (Port Blair ↔ Havelock ↔ Neil)",
+        "Snorkelling Experience & Coral Reef Excursion at Elephant Beach",
+        "Neil Island Sightseeing & Chidiya Tapu Sunset Visit",
+        "Transfers & Sightseeing as per Itinerary"
+      ]
+    },
+    "andaman-elite": {
+      title: "Andaman Island Escape – Elite",
+      badge: "BEACHES & ADVENTURE • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      price: "₹29,450",
+      unit: "Per Person (4 Adults)",
+      phone: "7200669293",
+      route: "Port Blair (TGS Emerald 3★) → Havelock Island (TSG Blue) → Neil Island (TSG Auro)",
+      itinerary: [
+        { day: "Day 1", desc: "Port Blair → Havelock Island. Airport pickup & transfer to Port Blair Harbour. Early morning cruise ferry to Havelock Island. Visit world-famous Radhanagar Beach (Beach No. 7) for swimming, sea bathing & sunset photography. Overnight at TSG Blue, Havelock." },
+        { day: "Day 2", desc: "Havelock – Elephant Beach Excursion. Breakfast at TSG Blue resort, boat ride to Elephant Beach. Complimentary Snorkelling session, explore vibrant coral reefs & marine life, beach relaxation & photography. Overnight at TSG Blue." },
+        { day: "Day 3", desc: "Havelock → Neil Island. Breakfast & check-out. High-speed ferry to Neil Island. Sightseeing covering Bharatpur Beach (water sports hub), Laxmanpur Beach & the iconic Natural Howrah Bridge rock formation. Overnight at TSG Auro." },
+        { day: "Day 4", desc: "Neil Island → Port Blair & Chidiya Tapu Sunset. Ferry transfer to Port Blair, check-in at TGS Emerald 3★. Proceed to Chidiya Tapu (Munda Pahad) for lush greenery, bird watching & a spectacular sunset over the Bay of Bengal. Overnight Port Blair." },
+        { day: "Day 5", desc: "Goodbye Andaman – Breakfast, check-out and private transfer to Port Blair Airport for onward flight. Curated specially by JP Holidays for Lakshmi and family." }
+      ],
+      inclusions: [
+        "4 Nights Premium Accommodation: TGS Emerald 3★ (Port Blair) + TSG Blue (Havelock) + TSG Auro (Neil Island)",
+        "Daily Breakfast at all properties",
+        "Airport Pickup & Drop at Port Blair",
+        "All Inter-Island High-Speed Catamaran Ferry Tickets (Port Blair ↔ Havelock ↔ Neil)",
+        "Snorkelling Experience & Coral Reef Excursion at Elephant Beach",
+        "Neil Island Sightseeing & Chidiya Tapu Sunset Visit",
+        "Transfers & Sightseeing as per Itinerary"
       ]
     },
     goldentriangle: {
@@ -673,7 +755,7 @@ document.addEventListener('DOMContentLoaded', () => {
     kenya: {
       title: "Kenya Highlights & Masai Mara Safari",
       badge: "WILDLIFE SAFARI • 6 NIGHTS / 7 DAYS",
-      img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=1200&q=80",
       price: "₹1,45,000",
       unit: "Per Person",
       phone: "7200669293",
@@ -837,31 +919,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "Abu Dhabi City Tour with Sheikh Zayed Mosque Entry & UAE Tourist Visa"
       ]
     },
-    europe: {
-      title: "Europe 5-Country Grand Tour",
-      badge: "GRAND INTERNATIONAL • 9 NIGHTS / 10 DAYS",
-      img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=80",
-      price: "₹1,85,000",
-      unit: "Per Person",
-      phone: "7200669293",
-      route: "France (Paris) → Belgium (Brussels) → Netherlands (Amsterdam) → Germany → Switzerland (Titlis & Lucerne)",
-      itinerary: [
-        { day: "Days 1-2", desc: "Paris (France) – Eiffel Tower 2nd level, Seine River Cruise & Louvre Museum." },
-        { day: "Day 3", desc: "Paris to Brussels & Amsterdam – Manneken Pis, Atomium & Amsterdam Canal Cruise." },
-        { day: "Day 4", desc: "Zaanse Schans Windmills & Keukenhof Tulip Gardens." },
-        { day: "Day 5", desc: "Drive to Cologne (Germany) – Cologne Cathedral & Rhine River Valley cruise." },
-        { day: "Days 6-8", desc: "Switzerland (Engelberg/Lucerne) – Mt. Titlis Rotair Cable Car, Ice Flyer & Chapel Bridge." },
-        { day: "Day 9", desc: "Black Forest & Rhine Falls (Schaffhausen) boat ride." },
-        { day: "Day 10", desc: "Zurich Departure – City tour & return flight." }
-      ],
-      inclusions: [
-        "9 Nights 4★ Hotel Accommodation across Europe",
-        "Daily Continental Breakfast & Indian Dinners",
-        "Eiffel Tower Ticket & Seine River Cruise Ticket",
-        "Mt. Titlis Cable Car Ticket & Ice Flyer",
-        "Luxury AC Coach Transportation & Schengen Visa Support"
-      ]
-    },
     vietnam: {
       title: "Vietnam & Cambodia Heritage Tour",
       badge: "CULTURE & HERITAGE • 6 NIGHTS / 7 DAYS",
@@ -887,31 +944,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "All Domestic Flights & Airport Transfers"
       ]
     },
-    switzerland: {
-      title: "Switzerland Alpine Dream Expedition",
-      badge: "ALPINES & LAKES • 6 NIGHTS / 7 DAYS",
-      img: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80",
-      price: "₹1,42,000",
-      unit: "Per Person",
-      phone: "7200669293",
-      route: "Zurich → Interlaken → Jungfraujoch → Lucerne → Mt Titlis → Geneva",
-      itinerary: [
-        { day: "Day 1", desc: "Zurich Arrival – Lake Zurich cruise, Bahnhofstrasse shopping & hotel check-in." },
-        { day: "Day 2", desc: "Zurich to Interlaken – Golden Pass scenic train ride & Lake Brienz cruise." },
-        { day: "Day 3", desc: "Jungfraujoch Top of Europe – Cogwheel train to snow glacier peak & Ice Palace." },
-        { day: "Day 4", desc: "Interlaken to Lucerne – Chapel Bridge, Lion Monument & Lucerne lake promenade." },
-        { day: "Day 5", desc: "Mount Titlis Excursion – Rotair 360 Cable Car, Cliff Walk & Glacier Cave." },
-        { day: "Day 6", desc: "Lucerne to Geneva – Jet d'Eau fountain & United Nations headquarters." },
-        { day: "Day 7", desc: "Geneva Departure – Airport transfer for return flight." }
-      ],
-      inclusions: [
-        "6 Nights 4★ Swiss Hotel Stay with Breakfast",
-        "7-Day Swiss Travel Pass (Unlimited Trains, Buses & Boats)",
-        "Jungfraujoch Top of Europe Train Ticket",
-        "Mt. Titlis Cable Car Excursion Pass",
-        "Visa Assistance & Travel Insurance"
-      ]
-    },
     japan: {
       title: "Japan Cherry Blossom & Tokyo Explorer",
       badge: "CULTURE & HIGH-TECH • 6 NIGHTS / 7 DAYS",
@@ -935,6 +967,103 @@ document.addEventListener('DOMContentLoaded', () => {
         "Shinkansen Bullet Train Ticket (Tokyo → Kyoto)",
         "Mt. Fuji 5th Station & Lake Ashi Cruise Ticket",
         "Japan Tourist Visa Assistance"
+      ]
+    },
+    "chardham-heli": {
+      title: "Luxury Char Dham Heli Yatra",
+      badge: "SACRED PILGRIMAGE • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      price: "₹1,98,450",
+      unit: "Per Person (Inclusive of All Applicable Taxes)",
+      phone: "7200669293",
+      route: "Dehradun → Kharsali (Yamunotri) → Harsil (Gangotri) → Guptkashi (Kedarnath) → Badrinath → Dehradun",
+      itinerary: [
+        { day: "Day 1", desc: "Dehradun to Kharsali (Yamunotri Dham) – Departure from Sahastradhara Helipad at 07:00 AM. Arrive Kharsali at 07:30 AM. Breakfast, proceed for VIP Darshan of Shri Yamunotri Dham via Palki (approx. 5 km). Evening visit to Shani Temple (winter abode of Goddess Yamuna). Dinner & overnight at Kharsali." },
+        { day: "Day 2", desc: "Kharsali to Harsil (Gangotri Dham) – 07:45 AM flight to Harsil Helipad (08:30 AM arrival). Transfer by Toyota Innova (approx. 20 km) for VIP Darshan of Shri Gangotri Dham and Bhagirathi River banks. Evening leisure in scenic Harsil Valley. Dinner & overnight at Harsil." },
+        { day: "Day 3", desc: "Harsil to Kedarnath & Guptkashi – 09:00 AM flight to Guptkashi. Board shuttle helicopter for Shri Kedarnath Ji VIP Darshan at the holy Jyotirlinga. Return by helicopter to Guptkashi. Check-in, dinner & overnight at Guptkashi." },
+        { day: "Day 4", desc: "Guptkashi to Badrinath – 10:00 AM flight to Badrinath Helipad. Hotel check-in & lunch. VIP Darshan of Shri Badrinath Temple. Later visit Mana Village (India's Last Village), Vyas Gufa, Ganesh Gufa & Bhim Pul. Dinner & overnight at Badrinath." },
+        { day: "Day 5", desc: "Badrinath to Dehradun Departure – Breakfast & check-out. 11:30 AM helicopter departure to Sahastradhara Helipad, Dehradun (12:30 PM arrival). Transfer to Airport / Railway Station for onward journey with divine blessings." }
+      ],
+      inclusions: [
+        "01 Night Complimentary Luxury Stay in Dehradun before yatra",
+        "04 Nights Luxury Accommodation (Kharsali, Harsil, Guptkashi, Badrinath)",
+        "Helicopter Transfers between all Helipads as per itinerary",
+        "VIP Darshan at all 4 Dhams (Yamunotri, Gangotri, Kedarnath & Badrinath)",
+        "Daily Breakfast, Lunch & Dinner Included",
+        "Palki (Sedan Chair) at Yamunotri & Toyota Innova Ground Transfers",
+        "Dedicated Tour Assistance throughout journey & All Applicable Taxes"
+      ]
+    },
+    meghalaya: {
+      title: "Majestic Meghalaya Tour Package",
+      badge: "NORTHEAST NATURE • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1200&q=80",
+      price: "₹22,670",
+      unit: "Per Person (Premium) | ₹24,450 (Budget)",
+      phone: "7200669293",
+      route: "Guwahati → Shillong (3N) → Cherrapunji (1N) → Dawki → Mawlynnong → Guwahati",
+      itinerary: [
+        { day: "Day 1", desc: "Guwahati Arrival → Shillong ('Scotland of the East'). Enroute visit Umananda Temple, Assam State Museum & the scenic Umiam Lake (Barapani). Check-in and evening at leisure in Shillong." },
+        { day: "Day 2", desc: "Shillong Local Sightseeing – Breakfast, full day exploration of Shillong Peak, Elephant Falls, Don Bosco Museum of Indigenous Cultures, Ward's Lake & the breathtaking Laitlum Canyon. Overnight at Shillong." },
+        { day: "Day 3", desc: "Dawki River & Mawlynnong → Cherrapunji. Full day excursion to crystal-clear Dawki (Umngot) River boating on the India-Bangladesh border, Mawlynnong (Asia's Cleanest Village) & the iconic Living Root Bridge. Transfer to misty Cherrapunji for overnight stay." },
+        { day: "Day 4", desc: "Cherrapunji Sightseeing → Shillong. Visit majestic Seven Sisters Waterfalls, Nohkalikai Falls (India's tallest plunge waterfall), Mawsmai Limestone Cave, Eco Park, Garden of Caves & Mawkdok Dympep View Point. Drive back to Shillong for overnight stay." },
+        { day: "Day 5", desc: "Shillong → Guwahati Departure. Breakfast & scenic drive to Guwahati. Visit Brahmaputra Heritage Centre, transfer to Guwahati Railway Station / Airport for departure." }
+      ],
+      inclusions: [
+        "4 Nights Accommodation (3N Shillong at Blueberry Inn / Jessica + 1N Cherrapunji at Pyrkyns / Serenity)",
+        "Daily Breakfast at all hotels",
+        "Private AC Innova / Ertiga for entire trip transfers & sightseeing",
+        "All Toll, Parking, Fuel, Interstate Permit & Driver Allowances",
+        "Excursion to Dawki River, Mawlynnong Cleanest Village & Living Root Bridge",
+        "Sightseeing to Seven Sisters Falls, Nohkalikai, Mawsmai Cave & Laitlum Canyon"
+      ]
+    },
+    kerala: {
+      title: "Kerala Backwaters & Houseboat Escape",
+      badge: "GOD'S OWN COUNTRY • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      price: "₹22,999",
+      unit: "Per Person",
+      phone: "7200669293",
+      route: "Cochin → Munnar (2N) → Thekkady (1N) → Alleppey (1N Luxury Houseboat)",
+      itinerary: [
+        { day: "Day 1", desc: "Cochin Arrival → Munnar. Scenic drive passing Cheeyappara & Valara waterfalls, lush tea plantations, check-in & evening tea garden stroll." },
+        { day: "Day 2", desc: "Munnar Sightseeing – Eravikulam National Park (Nilgiri Tahr), Mattupetty Dam, Echo Point, Tea Museum & Blossom Hydel Park." },
+        { day: "Day 3", desc: "Munnar → Thekkady. Periyar Wildlife Sanctuary boat safari, spice plantation guided walk & optional Kathakali / Kalaripayattu martial art show." },
+        { day: "Day 4", desc: "Thekkady → Alleppey Backwaters. Board traditional luxury AC Houseboat at noon. Cruise through emerald backwaters, village canals & lagoons. All meals on board." },
+        { day: "Day 5", desc: "Alleppey → Cochin Departure. Breakfast on houseboat, check-out & transfer to Cochin Airport / Railway Station." }
+      ],
+      inclusions: [
+        "3 Nights 4★ Resort Stay (Munnar & Thekkady) + 1 Night Deluxe Private AC Houseboat",
+        "Daily Breakfast at Resorts + All Meals (Breakfast, Lunch, Dinner) on Houseboat",
+        "Private AC Sedan for all transfers & sightseeing",
+        "Spice Plantation Guided Tour & Tea Museum Entry",
+        "Periyar Lake Wildlife Sanctuary Boat Ride Pass"
+      ]
+    },
+    rajasthan: {
+      title: "Rajasthan Royal Heritage Circuit",
+      badge: "ROYAL HERITAGE • 6 NIGHTS / 7 DAYS",
+      img: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      price: "₹34,999",
+      unit: "Per Person",
+      phone: "7200669293",
+      route: "Jaipur (2N) → Jodhpur (2N) → Jaisalmer (2N Desert Camp & Haveli)",
+      itinerary: [
+        { day: "Day 1", desc: "Arrival in Jaipur (Pink City) – Hotel check-in, visit Birla Mandir, Albert Hall Museum & colorful local bazaars." },
+        { day: "Day 2", desc: "Jaipur Sightseeing – Amber Fort Jeep Ride, Jal Mahal photo stop, City Palace, Jantar Mantar & Hawa Mahal." },
+        { day: "Day 3", desc: "Jaipur → Jodhpur (Blue City). Enroute visit Ajmer Sharif Dargah & sacred Pushkar Brahma Temple. Check-in at Jodhpur." },
+        { day: "Day 4", desc: "Jodhpur Sightseeing – Mehrangarh Fort, Jaswant Thada, Umaid Bhawan Palace & Mandore Gardens." },
+        { day: "Day 5", desc: "Jodhpur → Jaisalmer (Golden City). Check-in at Sam Sand Dunes Luxury Swiss Tent, Camel Safari & evening Rajasthani folk dance with dinner." },
+        { day: "Day 6", desc: "Jaisalmer Fort & Havelis – Golden Fort (Sonar Qila), Patwon Ki Haveli, Salim Singh Ki Haveli & Gadisar Lake." },
+        { day: "Day 7", desc: "Departure – Breakfast, transfer to Jodhpur / Jaisalmer Airport or Railway Station with royal memories." }
+      ],
+      inclusions: [
+        "6 Nights Heritage Hotel & Desert Camp Stay (Jaipur, Jodhpur, Jaisalmer)",
+        "Daily Buffet Breakfast + 1 Traditional Rajasthani Camp Dinner with Folk Dance",
+        "Sam Sand Dunes Camel Safari & Jeep Dune Bashing",
+        "Private AC Sedan/SUV for entire royal circuit",
+        "Amber Fort Jeep Ride & Local Monument Guides"
       ]
     }
   };
@@ -1016,7 +1145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="price-val">${data.price} <small style="font-size:0.8rem; font-weight:normal; color:#666;">${data.unit || ''}</small></div>
           </div>
           <div class="modal-actions">
-            <a href="tel:${data.phone || '9876543210'}" class="btn-call"><i class="fa-solid fa-phone"></i> Call Support</a>
+            <a href="tel:${data.phone || '7200669293'}" class="btn-call"><i class="fa-solid fa-phone"></i> Call Support</a>
             <button class="btn btn-primary btn-modal-book-now" data-place="${data.title}">Book Package Now</button>
           </div>
         </div>
