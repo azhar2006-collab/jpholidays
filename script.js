@@ -486,27 +486,211 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     "kashmir-pdf": {
-      title: "Grand Kashmir Tour",
-      badge: "PARADISE ON EARTH • 6 NIGHTS / 7 DAYS",
+      title: "The Grand Kashmir & Vaishno Devi Katra Tour",
+      badge: "PILGRIMAGE & PARADISE • 7 NIGHTS / 8 DAYS",
       img: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
-      price: "₹87,450",
-      unit: "Total Package (Flights Excl.)",
+      price: "₹76,340",
+      unit: "Total Package for 3 Adults (1 Triple Room)",
       phone: "7200669293",
-      route: "Srinagar (Hotel Kareem Residency/Leon) → Super Deluxe Houseboat (Dal Lake) → Pahalgam (Hotel Fifth Season)",
+      route: "Jammu Airport → Katra (2N) → Pahalgam (1N) → Srinagar (2N) → Gulmarg (1N) → Sonamarg (1N) → Srinagar Airport Drop",
+      hotels: [
+        "Katra (2 Nights): Hotel Zone Connect by Park Katra / Similar (3★)",
+        "Pahalgam (1 Night): Hotel Grand Salween / Similar (3★)",
+        "Srinagar (2 Nights): Hotel The Oriental Mansion / Similar (3★)",
+        "Gulmarg (1 Night): Hotel Zahgeer Continental / Similar (3★)",
+        "Sonamarg (1 Night): Hotel Thajwas Glacier / Similar (3★)"
+      ],
       itinerary: [
-        { day: "Day 1", desc: "Arrival in Srinagar Airport – Private transfer to hotel, evening at leisure." },
-        { day: "Day 2", desc: "Sonamarg Excursion – Srinagar to Sonamarg day trip, Sindh river view & return." },
-        { day: "Day 3", desc: "Gulmarg Snow Point – Srinagar to Gulmarg day trip, snow view points & return." },
-        { day: "Day 4", desc: "Srinagar to Pahalgam – Drive to Pahalgam, check-in at Hotel Fifth Season & overnight." },
-        { day: "Day 5", desc: "Pahalgam to Srinagar – Return drive to Srinagar & leisure day." },
-        { day: "Day 6", desc: "Srinagar & Houseboat – Srinagar local Mughal Gardens tour & Super Deluxe Houseboat stay on Dal Lake." },
-        { day: "Day 7", desc: "Departure – Breakfast & drop at Srinagar Airport." }
+        { day: "Day 1", desc: "Jammu ➝ Katra – Arrival at Jammu Airport and private transfer to Katra. Check-in at hotel and enjoy leisure time. Overnight Stay: Katra." },
+        { day: "Day 2", desc: "Katra | Vaishno Devi Darshan – Proceed for the holy Mata Vaishno Devi Darshan pilgrimage. Return to Katra after darshan. Overnight Stay: Katra." },
+        { day: "Day 3", desc: "Katra ➝ Pahalgam – Drive towards the breathtaking valley of Pahalgam. Enjoy scenic mountain landscapes and explore local surroundings. Overnight Stay: Pahalgam." },
+        { day: "Day 4", desc: "Pahalgam ➝ Srinagar – Proceed to Srinagar after breakfast. Enjoy a local city tour and explore the beautiful surroundings & Dal Lake. Overnight Stay: Srinagar." },
+        { day: "Day 5", desc: "Srinagar ➝ Gulmarg – Proceed towards Gulmarg, the world-famous 'Meadow of Flowers.' Enjoy spectacular mountain scenery and optional activities. Overnight Stay: Gulmarg." },
+        { day: "Day 6", desc: "Gulmarg ➝ Sonamarg – After breakfast, drive towards Sonamarg, the majestic 'Meadow of Gold.' Enjoy pristine scenic beauty and leisure time. Overnight Stay: Sonamarg." },
+        { day: "Day 7", desc: "Sonamarg ➝ Srinagar – Proceed to Srinagar. Enjoy local shopping and leisure time. Explore vibrant markets and shop for Kashmir handicrafts & souvenirs. Overnight Stay: Srinagar." },
+        { day: "Day 8", desc: "Srinagar | Departure – After breakfast, check out and transfer to Srinagar Airport for your onward journey with unforgettable memories of Kashmir. ❤️" }
       ],
       inclusions: [
-        "1 Night Super Deluxe Houseboat on Dal Lake + 5 Nights Hotel Stay",
+        "07 Nights Accommodation in 3★ Hotels",
+        "1 Triple Room for 3 Adults",
         "Daily Breakfast & Dinner",
-        "Private Innova Vehicle for all transfers & sightseeing",
-        "Complimentary Shikara Ride on Dal Lake"
+        "Private Sedan for Entire Tour Sightseeing & Transfers",
+        "Jammu Airport Pickup & Srinagar Airport Drop",
+        "Complimentary Shikara Ride on Dal Lake",
+        "Traditional Kashmiri Kehwa & Shawl Welcome",
+        "Guidance Throughout the Journey & 24/7 Assistance"
+      ],
+      exclusions: [
+        "Airfare (Domestic/International)",
+        "Lunch and meals outside stated meal plan",
+        "Vaishno Devi Pony / Palki / Helicopter Charges",
+        "Gondola Tickets in Gulmarg",
+        "Local Union Taxi Charges wherever applicable",
+        "Entry Tickets & Activity Charges",
+        "Personal Expenses & Anything not mentioned above"
+      ]
+    },
+    "kashmir-katra-pdf": {
+      title: "The Grand Kashmir & Vaishno Devi Katra Tour",
+      badge: "PILGRIMAGE & PARADISE • 7 NIGHTS / 8 DAYS",
+      img: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
+      price: "₹76,340",
+      unit: "Total Package for 3 Adults (1 Triple Room)",
+      phone: "7200669293",
+      route: "Jammu Airport → Katra (2N) → Pahalgam (1N) → Srinagar (2N) → Gulmarg (1N) → Sonamarg (1N) → Srinagar Airport Drop",
+      hotels: [
+        "Katra (2 Nights): Hotel Zone Connect by Park Katra / Similar (3★)",
+        "Pahalgam (1 Night): Hotel Grand Salween / Similar (3★)",
+        "Srinagar (2 Nights): Hotel The Oriental Mansion / Similar (3★)",
+        "Gulmarg (1 Night): Hotel Zahgeer Continental / Similar (3★)",
+        "Sonamarg (1 Night): Hotel Thajwas Glacier / Similar (3★)"
+      ],
+      itinerary: [
+        { day: "Day 1", desc: "Jammu ➝ Katra – Arrival at Jammu Airport and private transfer to Katra. Check-in at hotel and enjoy leisure time. Overnight Stay: Katra." },
+        { day: "Day 2", desc: "Katra | Vaishno Devi Darshan – Proceed for the holy Mata Vaishno Devi Darshan pilgrimage. Return to Katra after darshan. Overnight Stay: Katra." },
+        { day: "Day 3", desc: "Katra ➝ Pahalgam – Drive towards the breathtaking valley of Pahalgam. Enjoy scenic mountain landscapes and explore local surroundings. Overnight Stay: Pahalgam." },
+        { day: "Day 4", desc: "Pahalgam ➝ Srinagar – Proceed to Srinagar after breakfast. Enjoy a local city tour and explore the beautiful surroundings & Dal Lake. Overnight Stay: Srinagar." },
+        { day: "Day 5", desc: "Srinagar ➝ Gulmarg – Proceed towards Gulmarg, the world-famous 'Meadow of Flowers.' Enjoy spectacular mountain scenery and optional activities. Overnight Stay: Gulmarg." },
+        { day: "Day 6", desc: "Gulmarg ➝ Sonamarg – After breakfast, drive towards Sonamarg, the majestic 'Meadow of Gold.' Enjoy pristine scenic beauty and leisure time. Overnight Stay: Sonamarg." },
+        { day: "Day 7", desc: "Sonamarg ➝ Srinagar – Proceed to Srinagar. Enjoy local shopping and leisure time. Explore vibrant markets and shop for Kashmir handicrafts & souvenirs. Overnight Stay: Srinagar." },
+        { day: "Day 8", desc: "Srinagar | Departure – After breakfast, check out and transfer to Srinagar Airport for your onward journey with unforgettable memories of Kashmir. ❤️" }
+      ],
+      inclusions: [
+        "07 Nights Accommodation in 3★ Hotels",
+        "1 Triple Room for 3 Adults",
+        "Daily Breakfast & Dinner",
+        "Private Sedan for Entire Tour Sightseeing & Transfers",
+        "Jammu Airport Pickup & Srinagar Airport Drop",
+        "Complimentary Shikara Ride on Dal Lake",
+        "Traditional Kashmiri Kehwa & Shawl Welcome",
+        "Guidance Throughout the Journey & 24/7 Assistance"
+      ],
+      exclusions: [
+        "Airfare (Domestic/International)",
+        "Lunch and meals outside stated meal plan",
+        "Vaishno Devi Pony / Palki / Helicopter Charges",
+        "Gondola Tickets in Gulmarg",
+        "Local Union Taxi Charges wherever applicable",
+        "Entry Tickets & Activity Charges",
+        "Personal Expenses & Anything not mentioned above"
+      ]
+    },
+    "sea-trio-pdf": {
+      title: "Singapore • Malaysia • Vietnam – Year-End Family Escape",
+      badge: "TRI-COUNTRY ESCAPE • 13 NIGHTS / 14 DAYS",
+      img: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      price: "₹2,98,340",
+      unit: "Total Land Package (2 Adults + 1 Child)",
+      phone: "7200669293",
+      route: "Singapore (4N) → Express Coach to Kuala Lumpur (2N) → Flight to Ho Chi Minh City (3N) → Flight to Hanoi (2N) & Halong Bay → Flight to Da Nang (2N) & Ba Na Hills",
+      hotels: [
+        "Singapore (4 Nights): Days Inn by Wyndham Singapore Novena (Base Room, Daily Breakfast)",
+        "Malaysia (2 Nights): Ramada Encore by Wyndham Chinatown / StarPoints Hotel (Deluxe / Superior Room, Daily Breakfast)",
+        "Ho Chi Minh City (3 Nights): Prague Hotel Hồ Chí Minh (Superior Room with Window, Daily Breakfast)",
+        "Hanoi (2 Nights): First Eden Hotel (Base Room, Daily Breakfast)",
+        "Da Nang (2 Nights): Sepon Blue Hotel (Base Room, Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (23 Dec)", desc: "Singapore Arrival – Changi Airport transfer to hotel. Night Safari with Admission + Tram Ride." },
+        { day: "Day 2 (24 Dec)", desc: "Universal Studios Singapore – Full-day movie theme rides & shows with entrance ticket & 2-way hotel transfers." },
+        { day: "Day 3 (25 Dec)", desc: "Sentosa Island – Round-Trip Sentosa Cable Car, Madame Tussauds 4-in-1 experience & Wings of Time laser show." },
+        { day: "Day 4 (26 Dec)", desc: "Singapore ➝ Kuala Lumpur – Singapore City Tour, transfer to coach station & express coach to Kuala Lumpur." },
+        { day: "Day 5 (27 Dec)", desc: "Kuala Lumpur Arrival – Arrive at KL Coach Station, hotel check-in, KL Night City Tour & KL Tower Observation Deck." },
+        { day: "Day 6 (28 Dec)", desc: "Genting Highlands & Batu Caves – Full-Day Genting Highlands Tour, Batu Caves photo stop & Two-Way Skyway Cable Car." },
+        { day: "Day 7 (29 Dec)", desc: "Kuala Lumpur ➝ Ho Chi Minh City – Transfer to KLIA, flight to Vietnam, Saigon Sky Deck (Bitexco) & evening leisure." },
+        { day: "Day 8 (30 Dec)", desc: "Mekong Delta Excursion – Full-Day Mekong My Tho Excursion with island boating, local culture & fruit orchards." },
+        { day: "Day 9 (31 Dec)", desc: "Ho Chi Minh City & Cu Chi Tunnels – Full-Day City Tour & historic Cu Chi Tunnels. Evening free for New Year's Eve celebrations!" },
+        { day: "Day 10 (01 Jan)", desc: "Ho Chi Minh City ➝ Hanoi – Flight to Hanoi, Hanoi Half-Day City Tour (Tran Quoc Pagoda, Old Quarter) & evening leisure." },
+        { day: "Day 11 (02 Jan)", desc: "Halong Bay Luxury Cruise – Full-Day Deluxe Halong Bay Cruise, Sung Sot Cave, Titop Island & Kayaking / Bamboo Boat." },
+        { day: "Day 12 (03 Jan)", desc: "Hanoi ➝ Da Nang & Hoi An – Flight to Da Nang, visit Marble Mountains & lantern-lit Hoi An Ancient Town." },
+        { day: "Day 13 (04 Jan)", desc: "Ba Na Hills & Golden Bridge – Full-Day Ba Na Hills with scenic Cable Car ride, Golden Giant Hand Bridge & Buffet Lunch." },
+        { day: "Day 14 (05 Jan)", desc: "Da Nang Departure – Check-out and private airport transfer to Da Nang Airport for onward journey." }
+      ],
+      inclusions: [
+        "13 Nights 3★ Hotel Accommodation across Singapore (4N), Malaysia (2N), and Vietnam (7N)",
+        "Daily Breakfast at all hotels + Ba Na Hills International Buffet Lunch",
+        "Universal Studios Singapore Ticket with 2-Way Hotel Transfers",
+        "Night Safari Admission & Tram Ride Ticket (Singapore)",
+        "Sentosa Cable Car (Round-Trip) + Madame Tussauds 4-in-1 + Wings of Time",
+        "Singapore City Tour + Intercity AC Express Coach Singapore to Kuala Lumpur",
+        "KL Night City Tour + KL Tower Observation Deck Ticket",
+        "Full-Day Genting Highlands Tour with 2-Way Cable Car & Batu Caves Photo Stop",
+        "Saigon Sky Deck (Bitexco) Admission Ticket",
+        "Full-Day Mekong Delta (My Tho) Excursion with Boat Cruise",
+        "Cu Chi Tunnels Tour & Ho Chi Minh City Guided Tour",
+        "Hanoi Half-Day Guided City Tour",
+        "Full-Day Deluxe Halong Bay Cruise with Sung Sot Cave, Titop Island & Kayaking",
+        "Marble Mountains & Hoi An Ancient Town Guided Tour",
+        "Ba Na Hills Full-Day Tour with Cable Car, Golden Bridge & Buffet Lunch",
+        "All Private Airport Transfers in Singapore, Kuala Lumpur, Ho Chi Minh, Hanoi & Da Nang"
+      ],
+      exclusions: [
+        "International & Domestic Airfare",
+        "Visa Charges (Singapore, Malaysia, Vietnam)",
+        "Guide Tipping in Vietnam",
+        "Meals outside the stated meal plan",
+        "Optional Experiences (Ice Cream Museum, Gardens by the Bay, Marina Bay Sands, KL Bird Park, etc.)",
+        "Tourism taxes, compulsory supplements & refundable hotel deposits (where applicable)",
+        "Personal Expenses & Travel Insurance"
+      ]
+    },
+    "singapore-malaysia-vietnam-pdf": {
+      title: "Singapore • Malaysia • Vietnam – Year-End Family Escape",
+      badge: "TRI-COUNTRY ESCAPE • 13 NIGHTS / 14 DAYS",
+      img: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      price: "₹2,98,340",
+      unit: "Total Land Package (2 Adults + 1 Child)",
+      phone: "7200669293",
+      route: "Singapore (4N) → Express Coach to Kuala Lumpur (2N) → Flight to Ho Chi Minh City (3N) → Flight to Hanoi (2N) & Halong Bay → Flight to Da Nang (2N) & Ba Na Hills",
+      hotels: [
+        "Singapore (4 Nights): Days Inn by Wyndham Singapore Novena (Base Room, Daily Breakfast)",
+        "Malaysia (2 Nights): Ramada Encore by Wyndham Chinatown / StarPoints Hotel (Deluxe / Superior Room, Daily Breakfast)",
+        "Ho Chi Minh City (3 Nights): Prague Hotel Hồ Chí Minh (Superior Room with Window, Daily Breakfast)",
+        "Hanoi (2 Nights): First Eden Hotel (Base Room, Daily Breakfast)",
+        "Da Nang (2 Nights): Sepon Blue Hotel (Base Room, Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (23 Dec)", desc: "Singapore Arrival – Changi Airport transfer to hotel. Night Safari with Admission + Tram Ride." },
+        { day: "Day 2 (24 Dec)", desc: "Universal Studios Singapore – Full-day movie theme rides & shows with entrance ticket & 2-way hotel transfers." },
+        { day: "Day 3 (25 Dec)", desc: "Sentosa Island – Round-Trip Sentosa Cable Car, Madame Tussauds 4-in-1 experience & Wings of Time laser show." },
+        { day: "Day 4 (26 Dec)", desc: "Singapore ➝ Kuala Lumpur – Singapore City Tour, transfer to coach station & express coach to Kuala Lumpur." },
+        { day: "Day 5 (27 Dec)", desc: "Kuala Lumpur Arrival – Arrive at KL Coach Station, hotel check-in, KL Night City Tour & KL Tower Observation Deck." },
+        { day: "Day 6 (28 Dec)", desc: "Genting Highlands & Batu Caves – Full-Day Genting Highlands Tour, Batu Caves photo stop & Two-Way Skyway Cable Car." },
+        { day: "Day 7 (29 Dec)", desc: "Kuala Lumpur ➝ Ho Chi Minh City – Transfer to KLIA, flight to Vietnam, Saigon Sky Deck (Bitexco) & evening leisure." },
+        { day: "Day 8 (30 Dec)", desc: "Mekong Delta Excursion – Full-Day Mekong My Tho Excursion with island boating, local culture & fruit orchards." },
+        { day: "Day 9 (31 Dec)", desc: "Ho Chi Minh City & Cu Chi Tunnels – Full-Day City Tour & historic Cu Chi Tunnels. Evening free for New Year's Eve celebrations!" },
+        { day: "Day 10 (01 Jan)", desc: "Ho Chi Minh City ➝ Hanoi – Flight to Hanoi, Hanoi Half-Day City Tour (Tran Quoc Pagoda, Old Quarter) & evening leisure." },
+        { day: "Day 11 (02 Jan)", desc: "Halong Bay Luxury Cruise – Full-Day Deluxe Halong Bay Cruise, Sung Sot Cave, Titop Island & Kayaking / Bamboo Boat." },
+        { day: "Day 12 (03 Jan)", desc: "Hanoi ➝ Da Nang & Hoi An – Flight to Da Nang, visit Marble Mountains & lantern-lit Hoi An Ancient Town." },
+        { day: "Day 13 (04 Jan)", desc: "Ba Na Hills & Golden Bridge – Full-Day Ba Na Hills with scenic Cable Car ride, Golden Giant Hand Bridge & Buffet Lunch." },
+        { day: "Day 14 (05 Jan)", desc: "Da Nang Departure – Check-out and private airport transfer to Da Nang Airport for onward journey." }
+      ],
+      inclusions: [
+        "13 Nights 3★ Hotel Accommodation across Singapore (4N), Malaysia (2N), and Vietnam (7N)",
+        "Daily Breakfast at all hotels + Ba Na Hills International Buffet Lunch",
+        "Universal Studios Singapore Ticket with 2-Way Hotel Transfers",
+        "Night Safari Admission & Tram Ride Ticket (Singapore)",
+        "Sentosa Cable Car (Round-Trip) + Madame Tussauds 4-in-1 + Wings of Time",
+        "Singapore City Tour + Intercity AC Express Coach Singapore to Kuala Lumpur",
+        "KL Night City Tour + KL Tower Observation Deck Ticket",
+        "Full-Day Genting Highlands Tour with 2-Way Cable Car & Batu Caves Photo Stop",
+        "Saigon Sky Deck (Bitexco) Admission Ticket",
+        "Full-Day Mekong Delta (My Tho) Excursion with Boat Cruise",
+        "Cu Chi Tunnels Tour & Ho Chi Minh City Guided Tour",
+        "Hanoi Half-Day Guided City Tour",
+        "Full-Day Deluxe Halong Bay Cruise with Sung Sot Cave, Titop Island & Kayaking",
+        "Marble Mountains & Hoi An Ancient Town Guided Tour",
+        "Ba Na Hills Full-Day Tour with Cable Car, Golden Bridge & Buffet Lunch",
+        "All Private Airport Transfers in Singapore, Kuala Lumpur, Ho Chi Minh, Hanoi & Da Nang"
+      ],
+      exclusions: [
+        "International & Domestic Airfare",
+        "Visa Charges (Singapore, Malaysia, Vietnam)",
+        "Guide Tipping in Vietnam",
+        "Meals outside the stated meal plan",
+        "Optional Experiences (Ice Cream Museum, Gardens by the Bay, Marina Bay Sands, KL Bird Park, etc.)",
+        "Tourism taxes, compulsory supplements & refundable hotel deposits (where applicable)",
+        "Personal Expenses & Travel Insurance"
       ]
     },
     "vietnam-pdf": {
@@ -872,27 +1056,48 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     kashmir: {
-      title: "Kashmir Paradise & Gulmarg Snow",
-      badge: "NATURE & SNOW • 5 NIGHTS / 6 DAYS",
-      img: "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=80",
-      price: "₹28,500",
-      unit: "Per Person",
+      title: "The Grand Kashmir & Vaishno Devi Katra Tour",
+      badge: "PILGRIMAGE & PARADISE • 7 NIGHTS / 8 DAYS",
+      img: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
+      price: "₹76,340",
+      unit: "Total Package for 3 Adults (1 Triple Room)",
       phone: "7200669293",
-      route: "Srinagar → Gulmarg → Pahalgam → Sonamarg → Srinagar",
+      route: "Jammu Airport → Katra (2N) → Pahalgam (1N) → Srinagar (2N) → Gulmarg (1N) → Sonamarg (1N) → Srinagar Airport Drop",
+      hotels: [
+        "Katra (2 Nights): Hotel Zone Connect by Park Katra / Similar (3★)",
+        "Pahalgam (1 Night): Hotel Grand Salween / Similar (3★)",
+        "Srinagar (2 Nights): Hotel The Oriental Mansion / Similar (3★)",
+        "Gulmarg (1 Night): Hotel Zahgeer Continental / Similar (3★)",
+        "Sonamarg (1 Night): Hotel Thajwas Glacier / Similar (3★)"
+      ],
       itinerary: [
-        { day: "Day 1", desc: "Arrival in Srinagar – Check-in at Deluxe Houseboat on Dal Lake, evening Shikara ride." },
-        { day: "Day 2", desc: "Srinagar to Gulmarg – Gondola Cable Car Ride (Phase 1 & 2) & snow activities." },
-        { day: "Day 3", desc: "Gulmarg to Pahalgam – Visit Pampore Saffron Fields, Awantipora Ruins & Betaab Valley." },
-        { day: "Day 4", desc: "Pahalgam Valley Tour – Aru Valley, Chandanwari & pony rides along Lidder River." },
-        { day: "Day 5", desc: "Sonamarg Day Excursion – Thajiwas Glacier pony ride & return to Srinagar Mughal Gardens." },
-        { day: "Day 6", desc: "Departure – Breakfast & Srinagar airport drop." }
+        { day: "Day 1", desc: "Jammu ➝ Katra – Arrival at Jammu Airport and private transfer to Katra. Check-in at hotel and enjoy leisure time. Overnight Stay: Katra." },
+        { day: "Day 2", desc: "Katra | Vaishno Devi Darshan – Proceed for the holy Mata Vaishno Devi Darshan pilgrimage. Return to Katra after darshan. Overnight Stay: Katra." },
+        { day: "Day 3", desc: "Katra ➝ Pahalgam – Drive towards the breathtaking valley of Pahalgam. Enjoy scenic mountain landscapes and explore local surroundings. Overnight Stay: Pahalgam." },
+        { day: "Day 4", desc: "Pahalgam ➝ Srinagar – Proceed to Srinagar after breakfast. Enjoy a local city tour and explore the beautiful surroundings & Dal Lake. Overnight Stay: Srinagar." },
+        { day: "Day 5", desc: "Srinagar ➝ Gulmarg – Proceed towards Gulmarg, the world-famous 'Meadow of Flowers.' Enjoy spectacular mountain scenery and optional activities. Overnight Stay: Gulmarg." },
+        { day: "Day 6", desc: "Gulmarg ➝ Sonamarg – After breakfast, drive towards Sonamarg, the majestic 'Meadow of Gold.' Enjoy pristine scenic beauty and leisure time. Overnight Stay: Sonamarg." },
+        { day: "Day 7", desc: "Sonamarg ➝ Srinagar – Proceed to Srinagar. Enjoy local shopping and leisure time. Explore vibrant markets and shop for Kashmir handicrafts & souvenirs. Overnight Stay: Srinagar." },
+        { day: "Day 8", desc: "Srinagar | Departure – After breakfast, check out and transfer to Srinagar Airport for your onward journey with unforgettable memories of Kashmir. ❤️" }
       ],
       inclusions: [
-        "1 Night Deluxe Houseboat + 4 Nights 4★ Hotel Stay",
+        "07 Nights Accommodation in 3★ Hotels",
+        "1 Triple Room for 3 Adults",
         "Daily Breakfast & Dinner",
-        "Complimentary 1-Hour Shikara Ride on Dal Lake",
-        "Gulmarg Gondola Cable Car Ticket (Phase 1)",
-        "Private Heating Vehicle for all Sightseeing & Transfers"
+        "Private Sedan for Entire Tour Sightseeing & Transfers",
+        "Jammu Airport Pickup & Srinagar Airport Drop",
+        "Complimentary Shikara Ride on Dal Lake",
+        "Traditional Kashmiri Kehwa & Shawl Welcome",
+        "Guidance Throughout the Journey & 24/7 Assistance"
+      ],
+      exclusions: [
+        "Airfare (Domestic/International)",
+        "Lunch and meals outside stated meal plan",
+        "Vaishno Devi Pony / Palki / Helicopter Charges",
+        "Gondola Tickets in Gulmarg",
+        "Local Union Taxi Charges wherever applicable",
+        "Entry Tickets & Activity Charges",
+        "Personal Expenses & Anything not mentioned above"
       ]
     },
     dubai: {
@@ -1102,6 +1307,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const data = tourData[key];
     if (!data || !modalContent) return;
 
+    const hotelsHtml = data.hotels && data.hotels.length ? `
+      <div style="margin-bottom: 20px;">
+        <h4 class="modal-section-title"><i class="fa-solid fa-hotel"></i> Hotel Accommodation</h4>
+        <div class="hotels-box">
+          <ul>
+            ${data.hotels.map(h => `<li><i class="fa-solid fa-bed"></i> <span>${h}</span></li>`).join('')}
+          </ul>
+        </div>
+      </div>
+    ` : '';
+
+    const exclusionsHtml = data.exclusions && data.exclusions.length ? `
+      <div style="margin-bottom: 20px;">
+        <h4 class="modal-section-title"><i class="fa-solid fa-circle-xmark" style="color:#dc2626;"></i> Package Exclusions</h4>
+        <div class="exclusions-box">
+          <ul>
+            ${data.exclusions.map(ex => `<li><i class="fa-solid fa-xmark"></i> <span>${ex}</span></li>`).join('')}
+          </ul>
+        </div>
+      </div>
+    ` : '';
+
     modalContent.innerHTML = `
       <div class="modal-header-banner">
         <img src="${data.img}" alt="${data.title}">
@@ -1124,6 +1351,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           </div>
           <div>
+            ${hotelsHtml}
             <h4 class="modal-section-title">Package Inclusions</h4>
             <div class="inclusions-box">
               <ul>
@@ -1132,7 +1360,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 `).join('') : '<li><i class="fa-solid fa-circle-check"></i> Standard Package Inclusions</li>'}
               </ul>
             </div>
-            <div style="background:#F0E8EA; padding:15px; border-radius:12px;">
+            ${exclusionsHtml}
+            <div style="background:#F0E8EA; padding:15px; border-radius:12px; margin-bottom:15px;">
               <div style="font-size:0.78rem; color:#777; font-weight:700; text-transform:uppercase;">Tour Route / Location</div>
               <div style="font-size:0.88rem; font-weight:600; color:#1A0A0C; margin-top:4px;">${data.route || 'Worldwide'}</div>
             </div>
@@ -1152,19 +1381,38 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
+    // Ensure mobile navigation is closed when modal opens
+    document.querySelector('.mobile-toggle')?.classList.remove('active');
+    document.querySelector('.main-nav')?.classList.remove('open');
+
+    // Bind close button
+    const closeBtn = modalBackdrop.querySelector('.modal-close');
+    if (closeBtn) {
+      closeBtn.onclick = (e) => {
+        e.stopPropagation();
+        closeTourModal();
+      };
+    }
+
     modalBackdrop.classList.add('open');
+    document.body.classList.add('modal-active');
     document.body.style.overflow = 'hidden';
   }
 
   function closeTourModal() {
     if (modalBackdrop) modalBackdrop.classList.remove('open');
-    document.body.style.overflow = '';
+    if (!enquiryModal || !enquiryModal.classList.contains('open')) {
+      document.body.classList.remove('modal-active');
+      document.body.style.overflow = '';
+    }
   }
 
-  const existingModalClose = document.querySelector('#tour-modal .modal-close');
-  existingModalClose?.addEventListener('click', closeTourModal);
-  document.getElementById('tour-modal')?.addEventListener('click', (e) => {
-    if (e.target === document.getElementById('tour-modal')) closeTourModal();
+  // Global escape key listener
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeTourModal();
+      closeEnquiryModal();
+    }
   });
 
   /* ----- Package Book / Details Buttons ----- */
@@ -1232,6 +1480,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (enquiryModal) {
       enquiryModal.classList.add('open');
+      document.body.classList.add('modal-active');
       document.body.style.overflow = 'hidden';
     }
   }
@@ -1239,7 +1488,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeEnquiryModal() {
     if (enquiryModal) {
       enquiryModal.classList.remove('open');
-      document.body.style.overflow = '';
+      if (!modalBackdrop || !modalBackdrop.classList.contains('open')) {
+        document.body.classList.remove('modal-active');
+        document.body.style.overflow = '';
+      }
     }
   }
 
