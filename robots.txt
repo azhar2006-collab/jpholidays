@@ -1,0 +1,14 @@
+# Google Search Central Robots.txt for JP Holidays
+# Website: https://jpholidays.co.in
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://jpholidays.co.in/sitemap.xml
