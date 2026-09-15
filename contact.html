@@ -434,6 +434,27 @@
   <script>
     function handleContactSubmit(e) {
       e.preventDefault();
+          const name     = document.getElementById('cf-name').value.trim();
+    const phone    = document.getElementById('cf-phone').value.trim();
+    const email    = document.getElementById('cf-email').value.trim();
+    const dest     = document.getElementById('cf-dest').value.trim();
+    const travelers= document.getElementById('cf-adults').value.trim();
+    const date     = document.getElementById('cf-date').value.trim();
+    const msg      = document.getElementById('cf-msg').value.trim();
+    // Build WhatsApp message — no price field included
+    let waMsg = `*New Enquiry – JP Holidays*\n\n`;
+    waMsg += `*Name:* ${name}\n`;
+    waMsg += `*Phone:* ${phone}\n`;
+    waMsg += `*Email:* ${email}\n`;
+    if (dest)      waMsg += `*Interested In:* ${dest}\n`;
+    if (travelers) waMsg += `*No. of Travelers:* ${travelers}\n`;
+    if (date)      waMsg += `*Travel Date:* ${date}\n`;
+    if (msg)       waMsg += `*Message:* ${msg}\n`;
+    // Open WhatsApp with the message
+    const waNumber = '917200669293'; // your number without +
+    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMsg)}`;
+    window.open(waUrl, '_blank');
+
       document.getElementById('contactForm').style.display = 'none';
       document.getElementById('formSuccess').style.display = 'block';
     }
