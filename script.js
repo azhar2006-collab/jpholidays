@@ -1458,22 +1458,45 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!checkoutInput.value) checkoutInput.value = defaultCheckoutStr;
   }
 
+  // Helper to remove any price mentions from package / destination strings
+  function cleanPlaceName(text) {
+    if (!text) return 'Custom / Other Destination';
+    return text
+      // Remove patterns like " - ₹76,340", " | ₹24,950", " - USD 2,250", " | 4 Pax: ₹99,800"
+      .replace(/\s*[-–—|]\s*(?:4\s*Pax\s*:\s*)?(?:₹|rs\.?|inr|usd|\$)\s*[\d,.]+/gi, '')
+      // Remove price prefixes inside parens e.g. "(₹24,950 | Sundazee + Silver Pearl)" -> "(Sundazee + Silver Pearl)"
+      .replace(/\(\s*(?:₹|rs\.?|inr|usd|\$)\s*[\d,.]+\s*\|\s*/gi, '(')
+      // Remove trailing/standalone prices inside parens e.g. "(4N/5D - ₹1,98,450)" -> "(4N/5D)"
+      .replace(/\s*[-–—]\s*(?:₹|rs\.?|inr|usd|\$)\s*[\d,.]+/gi, '')
+      // Remove parenthesized standalone price e.g. "(₹1,98,450)"
+      .replace(/\s*\(\s*(?:₹|rs\.?|inr|usd|\$)\s*[\d,.]+\s*\)/gi, '')
+      // Remove any leftover currency tokens and digits
+      .replace(/(?:₹|rs\.?|inr|usd|\$)\s*[\d,.]+/gi, '')
+      // Clean empty parentheses or dangling hyphens/pipes
+      .replace(/\(\s*\)/g, '')
+      .replace(/\s*[-–—|]\s*$/g, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+  }
+
   function openEnquiryModal(placeName) {
     if (placeName && enquiryPlaceSelect) {
+      const cleanTarget = cleanPlaceName(placeName).toLowerCase();
       let matchFound = false;
       for (let i = 0; i < enquiryPlaceSelect.options.length; i++) {
-        const val = enquiryPlaceSelect.options[i].value.toLowerCase();
-        const target = placeName.toLowerCase();
-        if (val.includes(target) || target.includes(val)) {
+        const val = cleanPlaceName(enquiryPlaceSelect.options[i].value).toLowerCase();
+        const text = cleanPlaceName(enquiryPlaceSelect.options[i].textContent).toLowerCase();
+        if (val.includes(cleanTarget) || cleanTarget.includes(val) || text.includes(cleanTarget) || cleanTarget.includes(text)) {
           enquiryPlaceSelect.selectedIndex = i;
           matchFound = true;
           break;
         }
       }
       if (!matchFound) {
+        const cleanName = cleanPlaceName(placeName);
         const opt = document.createElement('option');
-        opt.value = placeName;
-        opt.textContent = placeName;
+        opt.value = cleanName;
+        opt.textContent = cleanName;
         opt.selected = true;
         enquiryPlaceSelect.appendChild(opt);
       }
@@ -1530,13 +1553,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Helper to extract enquiry form details
+  // Helper to extract enquiry form details without prices
   function getFormDetails() {
-    const name = document.getElementById('enquiry-name')?.value || '';
-    const phone = document.getElementById('enquiry-phone')?.value || '';
+    const name = document.getElementById('enquiry-name')?.value.trim() || '';
+    const phone = document.getElementById('enquiry-phone')?.value.trim() || '';
     const adults = document.getElementById('enquiry-adults')?.value || '1';
-    const kids = document.getElementById('enquiry-kids')?.value || 'None';
-    const place = enquiryPlaceSelect?.value || 'Custom / Other Destination';
+    const kids = document.getElementById('enquiry-kids')?.value.trim() || 'None';
+    const rawPlace = enquiryPlaceSelect?.value || 'Custom / Other Destination';
+    const place = cleanPlaceName(rawPlace);
     const checkin = checkinInput?.value || todayStr;
     const checkout = checkoutInput?.value || defaultCheckoutStr;
     const hotelRadio = document.querySelector('input[name="hotel_category"]:checked');
@@ -1544,7 +1568,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return { name, phone, adults, kids, place, checkin, checkout, hotel };
   }
 
-  // Submit Handler: Automatically sends details via WhatsApp to JP Holidays contact number
+  // Submit Handler: Automatically sends details via WhatsApp to JP Holidays contact number (Strictly NO prices mentioned)
   enquiryForm?.addEventListener('submit', (e) => {
     e.preventDefault();
     const d = getFormDetails();
@@ -1553,6 +1577,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
+    // Build WhatsApp message for Admin — strictly no package price mentioned
     const message = `Hello JP Holidays! I would like to book/enquire about a holiday package:
 
 👤 Your Name: ${d.name}
