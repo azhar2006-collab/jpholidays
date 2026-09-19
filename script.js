@@ -281,6 +281,338 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ----- Tour Data & Details Modal ----- */
   const tourData = {
+    "valparai-group": {
+      title: "Valparai Group Escape",
+      tripId: "JP-152/VALPARAI",
+      dates: "17 – 20 October 2026",
+      groupSize: "16 Adults (4 Rooms – Four Sharing)",
+      transport: "17-Seater Tempo Traveller",
+      badge: "GROUP ESCAPE • 3 NIGHTS / 4 DAYS",
+      img: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      price: "₹8,195",
+      unit: "Per Person (Total ₹1,31,120 for 16 Adults)",
+      phone: "7200669293",
+      route: "Chennai → Pollachi → Valparai → Chennai (via 40 Hairpin Bends)",
+      hotels: [
+        "Valparai (3 Nights): Premium Hill Resort / Hotel (4 Rooms – Four Sharing)"
+      ],
+      itinerary: [
+        { day: "Day 1 (17 Oct)", desc: "Chennai ➝ Pollachi ➝ Valparai – Early morning departure from Chennai around 5:00 AM by 17-Seater Tempo Traveller. Breakfast en route. Proceed towards Valparai via Pollachi. En route sightseeing: Monkey Falls, Aliyar Dam, Loam’s View Point & famous 40 Hairpin Bends with scenic tea estate views. Check-in to resort, evening free to relax in lush tea gardens. Overnight stay: Valparai." },
+        { day: "Day 2 (18 Oct)", desc: "Valparai Sightseeing – Places covered: Nallamudi View Point, Balaji Temple, Tea Estate & Tea Factory tour*, Chinna Kallar waterfall & Sholayar Dam. Enjoy breathtaking Western Ghats panoramas and tea garden walks. Overnight stay: Valparai." },
+        { day: "Day 3 (19 Oct)", desc: "Nature • Relax • Explore – Relaxed day surrounded by misty hills. Optional experiences: Grass Hills* (subject to forest dept permission), Bird Watching, Nature Walk, Tea Estate visit, evening Campfire 🔥, group games & leisure. Overnight stay: Valparai." },
+        { day: "Day 4 (20 Oct)", desc: "Valparai ➝ Chennai – Breakfast and check-out. Begin scenic descent towards Chennai via Aliyar. Lunch en route. Reach Chennai late night with wonderful hill station memories." }
+      ],
+      inclusions: [
+        "3 Nights Hotel / Resort Stay (4 Rooms, Four Sharing)",
+        "17-Seater Tempo Traveller for the entire 4-day trip",
+        "Chennai – Valparai – Chennai transportation",
+        "Sightseeing as mentioned in the itinerary",
+        "Driver allowance, toll & fuel charges for included services"
+      ],
+      exclusions: [
+        "Food & meals",
+        "Van parking charges",
+        "Entry tickets, if applicable",
+        "Activity charges, if applicable",
+        "Personal expenses",
+        "Anything not specifically mentioned under inclusions"
+      ],
+      notes: [
+        "Tea Factory visit is subject to availability.",
+        "Grass Hills visit is subject to Forest Department permission.",
+        "Sightseeing may be adjusted depending on local weather, road permissions and operational feasibility."
+      ]
+    },
+    "maldives-yearend": {
+      title: "Maldives Year-End Special (Maafushi)",
+      dates: "29 December 2026 – 02 January 2027",
+      groupSize: "2 Adults (Curated for Mr. Gaurav & Family)",
+      transport: "Return Speedboat Transfers (SIC Basis)",
+      badge: "YEAR-END SPECIAL • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1200&q=80",
+      price: "₹1,20,230",
+      unit: "Per Room (Arena Beach) | ₹1,21,450 (Kaani Grand)",
+      phone: "7200669293",
+      route: "Velana International Airport ↔ Maafushi Island, Maldives",
+      options: [
+        { title: "Option 1 – Kaani Grand Sea View", desc: "Deluxe Double Room with Sea View & Balcony, Half Board (Breakfast & Dinner), Return Speedboat Transfers (SIC)", price: "₹1,21,450/- per room" },
+        { title: "Option 2 – Arena Beach", desc: "Premium Double Room with Sea View & Balcony, Half Board (Breakfast & Dinner), Return Speedboat Transfers (SIC)", price: "₹1,20,230/- per room" }
+      ],
+      hotels: [
+        "Maafushi Island (4 Nights): Kaani Grand Sea View (Deluxe Room Sea View & Balcony) OR Arena Beach (Premium Room Sea View & Balcony)"
+      ],
+      itinerary: [
+        { day: "Day 1 (29 Dec)", desc: "Arrival in Maldives • Maafushi – Arrive at Velana International Airport, meet JP Holidays representative. Transfer to Maafushi by Speedboat (SIC basis). Hotel check-in, relax and enjoy the island. Evening at leisure & dinner at hotel. Overnight: Maafushi." },
+        { day: "Day 2 (30 Dec)", desc: "Snorkeling • Sandbank • Dolphin Cruise (10:00 AM – 3:00 PM) – Fantastic half-day excursion: Biyadhoo Reef snorkeling, Turtle Reef snorkeling, Sandbank tour with delicious lunch on the sandbank, dolphin cruise, snorkeling equipment, photography, water, soft drinks & beach towel. Return around 3:00 PM. Evening beach time & shopping. Overnight: Maafushi." },
+        { day: "Day 3 (31 Dec)", desc: "Maafushi • New Year's Eve Celebration 🎆 – Breakfast at hotel. Morning at leisure to explore Maafushi Island and beach. Optional water sports. In the evening, get ready to celebrate the arrival of 2027 in the Maldives! Festive countdown party, beach lights & Half Board festive dinner. Overnight: Maafushi." },
+        { day: "Day 4 (01 Jan)", desc: "Happy New Year 2027 • Leisure Day 🎉 – Relaxed breakfast. Enjoy the turquoise lagoons of Maafushi, swimming, island strolls, sunset photography & dinner at hotel. Overnight: Maafushi." },
+        { day: "Day 5 (02 Jan)", desc: "Maafushi • Airport Transfer • Departure – Breakfast at hotel, check-out. Speedboat transfer to Velana International Airport for onward journey with beautiful memories." }
+      ],
+      inclusions: [
+        "4 Nights accommodation (Kaani Grand Sea View or Arena Beach)",
+        "Half Board meal plan (Daily Breakfast & Dinner)",
+        "Return Speedboat Transfers (Velana Airport ↔ Maafushi) on SIC Basis",
+        "Biyadhoo Reef Snorkeling + Turtle Reef Snorkeling",
+        "Sandbank Tour + Dolphin Watching Cruise",
+        "Snorkeling Equipment & High-Resolution Photography",
+        "Lunch on the Sandbank + Water & Soft Drinks + Beach Towel",
+        "All applicable Maldives government taxes & service charges"
+      ],
+      exclusions: [
+        "International flight tickets",
+        "Maldives Green Tax / city levies (if applicable)",
+        "Lunch on non-excursion days & alcohol",
+        "Optional motorized water sports & diving",
+        "Personal expenses & travel insurance"
+      ],
+      notes: [
+        "Curated specially for Mr. Gaurav & Family by Jovita Prince (Founder - JP Holidays).",
+        "Rates are subject to room availability at the time of final confirmation."
+      ]
+    },
+    "pilgrimage-kashi-gaya": {
+      title: "Sacred Pilgrimage Tour – Varanasi, Prayagraj, Ayodhya & Gaya",
+      dates: "25th – 29th November 2026",
+      groupSize: "6 Adults (3 Double-Sharing Rooms)",
+      transport: "Innova Crysta for Road Sectors + Train to Gaya",
+      badge: "SACRED PILGRIMAGE • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+      price: "₹24,340",
+      unit: "Per Person (Total ₹1,46,040 for 6 Adults)",
+      phone: "7200669293",
+      route: "Varanasi (2N) → Prayagraj → Ayodhya (1N) → Gaya / Bodhgaya (1N)",
+      hotels: [
+        "Varanasi (2 Nights): Premium 3★ Hotel (3 Double Rooms, Breakfast & Dinner)",
+        "Ayodhya (1 Night): Premium 3★ Hotel (3 Double Rooms, Breakfast & Dinner)",
+        "Bodhgaya / Gaya (1 Night): Premium 3★ Hotel (3 Double Rooms, Breakfast & Dinner)"
+      ],
+      itinerary: [
+        { day: "Day 1 (25 Nov)", desc: "Arrival in Varanasi – Arrive at Varanasi Airport at 6:30 PM. Transfer & check-in at hotel, dinner & overnight stay in Varanasi." },
+        { day: "Day 2 (26 Nov)", desc: "Full Day Varanasi Divine Darshan – Sacred darshan at Shri Kashi Vishwanath Temple, Annapurna Devi Temple & Kaal Bhairav Temple. Morning/evening sacred Ganga boating & visit other important heritage temples. Dinner & overnight in Varanasi." },
+        { day: "Day 3 (27 Nov)", desc: "Varanasi ➝ Prayagraj ➝ Ayodhya – Depart Varanasi by road (approx. 2.5–3 hrs drive). Prayagraj: Sacred Triveni Sangam boat ride, Hanuman Temple & Anand Bhavan. Continue by road to Ayodhya (approx. 3.5–4 hrs drive). Ayodhya: Hanuman Garhi, Ram Ki Paidi & Naya Sarayu Ghat. Dinner & overnight stay in Ayodhya." },
+        { day: "Day 4 (28 Nov)", desc: "Ayodhya ➝ Gaya – Early morning auspicious darshan at Ram Lalla Temple. Proceed to railway station for the 11:30 AM train to Gaya. Arrive in Gaya at night, transfer & check-in at hotel, dinner & overnight stay in Bodhgaya/Gaya." },
+        { day: "Day 5 (29 Nov)", desc: "Gaya Rituals ➝ Departure – Perform traditional sacred Pinda Daan rituals at holy Vishnupad Temple. Complete pilgrimage rites. 11:30 AM transfer to Gaya Airport for onward journey with divine blessings." }
+      ],
+      inclusions: [
+        "Innova Crysta for all road sectors & sightseeing",
+        "4 Nights accommodation in 3 Double-sharing rooms",
+        "Daily Breakfast & Dinner at all hotels",
+        "Ganga boat ride in Varanasi & Triveni Sangam boat ride in Prayagraj",
+        "VIP assistance for temple darshans as per itinerary",
+        "Gaya railway station pickup & Gaya airport drop"
+      ],
+      exclusions: [
+        "Train tickets Ayodhya to Gaya & airfare",
+        "Pooja, Pinda Daan priest charges (dakshina) & special darshan passes",
+        "Lunch and meals outside breakfast & dinner",
+        "Personal expenses & porterage"
+      ],
+      notes: [
+        "Travel dates fall around the Diwali period, so hotel and travel tariffs reflect peak festive rates.",
+        "Itinerary schedule may be fine-tuned based on train timings and temple darshan slots."
+      ]
+    },
+    "spain-portugal": {
+      title: "Spain & Portugal Escape",
+      tripId: "JP-137",
+      dates: "24 December 2026 – 01 January 2027",
+      groupSize: "7 Adults (02 Standard Minivans)",
+      transport: "02 Private Standard Minivans for all included transfers",
+      badge: "EUROPE ESCAPE • 8 NIGHTS / 9 DAYS",
+      img: "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=80",
+      price: "₹1,32,670",
+      unit: "Per Person (Triple Sharing) | ₹1,34,860 (Double/Twin)",
+      phone: "7200669293",
+      route: "Lisbon (3N) → Madrid (2N) → Barcelona (3N)",
+      options: [
+        { title: "Double / Twin Sharing (4 Adults)", desc: "Stay in standard double/twin rooms across Lisbon, Madrid & Barcelona with daily breakfast", price: "₹1,34,860 per person" },
+        { title: "Triple Sharing (3 Adults)", desc: "Stay in spacious triple standard rooms across Lisbon, Madrid & Barcelona with daily breakfast", price: "₹1,32,670 per person" },
+        { title: "Optional Madrid ➝ Barcelona Train", desc: "High-speed 2nd Class Train ticket (subject to availability at issuance)", price: "€90 (approx. ₹9,996) per adult" }
+      ],
+      hotels: [
+        "Lisbon (3 Nights, 24–27 Dec): Fenicius Charme Hotel / Similar (1 Triple + 2 Twin Rooms, Daily Breakfast)",
+        "Madrid (2 Nights, 27–29 Dec): Acta Pirámides / Similar (2 Double/Twin + 1 Triple Room, Daily Breakfast)",
+        "Barcelona (3 Nights, 29 Dec–01 Jan): Hotel Sant Pau / Similar (2 Double + 1 Triple Room, Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (24 Dec)", desc: "Arrival in Lisbon 🇵🇹 – Arrive at Lisbon Airport, meet representative. Private airport transfer by 2 minivans to hotel. Check-in and relax. Spend evening at leisure soaking in Lisbon's Christmas lights. Overnight: Lisbon." },
+        { day: "Day 2 (25 Dec)", desc: "Lisbon Private Tuk-Tuk City Tour – After breakfast, enjoy a Private Tuk-Tuk City Tour with a Local Guide. Discover Lisbon's historic quarters, Alfama, miradouros viewpoints & iconic landmarks during the festive Christmas atmosphere. Overnight: Lisbon." },
+        { day: "Day 3 (26 Dec)", desc: "Sintra • Pena Palace • Cabo da Roca • Cascais – Full-day shared excursion. Visit fairytale Sintra, Pena Park and Pena Palace (entrance included), mysterious Quinta da Regaleira (entrance included), dramatic cliffs of Cabo da Roca & seaside Cascais. Return to Lisbon. Overnight: Lisbon." },
+        { day: "Day 4 (27 Dec)", desc: "Lisbon ➝ Madrid 🇪🇸 – Breakfast, check out. Private transfer to Lisbon Airport/Station. Proceed to Madrid. Arrive in Madrid, private transfer to hotel. Check-in and spend rest of day exploring Puerta del Sol and Gran Vía. Overnight: Madrid." },
+        { day: "Day 5 (28 Dec)", desc: "Madrid City Exploration – 24-Hour Madrid Hop-On Hop-Off Bus Tour. Prado Museum entrance ticket included! Explore grand avenues, Plaza Mayor, Royal Palace exterior, and lively tapas bars. Overnight: Madrid." },
+        { day: "Day 6 (29 Dec)", desc: "Madrid ➝ Barcelona – Breakfast, check-out. Private transfer to Madrid Station. High-speed train to Barcelona. Arrive Barcelona, private station transfer to Hotel Sant Pau. Check-in and relax. Overnight: Barcelona." },
+        { day: "Day 7 (30 Dec)", desc: "Barcelona City Tour – 24-Hour Barcelona Hop-On Hop-Off Bus Tour. Iconic Sagrada Familia entry ticket included! Marvel at Gaudí's masterpiece, explore Gothic Quarter and Passeig de Gràcia. Overnight: Barcelona." },
+        { day: "Day 8 (31 Dec)", desc: "Montserrat Excursion + New Year's Eve 🎆 – Shared half-day tour to spectacular Montserrat mountain monastery. Cogwheel train ascent & La Moreneta Black Madonna access included. Return to Barcelona. Evening at leisure: Welcome 2027 with Barcelona's spectacular New Year's Eve street celebrations! Overnight: Barcelona." },
+        { day: "Day 9 (01 Jan)", desc: "Barcelona Departure – Final breakfast at hotel. Check out. Private hotel transfer to Barcelona Airport by minivans for onward flight home." }
+      ],
+      inclusions: [
+        "8 Nights Hotel Accommodation (Lisbon 3N, Madrid 2N, Barcelona 3N)",
+        "Daily Breakfast at all hotels",
+        "Private Transfers by 02 Standard Minivans (Lisbon Airport ↔ Hotel, Madrid Airport ↔ Hotel ↔ Station, Barcelona Station ↔ Hotel ↔ Airport)",
+        "Private Tuk-Tuk City Tour with Local Guide in Lisbon",
+        "Full-Day Sintra, Pena Palace & Quinta da Regaleira Tour with Entrance Tickets",
+        "24-Hour Madrid Hop-On Hop-Off Bus Pass",
+        "Prado Museum Entrance Ticket",
+        "24-Hour Barcelona Hop-On Hop-Off Bus Pass",
+        "Sagrada Familia Entry Ticket",
+        "Montserrat Half-Day Excursion with Cogwheel Train & La Moreneta Access"
+      ],
+      exclusions: [
+        "Madrid to Barcelona Train Fare (optional at €90 / ~₹9,996 per adult)",
+        "International airfare & Schengen visa charges",
+        "Hotel city taxes (payable directly at the respective hotels)",
+        "Airport/station transfers between 9:00 PM and 8:00 AM (20% night supplement)",
+        "Lunch & dinner, driver tips, personal expenses"
+      ],
+      notes: [
+        "INR conversion is based on approx €1 = ₹111.07 and may vary with the exchange rate at payment.",
+        "Luggage allowance for minivans: 1 small handbag + 1 medium luggage per person.",
+        "No rooms are blocked at quotation stage; rates subject to availability upon confirmation."
+      ]
+    },
+    "japan-golden-route": {
+      title: "Japan Golden Route 2026",
+      dates: "19 – 28 October 2026",
+      groupSize: "4 Adults",
+      transport: "Private Toyota Alphard (7-Seater) + Shinkansen Bullet Train",
+      badge: "ULTIMATE JAPAN • 9 NIGHTS / 10 DAYS",
+      img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
+      price: "₹1,93,340",
+      unit: "Per Adult (Total ₹7,73,360 for 4 Adults)",
+      phone: "7200669293",
+      route: "Tokyo (4N) → Mt. Fuji & Hakone → Bullet Train → Kyoto (2N) → Nara → Osaka (3N)",
+      hotels: [
+        "Tokyo (4 Nights, 19–23 Oct): Tmark City Hotel Tokyo Omori ⭐⭐⭐ (2 Double Rooms, Daily Breakfast)",
+        "Kyoto (2 Nights, 23–25 Oct): Hotel MyStays Kyoto – Shijo ⭐⭐⭐ (2 Superior Queen Rooms, Daily Breakfast)",
+        "Osaka (3 Nights, 25–28 Oct): Comfort Hotel Osaka Shinsaibashi ⭐⭐⭐ (2 Double Rooms, Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (19 Oct)", desc: "Welcome to Tokyo 🇯🇵 – Narita Airport arrival, meet private driver with Toyota Alphard (7-Seater). Transfer to Tmark City Hotel Tokyo Omori, check-in and evening at leisure to rest." },
+        { day: "Day 2 (20 Oct)", desc: "Tokyo Icons • Culture • City Lights – 10-Hour Private Sightseeing Tour: Meiji Shrine, Harajuku & Takeshita Street, world-famous Shibuya Crossing, historic Senso-ji Temple, Nakamise Shopping Street, Tokyo Skytree Tembo Deck panoramic views & Imperial Palace photo stop. Overnight: Tokyo." },
+        { day: "Day 3 (21 Oct)", desc: "Mt. Fuji × Hakone Escape – Private full-day excursion: Breathtaking Mt. Fuji views, Owakudani geothermal valley, Lake Ashi scenic cruise & Hakone Ropeway aerial cableway. Private return transfer to Tokyo. Overnight: Tokyo." },
+        { day: "Day 4 (22 Oct)", desc: "Tokyo – Your Day, Your Way – Free day to explore Tokyo at your own pace. Discover Akihabara electronics/anime hub, Ginza luxury shopping, teamLab digital art or trendy cafes. Overnight: Tokyo." },
+        { day: "Day 5 (23 Oct)", desc: "Tokyo ➝ Kyoto by Bullet Train 🚄 – Private transfer to Tokyo Station. Board the high-speed Shinkansen Bullet Train (2nd Class) to Kyoto. Private station pickup and transfer to Hotel MyStays Kyoto – Shijo. Evening stroll in Gion. Overnight: Kyoto." },
+        { day: "Day 6 (24 Oct)", desc: "Timeless Kyoto – 10-Hour Private Kyoto Tour: Fushimi Inari Taisha (iconic 10,000 Vermilion Torii Gates), Kiyomizu-dera hillside temple, historic Gion geisha district, Arashiyama Bamboo Grove, Kinkaku-ji (The Golden Pavilion) & Togetsukyo Bridge. Overnight: Kyoto." },
+        { day: "Day 7 (25 Oct)", desc: "Kyoto ➝ Nara ➝ Osaka 🦌 – Depart Kyoto in private Alphard. Visit Nara Park with sacred Deer Feeding Experience, magnificent Todai-ji Temple (Giant Bronze Buddha), Kasuga Taisha Shrine & Naramachi historic district. Continue drive to Comfort Hotel Osaka Shinsaibashi. Overnight: Osaka." },
+        { day: "Day 8 (26 Oct)", desc: "Vibrant Osaka – 10-Hour Private Osaka Tour: Majestic Osaka Castle, Kuromon Ichiba food market, bustling Shinsaibashi shopping arcade, Dotonbori neon lights & Glico running man, Namba, Umeda Sky Building Floating Garden Observatory & retro Shinsekai with Tsutenkaku Tower. Overnight: Osaka." },
+        { day: "Day 9 (27 Oct)", desc: "Universal Studios Japan 🎢 – Full day thrills at Universal Studios Japan! 1-Day Studio Pass included. Private round-trip Alphard transfers. Experience Super Nintendo World, The Wizarding World of Harry Potter & exciting rollercoasters. Overnight: Osaka." },
+        { day: "Day 10 (28 Oct)", desc: "Sayonara Japan 🇯🇵 – Relaxed breakfast, hotel check-out. Private Alphard transfer to Osaka International Airport for your departure flight with unforgettable memories of Japan." }
+      ],
+      inclusions: [
+        "9 Nights 3★ Accommodation (Tokyo 4N, Kyoto 2N, Osaka 3N) with Daily Breakfast",
+        "Private Toyota Alphard 7-Seater throughout all transfers & sightseeing tours",
+        "Tokyo to Kyoto Shinkansen Bullet Train Tickets (2nd Class)",
+        "Tokyo Skytree Tembo Deck Entrance Ticket",
+        "Mt. Fuji & Hakone Excursion with Lake Ashi Cruise & Ropeway Pass",
+        "Universal Studios Japan 1-Day Studio Pass",
+        "Nara Park Deer Feeding Experience",
+        "Umeda Sky Building & Osaka Castle Admission Tickets",
+        "Driver accommodation, meals, fuel, tolls & parking for all included services"
+      ],
+      exclusions: [
+        "International airfare & Japan tourist visa charges",
+        "Travel insurance",
+        "Hotel city taxes (payable directly at hotels)",
+        "Lunch & dinner",
+        "Driver tips & personal expenses",
+        "Overtime vehicle usage beyond 10 hours/day"
+      ],
+      notes: [
+        "October offers ideal autumn weather with crisp air, comfortable temperatures and clear views of Mt. Fuji.",
+        "TCS, GST & government levies extra as applicable."
+      ]
+    },
+    "kuala-lumpur-getaway": {
+      title: "Kuala Lumpur Girls' Getaway",
+      dates: "11 August – 15 August 2026",
+      groupSize: "02 Adults (Ladies Special)",
+      transport: "Private AC Vehicle Transfers + SIC City Tour",
+      badge: "GIRLS' GETAWAY • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80",
+      price: "₹75,950",
+      unit: "Total for 2 Adults (₹37,975 per person)",
+      phone: "7200669293",
+      route: "Kuala Lumpur International Airport ↔ Upper View Regalia Hotel ↔ Genting Highlands",
+      hotels: [
+        "Kuala Lumpur (4 Nights): Upper View Regalia Hotel – 4★ (Deluxe Double Room, Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (11 Aug)", desc: "Welcome to Kuala Lumpur 🛬 – Arrive at KLIA, meet private driver and transfer to Upper View Regalia Hotel (4★). Check-in and relax. Evening: Kuala Lumpur Night City Tour with KL Tower Observation Deck ticket included – enjoy 360° panoramic views of Malaysia's glittering skyline. Overnight: Kuala Lumpur." },
+        { day: "Day 2 (12 Aug)", desc: "Petronas Twin Towers Experience 🏙️ – Breakfast at hotel. Leisure day for shopping at Suria KLCC and Bukit Bintang cafes. Evening visit to the iconic Petronas Twin Towers with Sky Bridge and 86th floor Observation Deck entrance ticket included. Capture unforgettable pictures. Overnight: Kuala Lumpur." },
+        { day: "Day 3 (13 Aug)", desc: "Genting Highlands Adventure 🎢 – Private transfer to the cool misty mountain retreat of Genting Highlands. Scenic Two-Way Cable Car ride + Genting SkyWorlds Theme Park ticket included! Enjoy world-class rides, rainforest scenery, casino & premier shopping. Return to KL. Overnight: Kuala Lumpur." },
+        { day: "Day 4 (14 Aug)", desc: "Kuala Lumpur City Discovery Tour 🏛️ – 3.5-hour city tour covering the National Mosque, King’s Palace photo stop, Independence Square, National Monument, Cocoa Boutique & local shopping spots. Rest of day free for spa & shopping. Overnight: Kuala Lumpur." },
+        { day: "Day 5 (15 Aug)", desc: "Departure with Beautiful Memories ✈️ – Breakfast at hotel, check-out and private transfer to Kuala Lumpur International Airport for your return flight." }
+      ],
+      inclusions: [
+        "04 Nights Accommodation at Upper View Regalia Hotel (4★ Deluxe Double Room)",
+        "Daily Breakfast at hotel",
+        "Private Airport Arrival & Departure Transfers",
+        "KL Tower Observation Deck Entrance Ticket",
+        "Petronas Twin Towers Sky Bridge & Observation Deck Ticket",
+        "Kuala Lumpur Night City Tour",
+        "Genting Highlands Excursion with Two-Way Cable Car Ride",
+        "Genting SkyWorlds Theme Park Entrance Ticket",
+        "3.5-Hour SIC Kuala Lumpur City Tour",
+        "All transfers in Air-Conditioned Vehicle"
+      ],
+      exclusions: [
+        "International airfare",
+        "Malaysia Visa & Tourism Taxes",
+        "Entry Permit Form Filling (₹300 for 2 Pax)",
+        "GST, travel insurance & meals not mentioned",
+        "Tips, porterage & personal expenses"
+      ],
+      notes: [
+        "Exchange rate based on 1 MYR ≈ ₹25 (current rate + ₹1 markup).",
+        "Rates valid for 24 hours only and subject to room availability.",
+        "100% cancellation charges apply within 21 days prior to arrival."
+      ]
+    },
+    "phuket-luxury": {
+      title: "Phuket Escape – 5-Star Luxury & Island Adventure",
+      dates: "18 – 22 November 2026",
+      groupSize: "2 Adults (Curated for Nakul & Friend)",
+      transport: "Private Airport Transfers + Speed Boat & Big Boat Tours",
+      badge: "5-STAR LUXURY • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1200&q=80",
+      price: "₹45,450",
+      unit: "Per Person (Total ₹90,900 for 2 Adults)",
+      phone: "7200669293",
+      route: "Phuket International Airport ↔ Amari Phuket 5★ ↔ Phi Phi & James Bond Islands",
+      hotels: [
+        "Phuket (4 Nights): Amari Phuket ⭐⭐⭐⭐⭐ (Superior Balcony Room, Double Occupancy, Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (18 Nov)", desc: "Arrive • Check-in • Unwind 🌊 – Arrive at Phuket International Airport, meet private driver and transfer to the luxury 5-star Amari Phuket resort overlooking Patong Bay. Check into Superior Balcony Room and spend the evening enjoying resort amenities and sunset ocean views. Overnight: Phuket." },
+        { day: "Day 2 (19 Nov)", desc: "Phi Phi + Khai Islands Speed Boat Tour 🏝️ – Private transfer to pier. Board high-speed boat to Phi Phi Don, Phi Phi Leh & Khai Islands. Snorkel in turquoise coral lagoons, swim with tropical fish and enjoy an island buffet lunch. Return transfer to resort. Overnight: Phuket." },
+        { day: "Day 3 (20 Nov)", desc: "Phuket • Culture • Views • Tigers 🐯 – Private round-trip tour: Visit revered Wat Chalong temple, colorful Sino-Portuguese architecture in Phuket Old Town, panoramic Karon Viewpoint, the majestic Big Buddha & Tiger Park with Medium Tiger interaction experience included! Overnight: Phuket." },
+        { day: "Day 4 (21 Nov)", desc: "James Bond Island Adventure 🛶 – Private transfer to pier. Big Boat tour through Phang Nga Bay, sea canoeing through hidden sea caves & limestone cliffs of James Bond Island (Koh Tapu). National Park Fee included! Return transfer to hotel. Overnight: Phuket." },
+        { day: "Day 5 (22 Nov)", desc: "Check-out • Fly Home ✈️ – Relaxed breakfast overlooking the bay, check-out and private transfer to Phuket International Airport for your return flight." }
+      ],
+      inclusions: [
+        "4 Nights Luxury Stay at Amari Phuket – 5 Star (Superior Balcony Room)",
+        "Daily Breakfast for 2 Adults",
+        "Private Airport Transfers (Round-Trip)",
+        "Phi Phi + Khai Islands Speed Boat Tour with Island Buffet Lunch",
+        "Phuket Cultural City Tour (Wat Chalong, Old Town, Karon Viewpoint, Big Buddha)",
+        "Tiger Park Entrance – Medium Tiger Experience",
+        "James Bond Island Big Boat Tour + Sea Canoeing",
+        "James Bond National Park Fee Included",
+        "Applicable hotel taxes and service charges"
+      ],
+      exclusions: [
+        "Phi Phi National Park Fee (payable on spot, approx 400 THB/pax)",
+        "International airfare, Thailand Visa & travel insurance",
+        "Meals not specifically mentioned",
+        "Hotel security deposit (refundable at check-out)",
+        "Personal expenses & guide tips"
+      ],
+      notes: [
+        "Quoted rates valid for 10 days; subject to room availability at booking.",
+        "Maya Bay seasonal closure (Aug–Sep) does not affect November travel dates.",
+        "Speed-boat island tours are not recommended for senior citizens or expectant mothers."
+      ]
+    },
     "srilanka-pdf": {
       title: "Sri Lanka Escape",
       badge: "HILLS & BEACHES • 4 NIGHTS / 5 DAYS",
@@ -357,30 +689,65 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     "finland-norway-pdf": {
-      title: "Finland & Norway Ultimate Arctic Luxury Escape",
+      title: "Finland & Norway – The Ultimate Arctic Luxury Escape",
+      dates: "04 – 15 September 2026",
+      groupSize: "2 Adults (Curated Exclusively by JP Holidays)",
+      transport: "Private Airport Transfers + 3 Arctic Flights + Baltic Ferry",
       badge: "ARCTIC LUXURY • 11 NIGHTS / 12 DAYS",
       img: "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80",
-      price: "₹5,29,761",
-      unit: "Per Person (Incl. GST, TCS & Insurance)",
+      price: "EUR 4,779.69",
+      unit: "Per Person (Incl. 5% GST & 2% TCS | EUR 9,559.38 Total)",
       phone: "7200669293",
-      route: "Helsinki (4N Scandic Grand Marina) → Saariselkä (3N Kakslauttanen Luxury Glass Igloo) → Tromsø (4N Quality Hotel Grand Tromsø)",
+      route: "Helsinki (2N) → Tallinn → Saariselkä Lapland (3N Glass Igloo) → Tromsø Norway (4N) → Helsinki (2N)",
+      hotels: [
+        "Helsinki (2 Nights, 04–06 Sept): Scandic Grand Marina",
+        "Saariselkä (3 Nights, 06–09 Sept): Kakslauttanen Arctic Resort | Luxury Kelo Glass Igloo",
+        "Tromsø (4 Nights, 09–13 Sept): Quality Hotel Grand Tromsø",
+        "Helsinki (2 Nights, 13–15 Sept): Scandic Grand Marina"
+      ],
       itinerary: [
-        { day: "Day 1", desc: "Arrival in Helsinki – Transfer to Scandic Grand Marina, harbour & waterfront leisure." },
-        { day: "Day 2", desc: "Tallinn Ferry Cruise – Baltic Sea ferry to Tallinn (Estonia), guided UNESCO Old Town tour & return." },
-        { day: "Day 3", desc: "Helsinki to Saariselkä Arctic Resort – City tour, Flying Cinema, SkyWheel, flight to Ivalo, check-in at Kakslauttanen Glass Igloo & Aurora Quad Bike Safari." },
-        { day: "Day 4", desc: "Husky Farm & Safari – Authentic Husky farm visit, Husky cart safari & warm drinks." },
-        { day: "Day 5", desc: "Lake Inari & Horse Aurora – Great Lake Inari boat cruise & Aurora hunting by horse carriage." },
-        { day: "Days 6-9", desc: "Tromsø Arctic Fjords – Flight to Tromsø (Norway), Full-Day Arctic Fjords tour at Sommarøy Island, Kvaløya guided scenic tour, traditional Norwegian lunch, Lake Cabin hike, bonfire & evening Northern Lights tour." },
-        { day: "Days 10-11", desc: "Helsinki Linnanmäki – Return flight to Helsinki, full day at Linnanmäki Amusement Park with unlimited ride pass." },
-        { day: "Day 12", desc: "Departure – Private airport transfer for return flight." }
+        { day: "Day 1 (04 Sept)", desc: "Welcome to Finland 🇫🇮 – Arrive in Helsinki. Private airport transfer to Scandic Grand Marina. Spend the evening exploring Helsinki’s beautiful harbour, seaside cafés and shopping streets at your own pace. Overnight: Helsinki." },
+        { day: "Day 2 (05 Sept)", desc: "A Fairytale Day in Tallinn 🇪🇪 – Breakfast at hotel. Cruise across the Baltic Sea by high-speed ferry to Estonia. Enjoy a guided walking tour through the UNESCO-listed Old Town, cobbled alleys & medieval squares. Free time for cafes & photography. Return ferry to Helsinki. Overnight: Helsinki." },
+        { day: "Day 3 (06 Sept)", desc: "Helsinki to Arctic Wonderland – Breakfast. Private Helsinki City Orientation Tour, Flying Cinema Experience & Helsinki SkyWheel. Fly north to Ivalo. Private transfer to Kakslauttanen Arctic Resort. Evening Aurora Hunting on a Quad Bike through Lapland wilderness! Overnight inside your Luxury Kelo Glass Igloo." },
+        { day: "Day 4 (07 Sept)", desc: "Huskies & Arctic Adventures 🐺 – Breakfast. Meet adorable huskies at an authentic Arctic husky farm. Exhilarating Husky Cart Safari through pristine Lapland pine forests. Enjoy warm berry juice, cookies and fireside tales. Overnight: Kakslauttanen Glass Igloo." },
+        { day: "Day 5 (08 Sept)", desc: "Lake Inari & Chasing the Northern Lights 🚤 – Breakfast. Scenic boat cruise on the sacred Great Lake Inari. Evening magical Aurora Hunting experience by Horse Carriage under the Arctic starlit sky. Overnight: Luxury Glass Igloo." },
+        { day: "Day 6 (09 Sept)", desc: "Welcome to Norway 🇳🇴 – Breakfast. Private transfer to Ivalo Airport. Fly across the Arctic border to Tromsø, the 'Capital of the Arctic'. Private transfer to Quality Hotel Grand Tromsø. Relax and explore Tromsø's vibrant waterfront and Arctic Cathedral. Overnight: Tromsø." },
+        { day: "Day 7 (10 Sept)", desc: "Arctic Fjords & Coastal Paradise 🌊 – Breakfast. Discover the breathtaking Arctic Fjords. Visit the stunning island of Sommarøy with white sandy beaches, crystal-clear turquoise waters and dramatic mountain peaks. Postcard photography opportunities. Overnight: Tromsø." },
+        { day: "Day 8 (11 Sept)", desc: "Norwegian Scenic Escape 🏔️ – Breakfast. Guided panoramic journey through Kvaløya (Whale Island). Enjoy a traditional Norwegian hot lunch, endless fjords, reindeer sightings and dramatic mountain viewpoints. Overnight: Tromsø." },
+        { day: "Day 9 (12 Sept)", desc: "Adventure & Aurora Magic 🔥 – Breakfast. Guided Lake Cabin hike through pristine Arctic nature. Authentic bonfire experience with hearty local food & warm drinks. Evening guided Northern Lights chase tour with professional aurora photography. Overnight: Tromsø." },
+        { day: "Day 10 (13 Sept)", desc: "Back to Helsinki ✈️ – Breakfast. Private transfer to Tromsø Airport. Flight back to Helsinki. Private airport transfer and hotel check-in at Scandic Grand Marina. Evening at leisure for fine dining & Esplanadi shopping. Overnight: Helsinki." },
+        { day: "Day 11 (14 Sept)", desc: "Fun, Thrills & Memories 🎢 – Breakfast. Full day of excitement at Linnanmäki Amusement Park with an Unlimited Rides Pass! Rollercoasters, panoramic park views and festive memories. Overnight: Helsinki." },
+        { day: "Day 12 (15 Sept)", desc: "Departure 👋 – Breakfast, check-out and private airport transfer to Helsinki Airport. Fly home with unforgettable Arctic memories and magical Northern Lights experiences." }
       ],
       inclusions: [
-        "11 Nights Accommodation (Scandic Grand Marina, Kakslauttanen Luxury Glass Igloo, Quality Hotel Grand Tromsø)",
-        "Daily Breakfast + Traditional Norwegian Lunch + Arctic Warm Drinks",
-        "3 Domestic Arctic Flights (Helsinki–Ivalo, Ivalo–Tromsø, Tromsø–Helsinki)",
-        "Tallinn Baltic Sea Ferry Cruise & Guided UNESCO Tour",
-        "Aurora Quad Bike Safari + Husky Cart Safari + Aurora Horse Carriage Tour",
-        "Lake Inari Boat Cruise + Arctic Fjords Tour + Linnanmäki Unlimited Ride Pass"
+        "11 Nights Premium Accommodation (Scandic Grand Marina, Kakslauttanen Luxury Glass Igloo, Quality Hotel Grand Tromsø)",
+        "Daily Breakfast at all hotels + Traditional Norwegian Lunch + Arctic Warm Drinks & Treats",
+        "Private Airport Transfers throughout Finland and Norway",
+        "Helsinki City Orientation Tour + Flying Cinema Experience + Helsinki SkyWheel",
+        "Tallinn Ferry Return Cruise & UNESCO Old Town Guided Tour",
+        "Aurora Hunting Quad Bike Safari in Lapland",
+        "Authentic Husky Farm Visit & Husky Cart Safari",
+        "Great Lake Inari Scenic Boat Cruise",
+        "Aurora Horse Carriage Experience under Arctic Skies",
+        "Sommarøy & Arctic Fjords Guided Tour",
+        "Kvaløya Scenic Mountain Tour with Traditional Norwegian Lunch",
+        "Lake Cabin Nature Hike with Fireside Bonfire Experience",
+        "Evening Northern Lights Guided Chase Tour",
+        "Linnanmäki Amusement Park Unlimited Ride Pass"
+      ],
+      exclusions: [
+        "International flights to/from India",
+        "Schengen visa processing fees",
+        "City Taxes (payable directly at hotels upon check-in)",
+        "Lunches & dinners not specifically mentioned",
+        "Travel & medical insurance",
+        "Personal expenses & porterage"
+      ],
+      notes: [
+        "Base Package: EUR 4,467 per person (EUR 8,934 for 2 Adults).",
+        "Add GST @ 5%: EUR 446.70 + TCS @ 2%: EUR 178.68.",
+        "Grand Total Payable: EUR 9,559.38 (EUR 4,779.69 per person including GST & TCS).",
+        "Quotation valid for 48 hours only, subject to hotel availability and EUR exchange rate fluctuations."
       ]
     },
     "azerbaijan-georgia-pdf": {
@@ -1318,6 +1685,21 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     ` : '';
 
+    const optionsHtml = data.options && data.options.length ? `
+      <div style="margin-bottom: 20px;">
+        <h4 class="modal-section-title"><i class="fa-solid fa-layer-group"></i> Package &amp; Room Options</h4>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          ${data.options.map(opt => `
+            <div style="background:#FDF5F6; border:1px solid #e0d0d2; border-left:4px solid #C8102E; border-radius:8px; padding:10px 14px;">
+              <div style="font-weight:700; color:#1A0A0C; font-size:0.9rem;">${opt.title}</div>
+              ${opt.desc ? `<div style="font-size:0.8rem; color:#666; margin-top:2px;">${opt.desc}</div>` : ''}
+              <div style="font-weight:800; color:#C8102E; margin-top:4px; font-size:0.92rem;">${opt.price}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    ` : '';
+
     const exclusionsHtml = data.exclusions && data.exclusions.length ? `
       <div style="margin-bottom: 20px;">
         <h4 class="modal-section-title"><i class="fa-solid fa-circle-xmark" style="color:#dc2626;"></i> Package Exclusions</h4>
@@ -1326,6 +1708,26 @@ document.addEventListener('DOMContentLoaded', () => {
             ${data.exclusions.map(ex => `<li><i class="fa-solid fa-xmark"></i> <span>${ex}</span></li>`).join('')}
           </ul>
         </div>
+      </div>
+    ` : '';
+
+    const notesHtml = data.notes && data.notes.length ? `
+      <div style="margin-bottom: 20px;">
+        <h4 class="modal-section-title"><i class="fa-solid fa-circle-exclamation" style="color:#d97706;"></i> Important Notes &amp; Policies</h4>
+        <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:10px; padding:12px 16px;">
+          <ul style="margin:0; padding-left:18px; font-size:0.82rem; color:#92400E; line-height:1.6;">
+            ${data.notes.map(n => `<li>${n}</li>`).join('')}
+          </ul>
+        </div>
+      </div>
+    ` : '';
+
+    const metaHtml = (data.tripId || data.dates || data.groupSize || data.transport) ? `
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:8px; margin-bottom:15px; font-size:0.8rem;">
+        ${data.tripId ? `<div style="background:#F0E8EA; padding:8px 12px; border-radius:8px; color:#4A4A4A;"><strong>📌 Trip ID:</strong> ${data.tripId}</div>` : ''}
+        ${data.dates ? `<div style="background:#F0E8EA; padding:8px 12px; border-radius:8px; color:#4A4A4A;"><strong>📅 Dates:</strong> ${data.dates}</div>` : ''}
+        ${data.groupSize ? `<div style="background:#F0E8EA; padding:8px 12px; border-radius:8px; color:#4A4A4A;"><strong>👥 Group:</strong> ${data.groupSize}</div>` : ''}
+        ${data.transport ? `<div style="background:#F0E8EA; padding:8px 12px; border-radius:8px; color:#4A4A4A;"><strong>🚐 Transport:</strong> ${data.transport}</div>` : ''}
       </div>
     ` : '';
 
@@ -1338,6 +1740,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="modal-body">
+        ${metaHtml}
         <div class="modal-grid">
           <div>
             <h4 class="modal-section-title">Tour Itinerary &amp; Highlights</h4>
@@ -1351,6 +1754,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           </div>
           <div>
+            ${optionsHtml}
             ${hotelsHtml}
             <h4 class="modal-section-title">Package Inclusions</h4>
             <div class="inclusions-box">
@@ -1361,6 +1765,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </ul>
             </div>
             ${exclusionsHtml}
+            ${notesHtml}
             <div style="background:#F0E8EA; padding:15px; border-radius:12px; margin-bottom:15px;">
               <div style="font-size:0.78rem; color:#777; font-weight:700; text-transform:uppercase;">Tour Route / Location</div>
               <div style="font-size:0.88rem; font-weight:600; color:#1A0A0C; margin-top:4px;">${data.route || 'Worldwide'}</div>
