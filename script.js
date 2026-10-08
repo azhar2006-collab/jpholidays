@@ -281,6 +281,524 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ----- Tour Data & Details Modal ----- */
   const tourData = {
+    "shirdi-spiritual": {
+      title: "Premium Shirdi Spiritual Journey",
+      dates: "Flexible (2 Nights / 3 Days)",
+      groupSize: "02 Persons (Private Innova AC)",
+      transport: "Private Innova AC throughout (Pickup, Sightseeing & Airport Drop)",
+      badge: "SPIRITUAL ESCAPE • 2 NIGHTS / 3 DAYS",
+      img: "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=1200&q=80",
+      price: "₹38,000",
+      unit: "Total for 2 Persons (Option 2 Luxury 5★) | ₹33,000 (Option 1 4★)",
+      phone: "7200669293",
+      route: "Shirdi Airport ↔ Shri Sai Baba Samadhi Mandir ↔ Dwarkamai & Sai Teerth",
+      options: [
+        { title: "👑 Option 2 — Luxury 5★ Hotel (Featured)", desc: "Private Innova AC, 1 VIP Darshan, 5★ Hotel (~1.5 km from temple), Daily Breakfast, Kakad Aarti ticket & Sai Teerth Theme Park entry", price: "₹38,000/- Total for 2 Persons (₹19,000/person)" },
+        { title: "⭐ Option 1 — Premium 4★ Hotel", desc: "Private Innova AC, 1 VIP Darshan, 4★ Hotel near temple, Daily Breakfast, Kakad Aarti ticket & Sai Teerth Theme Park entry", price: "₹33,000/- Total for 2 Persons (₹16,500/person)" },
+        { title: "🚗 Mumbai Airport Route (2 Days / 1 Night)", desc: "Mumbai Airport pickup/drop, private vehicle, 1 night 4★/5★ stay in Shirdi & Samadhi Darshan", price: "₹32,780/- Total for 2 Persons (₹16,390/person)" }
+      ],
+      hotels: [
+        "Option 2 (Luxury 5★): Premium 5★ Spiritual Resort / Hotel (Sun-n-Sand / St. Laurn / Temple Tree - 2 Nights with Daily Breakfast)",
+        "Option 1 (Premium 4★): Premium 4★ Hotel near Shri Sai Baba Temple (Shradha Inn / Hotel Sai Jashan - 2 Nights with Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1", desc: "Arrival in Shirdi • VIP Darshan • Temple Tour – Pickup from Shirdi Airport (or Mumbai Airport) in private AC Innova. Hotel check-in and freshen up. Proceed for blessed Shri Sai Baba VIP Darshan at the Samadhi Mandir. Visit sacred sites: Dwarkamai, Chavadi, Gurusthan, Lendi Baug and historic Hanuman Temple. Overnight stay in Shirdi." },
+        { day: "Day 2", desc: "Kakad Aarti • Shirdi Shopping • Sai Teerth Theme Park – Early morning attend the deeply divine Kakad Aarti at Shri Sai Baba Temple (included). Return to hotel for breakfast. Morning leisure time for shopping in Shirdi local markets. Afternoon visit to the famous Sai Teerth Devotional Theme Park (entry included). Return to hotel. Overnight stay in Shirdi." },
+        { day: "Day 3", desc: "Morning Blessings • Airport Drop ✈️ – Breakfast at hotel, check-out. Private transfer to Shirdi Airport (or Mumbai Airport) by 10:00 AM. Tour concludes with the divine blessings of Sai Baba!" }
+      ],
+      inclusions: [
+        "Private Innova AC for complete pickup, local sightseeing & airport drop",
+        "1 VIP Darshan at Shri Sai Baba Temple",
+        "Official Kakad Aarti Entry Ticket (customizable to preferred Aarti)",
+        "Sai Teerth Devotional Theme Park Entry Ticket",
+        "2 Nights Hotel Accommodation in chosen category (4★ or 5★)",
+        "Daily Breakfast for 2 nights at the hotel",
+        "Dedicated guide assistance & temple coordination",
+        "Chauffeur allowance, fuel charges, toll taxes & normal parking"
+      ],
+      exclusions: [
+        "Airfare to/from Shirdi or Mumbai",
+        "Lunch and dinner meals",
+        "Personal expenses, temple donations & offerings",
+        "Additional airport parking due to flight delays"
+      ],
+      notes: [
+        "Option 2 features luxury 5-star hotel stay (~1.5 km from temple).",
+        "Kakad Aarti ticket is included; can be changed to afternoon/evening Aarti according to preference.",
+        "Optional Sparsh Darshan assistance available on request subject to Sansthan rules.",
+        "Devotees are advised to wear comfortable, modest clothing suitable for temple rituals."
+      ]
+    },
+    "vietnam-grand-escape": {
+      title: "Vietnam Grand Escape – Hanoi, Sapa, Halong, Danang & Saigon",
+      tripId: "JP-31357 / NITA",
+      dates: "17 – 28 October 2026",
+      groupSize: "4 Adults (Connecting & Family Rooms)",
+      transport: "Private AC Vehicles + Halong Bay 5★ Luxury Cruise + Fansipan Cable Car",
+      badge: "GRAND TOUR • 11 NIGHTS / 12 DAYS",
+      img: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=80",
+      price: "₹94,560",
+      unit: "Per Person (Total ₹3,78,240 for 4 Adults)",
+      phone: "7200669293",
+      route: "Hanoi (2N) ➝ Halong Bay (1N) ➝ Sapa (2N) ➝ Danang (3N) ➝ Ho Chi Minh City (3N)",
+      hotels: [
+        "Hanoi (2 Nights): Minasi Hanoi OI Lake Side Hotel ⭐⭐⭐⭐ (1 Connecting Room, Breakfast)",
+        "Halong Bay (1 Night): Verdure Lotus Luxury Cruise – Lan Ha Bay ⭐⭐⭐⭐⭐ (AP Plan, Family Connecting)",
+        "Sapa (2 Nights): Sapa Catcat Hills Resort & Spa ⭐⭐⭐⭐ (Family Mountain Room, Breakfast)",
+        "Danang (3 Nights): Blue Sun Danang Beach Hotel ⭐⭐⭐⭐ (Deluxe Family Connecting Room, Breakfast)",
+        "Ho Chi Minh (3 Nights): A & Em Ben Thanh Hotel ⭐⭐⭐⭐ (VIP Family Room, Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (17 Oct)", desc: "Arrive in Hanoi • City Tour 🇻🇳 – Arrive at Noi Bai International Airport, private transfer to Minasi Hanoi OI Lake Side Hotel. Half-Day Hanoi City Tour: Hoan Kiem Lake, St. Joseph’s Cathedral, Ho Chi Minh Mausoleum, One Pillar Pagoda & Hanoi Train Street. Overnight: Hanoi." },
+        { day: "Day 2 (18 Oct)", desc: "Ninh Binh • Tam Coc & Bich Dong Pagoda – Full-day excursion to Ninh Binh: ancient Hoa Lu Temple, scenic boat ride through Tam Coc limestone caves and tranquil Bich Dong Pagoda amidst lush karst hills. Return to Hanoi. Overnight: Hanoi." },
+        { day: "Day 3 (19 Oct)", desc: "Hanoi ➝ Halong Bay Luxury Cruise 🛳️ – Transfer to Halong Bay. Board 5-star Verdure Lotus Luxury Cruise in Lan Ha Bay. Cruise amidst emerald waters, limestone karsts, kayaking and gourmet dining (AP Plan). Overnight on cruise." },
+        { day: "Day 4 (20 Oct)", desc: "Halong Bay ➝ Sapa – Morning cruise tai-chi & brunch. Disembark and proceed to the misty mountain retreat of Sapa. Check into Sapa Catcat Hills Resort & Spa. Evening free to explore Sapa town. Overnight: Sapa." },
+        { day: "Day 5 (21 Oct)", desc: "Fansipan Legend • Cable Car & Glass Bridge ☁️ – Transfer to Fansipan Legend: ride the Muong Hoa mountain train, ascend by Fansipan Cable Car to the Roof of Indochina, and experience the thrilling Sapa Glass Bridge. Overnight: Sapa." },
+        { day: "Day 6 (22 Oct)", desc: "Sapa ➝ Fly to Danang ✈️ – Transfer to airport, flight to Danang. Pickup and check-in at Blue Sun Danang Beach Hotel. Relax by My Khe Beach. Overnight: Danang." },
+        { day: "Day 7 (23 Oct)", desc: "Marble Mountains • Coconut Village • Hoi An 🏮 – Visit Marble Mountains, ride traditional Coconut Village Basket Boats in Bay Mau, explore lantern-lit UNESCO Hoi An Ancient Town & take a charming Hoi An Lantern Boat Ride. Overnight: Danang." },
+        { day: "Day 8 (24 Oct)", desc: "Ba Na Hills & Golden Hand Bridge 🌉 – Full-day excursion: world's longest cable car ride, walk on the famous Golden Bridge held by colossal giant hands, explore French Village & Fantasy Park. Overnight: Danang." },
+        { day: "Day 9 (25 Oct)", desc: "Danang ➝ Fly to Ho Chi Minh City ✈️ – Transfer to airport, flight to Saigon. Pickup and check into A & Em Ben Thanh Hotel. Evening free for shopping and dining. Overnight: Ho Chi Minh." },
+        { day: "Day 10 (26 Oct)", desc: "Ho Chi Minh City Tour 🏙️ – Discover War Remnants Museum, Central Post Office, Notre Dame Cathedral, Independence Palace & vibrant Ben Thanh Market. Overnight: Ho Chi Minh." },
+        { day: "Day 11 (27 Oct)", desc: "Cu Chi Tunnels & Mekong Delta 🚤 – Explore historic Cu Chi underground tunnels. Continue to Mekong Delta for a scenic boat cruise, fruit orchards, and traditional riverside life. Overnight: Ho Chi Minh." },
+        { day: "Day 12 (28 Oct)", desc: "Departure ✈️ – Relaxed morning, check-out and private transfer to Tan Son Nhat International Airport. Depart with lifelong memories of Vietnam!" }
+      ],
+      inclusions: [
+        "11 Nights 4★ & 5★ Hotel/Resort Stays across Vietnam",
+        "Daily Breakfast at hotels + AP Plan (All Meals) on Lan Ha Bay Cruise",
+        "Verdure Lotus 5★ Luxury Cruise Experience",
+        "Fansipan Cable Car + Muong Hoa Mountain Train + Sapa Glass Bridge",
+        "Ba Na Hills Cable Car + Golden Hand Bridge Pass",
+        "Marble Mountains Entry + Coconut Village Basket Boat Ride + Hoi An Lantern Boat Ride",
+        "Cu Chi Historic Tunnels Tour + Mekong Delta Boat Excursion",
+        "All Private Ground Transfers with English-speaking guides",
+        "Applicable hotel taxes and service charges"
+      ],
+      exclusions: [
+        "International & Domestic airfares",
+        "Vietnam visa fees & travel insurance",
+        "Mandatory driver/guide tips (USD 3/guest/day)",
+        "Meals outside stated itinerary & personal expenses"
+      ],
+      notes: [
+        "Curated for Nita & Family (Ref: JP-31357 / NITA).",
+        "INR rate indicative based on USD XE rate at booking."
+      ]
+    },
+    "hong-kong-macau-escape": {
+      title: "Hong Kong & Macau Escape – Urban, Heritage & Disneyland",
+      tripId: "JP-161 / HONG KONG",
+      dates: "16 – 19 January 2027",
+      groupSize: "14 Adults (07 Rooms – Twin Sharing)",
+      transport: "Private Vehicles (2 Standard) + HZMB Bridge Bus + TurboJET Ferry",
+      badge: "DISNEY & HERITAGE • 3 NIGHTS / 4 DAYS",
+      img: "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=1200&q=80",
+      price: "₹67,560",
+      unit: "Approx. Per Person (Total ₹9,45,840 for 14 Adults)",
+      phone: "7200669293",
+      route: "HKG Airport ➝ HZMB Bridge ➝ Macau (2N) ➝ TurboJET Ferry ➝ Hong Kong (1N) ➝ Disneyland",
+      hotels: [
+        "Macau (2 Nights | 16–18 Jan): Regency Art Macau (Superior Room, Twin Sharing)",
+        "Hong Kong (1 Night | 18–19 Jan): Harbour Plaza Metropolis (Superior Room, Twin Sharing)"
+      ],
+      itinerary: [
+        { day: "Day 1 (16 Jan)", desc: "Hong Kong Arrival ✈️ ➝ Macau via HZMB Bridge 🇲🇴 – Arrive at Hong Kong International Airport. Board bus crossing the spectacular Hong Kong–Zhuhai–Macau sea bridge. Private transfer from Macau border to Regency Art Macau. Check-in and leisure evening. Overnight: Macau." },
+        { day: "Day 2 (17 Jan)", desc: "Macau Heritage & City Discovery – Breakfast at hotel. 4-hour private Macau city tour: iconic Lotus Square, ancient A-Ma Temple, UNESCO-listed Ruins of St. Paul's, Fisherman's Wharf waterfront, and photo stop at Macau Tower. Evening free for casino entertainment and shopping. Overnight: Macau." },
+        { day: "Day 3 (18 Jan)", desc: "Macau ➝ Ferry to Hong Kong • Night Tour 🌃 – Breakfast, check-out. Private transfer to pier, board TurboJET ferry to Hong Kong. Private transfer to Harbour Plaza Metropolis. 5-hour Hong Kong Night Tour: panoramic Victoria Peak, 1-way historic Peak Tram ride, 1-way Star Ferry crossing, Symphony of Lights harbour laser show from TST Promenade & Old Clock Tower. Overnight: Hong Kong." },
+        { day: "Day 4 (19 Jan)", desc: "Hong Kong Disneyland 🎢 ➝ Airport Departure ✈️ – Breakfast at hotel, check-out. Full-day Hong Kong Disneyland pass: thrilling rides, Disney castle, character meet-and-greets and magical entertainment. Private evening transfer to Hong Kong International Airport for return flight." }
+      ],
+      inclusions: [
+        "03 Nights Accommodation (2N Regency Art Macau + 1N Harbour Plaza Metropolis)",
+        "Daily Breakfast at hotels",
+        "2 Private standard vehicles for tours and transfers",
+        "HKG Airport to Macau HZMB Sea Bridge border bus tickets",
+        "04-Hour Private Macau City Tour (Ruins of St. Paul's, A-Ma Temple, Lotus Square, Fisherman's Wharf)",
+        "Macau to Hong Kong TurboJET Ferry Tickets",
+        "05-Hour Hong Kong Night Tour (Victoria Peak, Peak Tram, Star Ferry, Symphony of Lights)",
+        "Full-Day Hong Kong Disneyland 1-Day Pass",
+        "Private departure airport transfer to HKG Airport"
+      ],
+      exclusions: [
+        "International flight tickets",
+        "Meals outside breakfast",
+        "Hong Kong / Macau PAR / visa fees & travel insurance",
+        "GST 5% & TCS 2% extra",
+        "Personal expenses & guide tips"
+      ],
+      notes: [
+        "Curated specially for Group of 14 Adults (Ref: JP-161 / HONG KONG).",
+        "Valid for 16 – 19 January 2027 travel dates."
+      ]
+    },
+    "lakshadweep-escape": {
+      title: "Lakshadweep Island Escape – Agatti & Kavaratti",
+      dates: "Flexible (05 Nights / 06 Days)",
+      groupSize: "05 Adults (Indian Nationals Only | Curated for Thiru & Family)",
+      transport: "Speed Boat Transfers (Agatti ↔ Kavaratti) + Airport Transfers",
+      badge: "ISLAND PARADISE • 5 NIGHTS / 6 DAYS",
+      img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+      price: "On Request",
+      unit: "Customized for 05 Adults (All Meals Included)",
+      phone: "7200669293",
+      route: "Kochi ✈️ Agatti Island 🚤 Kavaratti Island 🚤 Kalpetti Island ✈️ Kochi",
+      options: [
+        { title: "Standard Land Package (05 Adults)", desc: "02 Double Rooms + 01 Extra Mattress across Kavaratti (2N) & Agatti (3N) with All Meals, Permits & Transfers", price: "Best Quote on Request" },
+        { title: "Water Sports (Optional)", desc: "Scuba Diving, Snorkeling & Kayaking available at Dolphin Dive Center & Lagoon", price: "Direct Payment on Spot" }
+      ],
+      hotels: [
+        "Kavaratti Island (02 Nights): Sea Shell Beach Resort (AC Sea View Room, All Meals Included)",
+        "Agatti Island (03 Nights): Sea Shell Beach Resort (AC Sea View Room, All Meals Included)"
+      ],
+      itinerary: [
+        { day: "Day 01", desc: "Kochi ✈️ Agatti 🚤 Kavaratti – Arrival at Agatti Airport. Meet JP Holidays on-ground team. Board high-speed boat transfer across turquoise waters to Kavaratti Island (2–3 hrs). Resort check-in at Sea Shell Beach Resort, welcome briefing and delicious lunch. Evening beach walk and breathtaking island sunset. Dinner & overnight stay. (Meal Plan: Lunch & Dinner)" },
+        { day: "Day 02", desc: "Kavaratti Island Exploration 🤿 – Breakfast at resort. Explore Kavaratti's pristine lagoon. Optional water sports: Scuba Diving, Snorkeling, Kayaking (direct payment). Guided sightseeing: Kavaratti Lagoon, Marine Aquarium & Museum, Dolphin Dive Center and historic Ujra Mosque. Dinner & overnight stay. (Meal Plan: Breakfast, Lunch & Dinner)" },
+        { day: "Day 03", desc: "Kavaratti 🚤 Agatti Island – Breakfast at resort. Scenic speed boat transfer back to Agatti Island. Check in to Sea Shell Beach Resort and lunch. Sightseeing: Public Library, Anthropological Museum, South Beach, Eastern Jetty & Lagoon Beach. Relaxing evening sunset by the beach. Dinner & overnight stay. (Meal Plan: Breakfast, Lunch & Dinner)" },
+        { day: "Day 04", desc: "Kalpetti Island Excursion 🐠 – Breakfast at resort. Morning boat excursion to uninhabited Kalpetti Island. Experience glass-bottom boat ride, explore colorful coral gardens, sea turtles and vibrant marine life. Evening return to Agatti. Dinner & overnight stay. (Meal Plan: Breakfast, Lunch & Dinner)" },
+        { day: "Day 05", desc: "Agatti Leisure Day 🌴 – Breakfast at resort. Free day to unwind on powder-white sand beaches, swim in turquoise lagoons, or enjoy optional adventure water sports. Dinner & overnight stay. (Meal Plan: Breakfast, Lunch & Dinner)" },
+        { day: "Day 06", desc: "Departure ✈️ Kochi – Breakfast at resort, check-out. Private transfer to Agatti Airport. Fly back to Kochi with unforgettable coral island memories! (Meal Plan: Breakfast)" }
+      ],
+      inclusions: [
+        "Entry Permit & Heritage Fees for Lakshadweep",
+        "Airport pickup & drop transfers at Agatti Airport",
+        "Inter-island Speed Boat Transfers (Agatti ↔ Kavaratti)",
+        "5 Nights AC Sea View Accommodation (02 Double Rooms + 01 Extra Mattress)",
+        "All Meals included throughout the tour (Breakfast, Lunch & Dinner)",
+        "Complete sightseeing in Kavaratti & Agatti as mentioned",
+        "Kalpetti Island Boat Ride excursion & glass-bottom viewing",
+        "Complimentary: 1-Time Kayaking + 1-Time Snorkeling included",
+        "All applicable island taxes & documentation fees",
+        "Dedicated on-ground assistance by JP Holidays team"
+      ],
+      exclusions: [
+        "Flight Tickets (Kochi ↔ Agatti)",
+        "Additional Water Sports (Scuba diving, extra snorkeling sessions)",
+        "Personal expenses, room service & porterage",
+        "Additional entry fees & GST, if applicable"
+      ],
+      notes: [
+        "Curated specially for Thiru & Family by JP Holidays (Indian Nationals Only).",
+        "Documents required: Aadhaar Card, Passport photo, Police Clearance Certificate (PCC) & flight tickets (submit 7–10 working days prior).",
+        "Eco-guidelines: Zero plastic usage; protect marine life & fragile live corals; alcohol strictly prohibited.",
+        "Mobile connectivity: BSNL & Airtel networks only.",
+        "Rooms subject to availability. Please confirm tour package before booking flights."
+      ]
+    },
+    "malaysia-family-escape": {
+      title: "Malaysia Family Escape – Genting Highlands & Kuala Lumpur",
+      dates: "12 – 16 October 2026",
+      groupSize: "2 Adults + 1 Child (with Bed) + 1 Child (without Bed)",
+      transport: "Private A/C Vehicle for Transfers & Sightseeing",
+      badge: "FAMILY GETAWAY • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=80",
+      price: "₹26,560",
+      unit: "Per Adult | ₹17,920 (Child with Bed) | ₹15,670 (Child without Bed)",
+      phone: "7200669293",
+      route: "Kuala Lumpur International Airport ↔ Genting Highlands ↔ Kuala Lumpur",
+      options: [
+        { title: "Adult", desc: "Per adult on twin/double sharing with daily breakfast", price: "₹26,560/- per adult" },
+        { title: "Child with Bed", desc: "Accommodation with extra bed & daily breakfast", price: "₹17,920/- per child" },
+        { title: "Child without Bed", desc: "Accommodation sharing existing bed & daily breakfast", price: "₹15,670/- per child" }
+      ],
+      hotels: [
+        "Genting Highlands (1 Night | 12–13 Oct): Awana Hotel ⭐⭐⭐⭐ (Superior Deluxe Room, Double + 1 Child w/ Bed + 1 Child w/o Bed, Breakfast Included)",
+        "Kuala Lumpur (3 Nights | 13–16 Oct): Ibis Styles Kuala Lumpur Fraser Business Park ⭐⭐⭐ (Standard Room, Double + 1 Child w/ Bed + 1 Child w/o Bed, Breakfast Included)"
+      ],
+      itinerary: [
+        { day: "Day 1 (12 Oct)", desc: "Kuala Lumpur ✈️ Genting Highlands – Arrival at Kuala Lumpur International Airport. Meet JP Holidays representative. Private A/C airport transfer and scenic drive to Genting Highlands. Experience the two-way Genting Cable Car ride up to the highlands. Hotel check-in at Awana Hotel. Evening at leisure enjoying the crisp mountain air. Overnight: Genting Highlands." },
+        { day: "Day 2 (13 Oct)", desc: "Genting Highlands • Skytropolis • Kuala Lumpur – Breakfast at hotel, check-out. Enjoy Skytropolis Indoor Theme Park with admission tickets included. Proceed towards Kuala Lumpur with an en-route 20-minute photo stop at the iconic Batu Caves and Murugan statue. Check into Ibis Styles Kuala Lumpur. Evening free for leisure. Overnight: Kuala Lumpur." },
+        { day: "Day 3 (14 Oct)", desc: "Kuala Lumpur • Dedicated Shopping Day – Breakfast at hotel. 3 hours private vehicle disposal for shopping at your preferred lifestyle destinations, shopping malls and markets across Kuala Lumpur. Evening at leisure. Overnight: Kuala Lumpur." },
+        { day: "Day 4 (15 Oct)", desc: "Kuala Lumpur City Tour • KL Tower – Breakfast at hotel. Private Kuala Lumpur City Tour driving through major iconic landmarks and photo stops. Visit KL Tower with Observation Deck tickets included for 360° skyline views. Return to hotel. Overnight: Kuala Lumpur." },
+        { day: "Day 5 (16 Oct)", desc: "Kuala Lumpur • Departure ✈️ – Breakfast at hotel. Check-out by 12:00 noon. Private A/C transfer to Kuala Lumpur International Airport for your departure flight with cherished family memories." }
+      ],
+      inclusions: [
+        "1 Night accommodation at Awana Hotel Genting Highlands (4-Star)",
+        "3 Nights accommodation at Ibis Styles KL Fraser Business Park (3-Star)",
+        "Daily Breakfast at both hotels",
+        "Double Room + Child with Bed + Child without Bed arrangements",
+        "Private A/C Airport → Genting Highlands transfer",
+        "Private A/C Genting Highlands → Kuala Lumpur transfer",
+        "Private A/C Kuala Lumpur → Airport departure transfer",
+        "Genting Highlands Two-Way Cable Car experience",
+        "Skytropolis Indoor Theme Park admission ticket",
+        "Batu Caves 20-minute en-route photo stop",
+        "3-Hour Private Vehicle Disposal for Kuala Lumpur shopping",
+        "Private Kuala Lumpur City Tour with landmark stops",
+        "KL Tower Observation Deck admission ticket"
+      ],
+      exclusions: [
+        "International airfare & Malaysia Visa / entry fees",
+        "Tourism Tax (payable directly at hotel check-in/out)",
+        "GST & compulsory hotel supplements, if applicable",
+        "Meals apart from breakfast",
+        "Camera/video permits & personal expenses",
+        "Vehicle usage outside specified itinerary"
+      ],
+      notes: [
+        "Curated specially for Adv. Vinodh and family by JP Holidays.",
+        "Hotel check-in: 3:00 PM | Hotel check-out: 12:00 Noon.",
+        "Children above 12 years are considered adults. Children below 2 years complimentary as per hotel policy.",
+        "Arrival/departure between 9:00 PM and 7:00 AM may attract an additional vehicle surcharge.",
+        "Confirmed bookings cancelled less than 21 days before arrival are subject to 100% cancellation charges."
+      ]
+    },
+    "dubai-family-escape": {
+      title: "Dubai Family Escape 2026",
+      dates: "18 – 22 September 2026",
+      groupSize: "10 Guests (08 Adults + 02 Children: 1 Child 6 yrs + 1 Infant 1 yr)",
+      transport: "01 × 7-Seater + 01 × 12-Seater (All Sightseeing on Private Basis)",
+      badge: "FAMILY LUXURY • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=80",
+      price: "₹35,670",
+      unit: "Per Adult (Wescott Hotel) | ₹36,370 (Admiral Plaza / Gateway)",
+      phone: "7200669293",
+      route: "Dubai International Airport ↔ Bur Dubai ↔ Dubai Marina & Abu Dhabi",
+      options: [
+        { title: "Option 01: Wescott Hotel – Bur Dubai ⭐⭐⭐", desc: "Adult: ₹35,670/- | Child (6 Yrs): ₹23,450/- | Infant (1 Yr): Complimentary", price: "₹3,15,780/- Total (8 Adults + 1 Child + 1 Infant)" },
+        { title: "Option 02: Admiral Plaza / Gateway Hotel – Bur Dubai ⭐⭐⭐", desc: "Adult: ₹36,370/- | Child (6 Yrs): ₹24,820/- | Infant (1 Yr): Complimentary", price: "₹3,25,780/- Total (8 Adults + 1 Child + 1 Infant)" },
+        { title: "Optional Add-On: UAE Single Entry Visa", desc: "Applicable only for guests requiring a tourist visa", price: "₹7,850/- Per Person" }
+      ],
+      hotels: [
+        "Bur Dubai (4 Nights): Wescott Hotel ⭐⭐⭐ OR Admiral Plaza Hotel / Gateway Hotel ⭐⭐⭐"
+      ],
+      itinerary: [
+        { day: "Day 1 (18 Sep)", desc: "Welcome to Dubai ✈️ + Dhow Cruise Marina 🚢 – Arrive at Dubai International Airport. Meet representative and private transfer to your hotel in Bur Dubai. Check-in and relax. In the evening, transfer to Dubai Marina for a scenic 2-hour Dhow Cruise with a sumptuous international buffet dinner and dazzling skyline views under the stars. Private return transfer. Overnight: Dubai." },
+        { day: "Day 2 (19 Sep)", desc: "Discover Dubai 🏙️ + Burj Khalifa 124th Floor ☁️ – Breakfast at hotel. Private Half-Day Dubai City Tour covering Dubai Museum, Jumeirah Mosque, Burj Al Arab photo stop & Dubai Mall. Ascend to the 124th Floor Observation Deck of Burj Khalifa (off-peak ticket included) for breathtaking panoramic vistas. Private return transfer. Overnight: Dubai." },
+        { day: "Day 3 (20 Sep)", desc: "Desert Adventure & BBQ Dinner 🔥 – Morning at leisure for shopping or relaxation. Afternoon private transfer for the thrill of a Desert Safari: dune bashing in 4x4s, camel ride, sandboarding, Henna painting, live Tanoura & fire show, followed by a delicious BBQ dinner under desert starlight. Private return transfer. Overnight: Dubai." },
+        { day: "Day 4 (21 Sep)", desc: "Abu Dhabi City Experience 🕌 + BAPS Hindu Mandir 🛕 – Full-day private excursion to the UAE capital, Abu Dhabi. Visit the world-famous architectural wonder BAPS Hindu Mandir, drive along the Corniche, photo stop at Emirates Palace and explore the rich heritage of Abu Dhabi. Private return transfer. Overnight: Dubai." },
+        { day: "Day 5 (22 Sep)", desc: "Farewell Dubai 👋 • Fly Home ✈️ – Breakfast at hotel, check-out. Private airport departure transfer to Dubai International Airport by 1x 7-Seater and 1x 12-Seater vehicles. Return home with unforgettable Arabian memories!" }
+      ],
+      inclusions: [
+        "4 Nights Hotel Accommodation in Bur Dubai",
+        "Daily Breakfast at the hotel",
+        "Private Airport Arrival & Departure Transfers (1x 7-Seater + 1x 12-Seater)",
+        "Dubai Marina Dhow Cruise Experience with Dinner included",
+        "Half-Day Dubai City Tour on Private Basis",
+        "Burj Khalifa 124th Floor Off-Peak Entry Ticket",
+        "Desert Safari Experience with Dune Bashing & Sandboarding",
+        "BBQ Dinner & Cultural Entertainment Show in Desert Camp",
+        "Full-Day Abu Dhabi City Tour on Private Basis",
+        "Magnificent BAPS Hindu Mandir Visit in Abu Dhabi",
+        "All Mentioned Sightseeing Transfers on Private Basis",
+        "All Applicable Taxes Included"
+      ],
+      exclusions: [
+        "International airfare",
+        "UAE Single Entry Visa (available as add-on at ₹7,850/pax)",
+        "Tourism Dirham Fee (approx 10–15 AED/room/night payable directly to hotel)",
+        "Lunches and beverages not specified",
+        "Personal expenses, tips & travel insurance"
+      ],
+      notes: [
+        "Rooms and rates subject to availability at time of confirmation.",
+        "Vehicle arrangement for the group: 01 × 7-Seater + 01 × 12-Seater.",
+        "Package prices in INR subject to currency exchange rate fluctuations until final payment."
+      ]
+    },
+    "azerbaijan-group-baku": {
+      title: "Azerbaijan Group Tour – We Love Baku",
+      tripId: "JP-136",
+      dates: "4 Nights / 5 Days",
+      groupSize: "36 Pax Group Special (2 Pax FOC)",
+      transport: "Dedicated AC Luxury Coach + English Speaking Guide",
+      badge: "GROUP SPECIAL • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1578895210405-907db486c111?auto=format&fit=crop&w=1200&q=80",
+      price: "₹44,340",
+      unit: "Per Person (Room Sharing Basis | 36 Pax)",
+      phone: "7200669293",
+      route: "Baku ↔ Absheron Peninsula ↔ Gobustan ↔ Gabala & Shahdag",
+      options: [
+        { title: "Group Tour Package (36 Pax)", desc: "4 Nights Baku accommodation on sharing basis, guide, luxury coach & all entrance tickets", price: "₹44,340/- per person" },
+        { title: "Optional: Real Oil Tanker Visit", desc: "Surakhani Ship Museum & oil tanker tour", price: "USD 5 per person" },
+        { title: "Optional: Caspian Sea Boat Cruise", desc: "Summer season boat tour on Caspian Sea", price: "USD 8 per person" },
+        { title: "Optional: Gun Shooting Experience", desc: "Baku Shooting Centre with 10 bullets included", price: "USD 15 per person" },
+        { title: "Optional: Go-Karting Experience", desc: "Baku Go-Karting circuit experience", price: "USD 22 per person" }
+      ],
+      hotels: [
+        "Baku (4 Nights): 4-Star Premium Hotel in Baku with Daily Breakfast (Room-sharing basis, 2 Pax FOC)"
+      ],
+      itinerary: [
+        { day: "Day 1", desc: "Welcome to Baku 🇦🇿 – Arrive at Heydar Aliyev International Airport (14:00 Hrs). Meet representative, private transfer to hotel in Baku. Check-in and leisure time to explore the Caspian promenade. Overnight: Baku." },
+        { day: "Day 2", desc: "Baku City Tour • Old City & Zaha Hadid Landmark – Breakfast at hotel. 10:00 Hrs: Explore Old City (Icherisheher), a UNESCO World Heritage Site with Shirvanshahs' Palace & Maiden Tower. 12:00 Hrs: Nizami Street walking tour and café hopping. 14:00 Hrs: Lunch (direct payment). 16:00 Hrs: Highland Park & Baku Funicular with panoramic Caspian Sea views. 18:00 Hrs: Photo stop at iconic Heydar Aliyev Centre designed by Zaha Hadid. Return to hotel. Overnight: Baku." },
+        { day: "Day 3", desc: "Absheron Fire Tour & Gobustan Mud Volcanoes 🔥 – Breakfast at hotel. 10:30 Hrs: Visit Ateshgah Fire Temple (historic Fire Worshippers sanctuary) & Yanardag (continuously burning Fire Mountain). Lunch (direct payment). Afternoon: Explore modern Gobustan Museum with prehistoric petroglyphs and visit the extraordinary Gobustan Mud Volcanoes. Return to hotel. Overnight: Baku." },
+        { day: "Day 4", desc: "Gabala & Shahdag Mountain Resort 🏔️ – Breakfast at hotel. 08:30 Hrs departure to Greater Caucasus mountains. Visit emerald Nohur Lake and Yeddi Gozel (Seven Beautiful Waterfalls). Visit Tufandag Mountain Resort with cable car ride included. Continue to Shahdag Mountain Resort in Shahdag National Park with breathtaking alpine landscapes. Optional activities: Quad Biking, Zip Line, Snow activities, Coaster. 19:00 Hrs return to Baku. Overnight: Baku." },
+        { day: "Day 5", desc: "Baku Departure ✈️ – Breakfast at hotel. Check-out at 12:00 Hrs. Free time for souvenir shopping. Private transfer to Heydar Aliyev International Airport for your onward flight." }
+      ],
+      inclusions: [
+        "Airport meet & greet assistance",
+        "4 Nights hotel accommodation in Baku (4-Star)",
+        "Daily Breakfast at the hotel",
+        "Dedicated English-speaking professional tour guide",
+        "Luxury AC Coach and guide throughout sightseeing",
+        "Ateshgah Fire Temple entrance ticket",
+        "Yanardag Fire Mountain entrance ticket",
+        "Gobustan Museum entrance ticket & Mud Volcano visit",
+        "Gabala / Shahdag Cable Car experience included",
+        "Heydar Aliyev Centre entrance ticket",
+        "2 bottles of mineral water per person per day",
+        "Applicable hotel taxes & group service fees",
+        "2 Pax Free of Charge (FOC) for 36 Pax group"
+      ],
+      exclusions: [
+        "International flight tickets & Azerbaijan e-Visa",
+        "Lunches and dinners (direct payment)",
+        "Optional activities (Shooting, Karting, Boat Cruise, etc.)",
+        "Travel insurance & personal expenses"
+      ],
+      notes: [
+        "Calculated at USD 1 = AZN 1.70. Rates subject to currency fluctuations.",
+        "Prices based on twin/double room-sharing basis.",
+        "4% bank surcharge applies for bank payments."
+      ]
+    },
+    "singapore-kl-escape": {
+      title: "Singapore & Kuala Lumpur Escape",
+      dates: "23 – 29 December 2026 (Year-End Festive Season)",
+      groupSize: "Flexible / Family & Couples",
+      transport: "Private Airport Transfers + Luxury Coach Singapore ➝ KL",
+      badge: "DUAL CITY ESCAPE • 6 NIGHTS / 7 DAYS",
+      img: "https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=1200&q=80",
+      price: "₹5,13,970",
+      unit: "Complete Package (Accommodations, Attractions & Private Transfers)",
+      phone: "7200669293",
+      route: "Singapore (3 Nights) ➝ Coach ➝ Kuala Lumpur (3 Nights) ➝ KLIA",
+      options: [
+        { title: "Accommodation Component", desc: "3N V Hotel Lavender Singapore 4★ + 3N IDEAS Kuala Lumpur 4★ with daily breakfast", price: "₹2,79,300/-" },
+        { title: "Activities, Attractions & Transfers", desc: "Universal Studios, Oceanarium, Gardens by the Bay, Sentosa Cable Car & Wings of Time, KL Tower, Genting Cable Car, Putrajaya & all private transfers", price: "₹2,34,670/-" },
+        { title: "Total Complete Package", desc: "All-inclusive tour, activities, admissions, luxury coach & 4★ stays", price: "₹5,13,970/- Total" }
+      ],
+      hotels: [
+        "Singapore (3 Nights | 23–26 Dec): V Hotel Lavender ⭐⭐⭐⭐ (Superior Room with Daily Breakfast)",
+        "Kuala Lumpur (3 Nights | 26–29 Dec): IDEAS Kuala Lumpur ⭐⭐⭐⭐ (Deluxe Room with Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (23 Dec)", desc: "Singapore Arrival • City Tour • Gardens by the Bay 🇸🇬 – Arrive at Singapore Changi Airport. Private transfer to V Hotel Lavender 4★. Enjoy a 3-hour private Singapore City Tour. Visit Gardens by the Bay: explore the Flower Dome, Cloud Forest misty waterfalls, and the spectacular Jurassic World: The Exhibition. Private transfers included. Overnight: Singapore." },
+        { day: "Day 2 (24 Dec)", desc: "Universal Studios Singapore • Singapore Oceanarium 🎢 – Breakfast at hotel. Private transfer to Resorts World Sentosa. Immerse in movie-themed thrill rides at Universal Studios Singapore (Standard Admission). Explore vibrant marine life at Singapore Oceanarium. Private return transfer. Overnight: Singapore." },
+        { day: "Day 3 (25 Dec)", desc: "Christmas at Sentosa • Cable Car • Wings of Time 🎄✨ – Breakfast at hotel. Private two-way transfer to Sentosa Island. Enjoy panoramic scenic views on a One-way Cable Car ride. Free time at Sentosa beaches and attractions. In the evening, witness the award-winning Wings of Time multi-sensory laser, fire and water show. Return transfer. Overnight: Singapore." },
+        { day: "Day 4 (26 Dec)", desc: "Singapore ➜ Kuala Lumpur by Coach 🚌🇲🇾 – Breakfast at hotel, check-out. Private transfer to coach station. Board scenic express coach from Singapore to Kuala Lumpur. Private transfer from KL coach station to IDEAS Kuala Lumpur 4★. Check-in and leisure evening. Overnight: Kuala Lumpur." },
+        { day: "Day 5 (27 Dec)", desc: "Kuala Lumpur City Tour • KL Tower 🏙️ – Breakfast at hotel. Private Kuala Lumpur City Tour (3.5 hours) covering Petronas Twin Towers, King's Palace, Independence Square & National Monument. Visit KL Tower with Observation Deck admission tickets included for 360° city vistas. Overnight: Kuala Lumpur." },
+        { day: "Day 6 (28 Dec)", desc: "Genting Highlands • Cable Car • Batu Caves 🚡 – Breakfast at hotel. Full-day private excursion: photo stop at sacred Batu Caves (20 mins), proceed to Genting Highlands. Experience the Two-Way Genting Cable Car ride soaring above ancient rainforests. Explore highland attractions. Return to KL. Overnight: Kuala Lumpur." },
+        { day: "Day 7 (29 Dec)", desc: "Putrajaya • Kuala Lumpur Airport • Departure ✈️ – Breakfast at hotel, check-out. Private airport transfer with en-route Putrajaya sightseeing (Putra Mosque & administrative capital). Drop at Kuala Lumpur International Airport (KLIA) for flight home." }
+      ],
+      inclusions: [
+        "3 Nights stay at V Hotel Lavender Singapore 4★ with Daily Breakfast",
+        "3 Nights stay at IDEAS Kuala Lumpur 4★ with Daily Breakfast",
+        "Private Airport Transfers (Singapore Arrival & KL Departure)",
+        "Private Singapore City Tour (3 Hours)",
+        "Gardens by the Bay (Flower Dome + Cloud Forest + Jurassic World: The Exhibition)",
+        "Universal Studios Singapore Standard Admission",
+        "Singapore Oceanarium Admission Ticket",
+        "Sentosa Island Two-Way Transfers + One-Way Cable Car Ride",
+        "Wings of Time Night Spectacle Ticket",
+        "Singapore ➜ Kuala Lumpur Express Coach Ticket + Station Transfers",
+        "Private Kuala Lumpur City Tour (3.5 Hours)",
+        "KL Tower Observation Deck Admission Ticket",
+        "Full-Day Genting Highlands Tour with Two-Way Cable Car",
+        "Batu Caves 20-minute en-route photo stop",
+        "En-route Putrajaya City Sightseeing"
+      ],
+      exclusions: [
+        "International airfare",
+        "Singapore & Malaysia Visas",
+        "Tourism Tax in Malaysia (MYR 10/room/night payable at check-in)",
+        "Meals other than breakfast",
+        "Personal expenses, tips & travel insurance"
+      ],
+      notes: [
+        "INR conversion is approximate and may vary according to USD exchange rate applicable at booking.",
+        "Peak holiday season travel dates (23 – 29 December 2026)."
+      ]
+    },
+    "munnar-hill-escape": {
+      title: "Munnar Hill Escape",
+      tripId: "JP-157/Munnar",
+      dates: "17 – 20 October 2026 (Festive / Peak Season)",
+      groupSize: "2 Adults (Curated for Deepika & Family)",
+      transport: "Private Swift Dzire AC Car for all 4 Days",
+      badge: "HILL STATION ESCAPE • 3 NIGHTS / 4 DAYS",
+      img: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+      price: "₹18,175",
+      unit: "Per Person (CP ₹36,350 Total) | MAP ₹38,680 Total for 2 Adults",
+      phone: "7200669293",
+      route: "Munnar Bus Stand / Railway Station ↔ Star Emirates Resort & Spa ↔ Top Station",
+      options: [
+        { title: "CP Plan (Breakfast Only)", desc: "3 Nights luxury resort stay + daily breakfast + 4-day private car & sightseeing", price: "₹36,350/- for 2 Adults (₹18,175/person)" },
+        { title: "MAP Plan (Breakfast + Dinner)", desc: "3 Nights luxury resort stay + daily breakfast & dinner + 4-day private car & sightseeing", price: "₹38,680/- for 2 Adults (₹19,340/person)" }
+      ],
+      hotels: [
+        "Munnar (3 Nights): Hotel Star Emirates Luxury Resort & Spa (Luxury Room with Hill Views)"
+      ],
+      itinerary: [
+        { day: "Day 1 (17 Oct)", desc: "Arrival in Munnar & Local Sightseeing 🌿 – Pickup from Munnar Bus Stand or Railway Station. Private transfer to Hotel Star Emirates Luxury Resort & Spa. Check-in and freshen up. Afternoon sightseeing: scenic tea garden viewpoints, Pothamedu View Point for panoramic vistas of tea, coffee and cardamom plantations. Leisurely stroll through Munnar town & local market. Overnight: Munnar." },
+        { day: "Day 2 (18 Oct)", desc: "Mattupetty • Echo Point • Kundala Lake 🏞️ – Breakfast at resort. Scenic full-day tour along Munnar–Top Station route: Photo Point tea estates, Mattupetty Dam & Lake (optional speedboating), high-altitude dairy pastures of Indo-Swiss farm, Echo Point natural acoustic phenomenon, and Kundala Lake & Dam surrounded by rolling hills. Return to resort. Overnight: Munnar." },
+        { day: "Day 3 (19 Oct)", desc: "Eravikulam National Park & Munnar Heritage 🦌 – Breakfast at resort. Visit Eravikulam National Park (Rajamalai), home to the endangered Nilgiri Tahr and views of Anamudi (South India's highest peak). Visit the famous Tata Tea Museum to learn the legacy of tea processing. Time for Munnar shopping: fresh spices, handmade chocolates, pure tea & oils. Overnight: Munnar." },
+        { day: "Day 4 (20 Oct)", desc: "Resort Leisure & Departure 🚗 – Relaxed morning enjoying the pleasant mountain weather and resort amenities. Breakfast at hotel, check-out. Private Dzire transfer to Munnar Bus Stand / Railway Station for onward journey." }
+      ],
+      inclusions: [
+        "3 Nights stay at Hotel Star Emirates Luxury Resort & Spa",
+        "Meal plan as chosen (CP: Daily Breakfast | MAP: Breakfast + Dinner)",
+        "Private AC Swift Dzire car dedicated for all 4 days",
+        "Munnar Bus Stand / Railway Station round-trip transfers",
+        "Complete sightseeing as detailed in the itinerary",
+        "Driver beta, fuel charges, toll & parking fees included"
+      ],
+      exclusions: [
+        "Entry tickets at monuments, parks & Tata Tea Museum",
+        "Boating charges at Mattupetty Dam and Kundala Lake",
+        "Lunches and personal snacks",
+        "Anything not specifically mentioned under inclusions"
+      ],
+      notes: [
+        "Curated specially for Deepika and family by JP Holidays.",
+        "Eravikulam National Park access is subject to park regulations and ticket availability.",
+        "October 17–20 falls during peak festive season; advance booking strongly advised."
+      ]
+    },
+    "vagamon-group-escape": {
+      title: "Vagamon Group Escape 2026",
+      tripId: "JP-158",
+      dates: "25 – 29 December 2026 (Year-End Special)",
+      groupSize: "12 Pax Group Special (06 Double Rooms)",
+      transport: "17-Seater Luxury Tempo Traveller (Kochi Pickup & Drop)",
+      badge: "GROUP ESCAPE • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      price: "₹17,900",
+      unit: "Per Person (Total ₹2,14,800 for 12 Pax | GST Included)",
+      phone: "7200669293",
+      route: "Kochi ↔ Vagamon (Rolling Meadows, Pine Forests & Illikkal Kallu)",
+      options: [
+        { title: "Complete Group Package (12 Pax)", desc: "3-Star resort stay (6 Double Rooms), 17-Seater Tempo Traveller, CP meal plan & GST", price: "₹17,900/- per person (₹2,14,800/- Total)" },
+        { title: "Optional: Ulupunni Off-Road Jeep Safari", desc: "Thrilling off-road safari to hidden waterfalls & viewpoints", price: "Direct Payment / Additional on Request" }
+      ],
+      hotels: [
+        "Vagamon (4 Nights): Premium 3-Star Hill Resort / Property (06 Double Rooms with Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (25 Dec)", desc: "Kochi ➝ Vagamon (Misty Welcome) 🌲 – Pickup from Kochi (Airport / Railway Station) in a comfortable 17-Seater Tempo Traveller. Scenic drive to Vagamon (approx 100–110 km, 3–4 hrs) amidst winding hill roads and lush rubber plantations. Check into 3-star resort. Visit Vagamon Meadows for a breezy evening amidst rolling green hills. Overnight: Vagamon." },
+        { day: "Day 2 (26 Dec)", desc: "Vagamon Sightseeing 🌄 – Breakfast at resort. Full day of scenic exploration: serene Vagamon Lake (boating available), vast Vagamon Meadows, aromatic Vagamon Pine Forest, spiritual Thangal Para, and breathtaking views from Parunthumpara (Eagle Rock). Return to resort. Overnight: Vagamon." },
+        { day: "Day 3 (27 Dec)", desc: "Vagamon Exploration & Illikkal Kallu ⛰️ – Breakfast at resort. Explore Kurishumala Ashram and dairy farm, Murugan Mala, and the iconic cliff monolithic peak Illikkal Kallu. Optional adventure activities: tandem paragliding & trekking. Evening at leisure at resort. Overnight: Vagamon." },
+        { day: "Day 4 (28 Dec)", desc: "Vagamon Nature & Leisure Day 🌿 – Breakfast at resort. Relaxed leisure day amidst misty hills. Nature walks, landscape photography, tea plantation visits, or optional off-road 4x4 Jeep Safari to Ulupunni. Campfire and group bonding in the evening. Overnight: Vagamon." },
+        { day: "Day 5 (29 Dec)", desc: "Vagamon ➝ Kochi Drop 🚐 – Breakfast at resort, check-out. Drive down scenic Western Ghats towards Kochi (100–110 km). Drop at Kochi Airport or Railway Station according to onward schedule. Tour ends with wonderful mountain memories!" }
+      ],
+      inclusions: [
+        "4 Nights accommodation at 3-Star Property in Vagamon (06 Double Rooms)",
+        "Daily Breakfast included (CP Plan)",
+        "17-Seater Tempo Traveller for entire 5-day tour & sightseeing",
+        "Kochi Airport / Railway Station pickup & drop",
+        "All mentioned sightseeing in Vagamon & surrounding hills",
+        "Driver allowance, fuel, toll & state taxes",
+        "Applicable GST included in package price"
+      ],
+      exclusions: [
+        "Lunches and dinners",
+        "Entry tickets and parking fees",
+        "Optional Ulupunni Jeep Safari & paragliding",
+        "Personal expenses & porterage"
+      ],
+      notes: [
+        "Sightseeing points covered based on time availability and road conditions.",
+        "Ulupunni Jeep Safari can be arranged at additional cost subject to availability.",
+        "Festive Year-End dates (25–29 Dec); booking confirmation subject to room availability."
+      ]
+    },
     "valparai-group": {
       title: "Valparai Group Escape",
       tripId: "JP-152/VALPARAI",
@@ -570,47 +1088,57 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "phuket-luxury": {
       title: "Phuket Escape – 5-Star Luxury & Island Adventure",
+      tripId: "4445633",
       dates: "18 – 22 November 2026",
       groupSize: "2 Adults (Curated for Nakul & Friend)",
-      transport: "Private Airport Transfers + Speed Boat & Big Boat Tours",
+      transport: "Private Airport Transfers + Speed Boat / Big Boat Island Tours",
       badge: "5-STAR LUXURY • 4 NIGHTS / 5 DAYS",
       img: "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1200&q=80",
       price: "₹45,450",
-      unit: "Per Person (Total ₹90,900 for 2 Adults)",
+      unit: "Per Person (Starts From ₹90,900 for 2 Adults)",
       phone: "7200669293",
-      route: "Phuket International Airport ↔ Amari Phuket 5★ ↔ Phi Phi & James Bond Islands",
+      route: "Phuket International Airport ↔ Patong / 5★ Resorts ↔ Phi Phi & James Bond Islands",
+      options: [
+        { title: "Option 1 – Amari Phuket ⭐⭐⭐⭐⭐", desc: "Superior Balcony Room (Double Sharing) with Daily Breakfast (CP) + Speed Boat Island Tours", price: "₹45,450/- per person (₹90,900/- Total for 2 Adults)" },
+        { title: "Option 2 – The Nature Phuket ⭐⭐⭐⭐⭐", desc: "Deluxe Room (Double Sharing) with Daily Breakfast (CP) + Big Boat & Longtail Tours", price: "₹49,780/- per person (₹99,560/- Total for 2 Adults)" },
+        { title: "Option 3 – M Social Phuket ⭐⭐⭐⭐⭐", desc: "Social Room (Double Sharing) with Daily Breakfast (CP) + Big Boat & Longtail Tours", price: "USD 491 per person (USD 982 Total for 2 Adults)" }
+      ],
       hotels: [
-        "Phuket (4 Nights): Amari Phuket ⭐⭐⭐⭐⭐ (Superior Balcony Room, Double Occupancy, Daily Breakfast)"
+        "Option 1: Amari Phuket ⭐⭐⭐⭐⭐ (Superior Balcony Room, Double Occupancy, Daily Breakfast)",
+        "Option 2: The Nature Phuket ⭐⭐⭐⭐⭐ (Deluxe Room, Double Sharing, Daily Breakfast)",
+        "Option 3: M Social Phuket ⭐⭐⭐⭐⭐ (Social Room, Double Sharing, Daily Breakfast)"
       ],
       itinerary: [
-        { day: "Day 1 (18 Nov)", desc: "Arrive • Check-in • Unwind 🌊 – Arrive at Phuket International Airport, meet private driver and transfer to the luxury 5-star Amari Phuket resort overlooking Patong Bay. Check into Superior Balcony Room and spend the evening enjoying resort amenities and sunset ocean views. Overnight: Phuket." },
-        { day: "Day 2 (19 Nov)", desc: "Phi Phi + Khai Islands Speed Boat Tour 🏝️ – Private transfer to pier. Board high-speed boat to Phi Phi Don, Phi Phi Leh & Khai Islands. Snorkel in turquoise coral lagoons, swim with tropical fish and enjoy an island buffet lunch. Return transfer to resort. Overnight: Phuket." },
-        { day: "Day 3 (20 Nov)", desc: "Phuket • Culture • Views • Tigers 🐯 – Private round-trip tour: Visit revered Wat Chalong temple, colorful Sino-Portuguese architecture in Phuket Old Town, panoramic Karon Viewpoint, the majestic Big Buddha & Tiger Park with Medium Tiger interaction experience included! Overnight: Phuket." },
-        { day: "Day 4 (21 Nov)", desc: "James Bond Island Adventure 🛶 – Private transfer to pier. Big Boat tour through Phang Nga Bay, sea canoeing through hidden sea caves & limestone cliffs of James Bond Island (Koh Tapu). National Park Fee included! Return transfer to hotel. Overnight: Phuket." },
-        { day: "Day 5 (22 Nov)", desc: "Check-out • Fly Home ✈️ – Relaxed breakfast overlooking the bay, check-out and private transfer to Phuket International Airport for your return flight." }
+        { day: "Day 1 (18 Nov)", desc: "Arrive in Phuket ✈️ • Check-in • Unwind – Arrive at Phuket International Airport. Private arrival transfer to your 5-star resort in Phuket / Patong. Check in and spend the evening enjoying resort amenities, beachfront breeze and sunset ocean views. Overnight: Phuket." },
+        { day: "Day 2 (19 Nov)", desc: "Phuket City Explorer & Culture 🌺 – Breakfast at hotel. 4-Hour Private City Tour covering Karon Viewpoint, revered Wat Chalong temple, Big Buddha, Phuket Old Town architecture and Elephant Farm photo stop (or Tiger Park Medium experience). Overnight: Phuket." },
+        { day: "Day 3 (20 Nov)", desc: "Phi Phi Island Escape 🏝️ – Private transfer to pier. Board Speed Boat / Big Boat to Phi Phi Islands (Phi Phi Don, Phi Phi Leh & Khai Islands). Snorkel in turquoise lagoons, swim with tropical marine life and enjoy a delicious island buffet lunch. National Park Fee included as per option. Private return transfer. Overnight: Phuket." },
+        { day: "Day 4 (21 Nov)", desc: "James Bond Island Adventure 🛶 – Private transfer to Phang Nga pier. Tour Phang Nga Bay by Big Boat / Longtail Boat with sea canoeing experience through limestone sea caves & Koh Tapu (James Bond Island). National park fee included. Return transfer. Overnight: Phuket." },
+        { day: "Day 5 (22 Nov)", desc: "Check-out • Fly Back Home ✈️ – Relaxed breakfast overlooking the Andaman sea. Check-out and private departure transfer to Phuket International Airport." }
       ],
       inclusions: [
-        "4 Nights Luxury Stay at Amari Phuket – 5 Star (Superior Balcony Room)",
-        "Daily Breakfast for 2 Adults",
-        "Private Airport Transfers (Round-Trip)",
-        "Phi Phi + Khai Islands Speed Boat Tour with Island Buffet Lunch",
-        "Phuket Cultural City Tour (Wat Chalong, Old Town, Karon Viewpoint, Big Buddha)",
-        "Tiger Park Entrance – Medium Tiger Experience",
-        "James Bond Island Big Boat Tour + Sea Canoeing",
-        "James Bond National Park Fee Included",
-        "Applicable hotel taxes and service charges"
+        "4 Nights 5-Star Luxury Accommodation as selected (Amari, The Nature, or M Social)",
+        "Daily Breakfast for 2 Adults (CP Plan)",
+        "Private Round-Trip Airport Transfers",
+        "Private 4-Hour Phuket City Tour (Wat Chalong, Big Buddha, View Point, Elephant/Tiger visit)",
+        "Phi Phi Island Tour with Buffet Lunch included",
+        "James Bond Island Tour with Sea Canoeing & Lunch included",
+        "National Park Fees as specified per option",
+        "All applicable hotel taxes and service charges"
       ],
       exclusions: [
-        "Phi Phi National Park Fee (payable on spot, approx 400 THB/pax)",
         "International airfare, Thailand Visa & travel insurance",
-        "Meals not specifically mentioned",
-        "Hotel security deposit (refundable at check-out)",
-        "Personal expenses & guide tips"
+        "Meals & beverages not specifically mentioned",
+        "Elephant photo expenses (payable directly on spot)",
+        "Phi Phi National Park Fee if opting for Speed Boat (approx 400 THB/pax)",
+        "Tour guide & driver tips, hotel security deposit",
+        "Personal expenses & late check-out"
       ],
       notes: [
-        "Quoted rates valid for 10 days; subject to room availability at booking.",
-        "Maya Bay seasonal closure (Aug–Sep) does not affect November travel dates.",
-        "Speed-boat island tours are not recommended for senior citizens or expectant mothers."
+        "Curated exclusively by JP Holidays for Nakul & Friend.",
+        "100% payment required prior to guest arrival in Thailand.",
+        "Rates valid for bookings made on or before 30 September 2026.",
+        "THB ROE: XE Rate + 0.13 Paise | USD ROE: XE Rate + ₹1.20.",
+        "Maya Bay seasonal closure (Aug–Sep) does not overlap with November travel dates."
       ]
     },
     "srilanka-pdf": {
@@ -779,7 +1307,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "malaysia-pdf": {
       title: "Kuala Lumpur Escape (Malaysia)",
       badge: "CITY BREAK • 3 NIGHTS / 4 DAYS",
-      img: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1200&q=80",
       price: "₹18,450",
       unit: "Per Person Double Sharing",
       phone: "7200669293",
@@ -900,7 +1428,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "kashmir-katra-pdf": {
       title: "The Grand Kashmir & Vaishno Devi Katra Tour",
       badge: "PILGRIMAGE & PARADISE • 7 NIGHTS / 8 DAYS",
-      img: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=1200&q=80",
       price: "₹76,340",
       unit: "Total Package for 3 Adults (1 Triple Room)",
       phone: "7200669293",
@@ -945,7 +1473,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "sea-trio-pdf": {
       title: "Singapore • Malaysia • Vietnam – Year-End Family Escape",
       badge: "TRI-COUNTRY ESCAPE • 13 NIGHTS / 14 DAYS",
-      img: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80",
       price: "₹2,98,340",
       unit: "Total Land Package (2 Adults + 1 Child)",
       phone: "7200669293",
@@ -1004,7 +1532,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "singapore-malaysia-vietnam-pdf": {
       title: "Singapore • Malaysia • Vietnam – Year-End Family Escape",
       badge: "TRI-COUNTRY ESCAPE • 13 NIGHTS / 14 DAYS",
-      img: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
       price: "₹2,98,340",
       unit: "Total Land Package (2 Adults + 1 Child)",
       phone: "7200669293",
@@ -1109,7 +1637,7 @@ document.addEventListener('DOMContentLoaded', () => {
     malaysia: {
       title: "Malaysia Group Tour",
       badge: "GROUP TOUR • 4 NIGHTS / 5 DAYS",
-      img: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1200&q=80",
       price: "₹39,999",
       unit: "Per Person",
       phone: "7200669293",
@@ -1132,7 +1660,7 @@ document.addEventListener('DOMContentLoaded', () => {
     thailand: {
       title: "Thailand Tour",
       badge: "POPULAR TROPICAL • 4 NIGHTS / 5 DAYS",
-      img: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80",
       price: "₹34,999",
       unit: "Per Person",
       phone: "7200669293",
@@ -1178,7 +1706,7 @@ document.addEventListener('DOMContentLoaded', () => {
     srilanka: {
       title: "Sri Lanka – Hills & Beach Group Tour",
       badge: "HILLS & BEACHES • 5 NIGHTS / 6 DAYS",
-      img: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1200&q=80",
       price: "₹42,500",
       unit: "Per Person",
       phone: "7200669293",
@@ -1306,7 +1834,7 @@ document.addEventListener('DOMContentLoaded', () => {
     kenya: {
       title: "Kenya Highlights & Masai Mara Safari",
       badge: "WILDLIFE SAFARI • 6 NIGHTS / 7 DAYS",
-      img: "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
       price: "₹1,45,000",
       unit: "Per Person",
       phone: "7200669293",
@@ -1378,7 +1906,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bali: {
       title: "Bali Tropical Luxury Escape",
       badge: "HONEYMOON & TROPICAL • 5 NIGHTS / 6 DAYS",
-      img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
       price: "₹45,999",
       unit: "Per Person",
       phone: "7200669293",
@@ -1425,7 +1953,7 @@ document.addEventListener('DOMContentLoaded', () => {
     kashmir: {
       title: "The Grand Kashmir & Vaishno Devi Katra Tour",
       badge: "PILGRIMAGE & PARADISE • 7 NIGHTS / 8 DAYS",
-      img: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=1200&q=80",
       price: "₹76,340",
       unit: "Total Package for 3 Adults (1 Triple Room)",
       phone: "7200669293",
@@ -1494,7 +2022,7 @@ document.addEventListener('DOMContentLoaded', () => {
     vietnam: {
       title: "Vietnam & Cambodia Heritage Tour",
       badge: "CULTURE & HERITAGE • 6 NIGHTS / 7 DAYS",
-      img: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80",
       price: "₹48,999",
       unit: "Per Person",
       phone: "7200669293",
@@ -1519,7 +2047,7 @@ document.addEventListener('DOMContentLoaded', () => {
     japan: {
       title: "Japan Cherry Blossom & Tokyo Explorer",
       badge: "CULTURE & HIGH-TECH • 6 NIGHTS / 7 DAYS",
-      img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
       price: "₹1,25,000",
       unit: "Per Person",
       phone: "7200669293",
@@ -1544,7 +2072,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "chardham-heli": {
       title: "Luxury Char Dham Heli Yatra",
       badge: "SACRED PILGRIMAGE • 4 NIGHTS / 5 DAYS",
-      img: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      img: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1200&q=80",
       price: "₹1,98,450",
       unit: "Per Person (Inclusive of All Applicable Taxes)",
       phone: "7200669293",
