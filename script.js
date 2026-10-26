@@ -384,51 +384,73 @@ document.addEventListener('DOMContentLoaded', () => {
         "INR rate indicative based on USD XE rate at booking."
       ]
     },
-    "hong-kong-macau-escape": {
-      title: "Hong Kong & Macau Escape – Urban, Heritage & Disneyland",
-      tripId: "JP-161 / HONG KONG",
-      dates: "16 – 19 January 2027",
-      groupSize: "14 Adults (07 Rooms – Twin Sharing)",
-      transport: "Private Vehicles (2 Standard) + HZMB Bridge Bus + TurboJET Ferry",
-      badge: "DISNEY & HERITAGE • 3 NIGHTS / 4 DAYS",
+    "hong-kong-macau-pattaya": {
+      title: "Hong Kong + Macau + Pattaya",
+      tripId: "JP-161 / HKG-MACAU-PATTAYA",
+      dates: "19 – 25 January 2027",
+      groupSize: "14 Adults (7 Rooms)",
+      transport: "Private Coach Basis Tours & Transfers",
+      badge: "3 DESTINATIONS • 7 DAYS / 6 NIGHTS",
       img: "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=1200&q=80",
-      price: "₹67,560",
-      unit: "Approx. Per Person (Total ₹9,45,840 for 14 Adults)",
+      price: "₹1,59,890",
+      unit: "Per Person (₹1,65,450 with Indian Tour Leader | Min 14 Adults)",
       phone: "7200669293",
-      route: "HKG Airport ➝ HZMB Bridge ➝ Macau (2N) ➝ TurboJET Ferry ➝ Hong Kong (1N) ➝ Disneyland",
+      route: "Bangalore ✈️ Hong Kong (3N) ➝ Ferry ➝ Macau (1N) ➝ HZMB Bridge / HKIA ➝ Pattaya (2N) ➝ Bangkok ✈️ Bangalore",
+      options: [
+        { title: "Standard Group Package", desc: "Private coach, 7 rooms, Disneyland 1-day pass, Ngong Ping Cable Car & Big Buddha, Macau City Tour & Pattaya free leisure", price: "₹1,59,890 per person" },
+        { title: "Package with Indian Tour Leader", desc: "Includes all package features accompanied throughout by an experienced Indian Tour Leader", price: "₹1,65,450 per person" }
+      ],
       hotels: [
-        "Macau (2 Nights | 16–18 Jan): Regency Art Macau (Superior Room, Twin Sharing)",
-        "Hong Kong (1 Night | 18–19 Jan): Harbour Plaza Metropolis (Superior Room, Twin Sharing)"
+        "Hong Kong (3 Nights | 19–22 Jan): Best Western Plus Kowloon or similar (3 Star)",
+        "Macau (1 Night | 22–23 Jan): Regency Art (4 Star)",
+        "Pattaya (2 Nights | 23–25 Jan): Beverly Pattaya (4 Star)"
       ],
       itinerary: [
-        { day: "Day 1 (16 Jan)", desc: "Hong Kong Arrival ✈️ ➝ Macau via HZMB Bridge 🇲🇴 – Arrive at Hong Kong International Airport. Board bus crossing the spectacular Hong Kong–Zhuhai–Macau sea bridge. Private transfer from Macau border to Regency Art Macau. Check-in and leisure evening. Overnight: Macau." },
-        { day: "Day 2 (17 Jan)", desc: "Macau Heritage & City Discovery – Breakfast at hotel. 4-hour private Macau city tour: iconic Lotus Square, ancient A-Ma Temple, UNESCO-listed Ruins of St. Paul's, Fisherman's Wharf waterfront, and photo stop at Macau Tower. Evening free for casino entertainment and shopping. Overnight: Macau." },
-        { day: "Day 3 (18 Jan)", desc: "Macau ➝ Ferry to Hong Kong • Night Tour 🌃 – Breakfast, check-out. Private transfer to pier, board TurboJET ferry to Hong Kong. Private transfer to Harbour Plaza Metropolis. 5-hour Hong Kong Night Tour: panoramic Victoria Peak, 1-way historic Peak Tram ride, 1-way Star Ferry crossing, Symphony of Lights harbour laser show from TST Promenade & Old Clock Tower. Overnight: Hong Kong." },
-        { day: "Day 4 (19 Jan)", desc: "Hong Kong Disneyland 🎢 ➝ Airport Departure ✈️ – Breakfast at hotel, check-out. Full-day Hong Kong Disneyland pass: thrilling rides, Disney castle, character meet-and-greets and magical entertainment. Private evening transfer to Hong Kong International Airport for return flight." }
+        { day: "Day 1 (19 Jan)", desc: "Bangalore ✈️ Hong Kong • Night Tour 🌃 – Arrival at Hong Kong International Airport from Bangalore, Indian lunch, hotel check-in and an exciting Hong Kong night tour featuring Victoria Peak with one-way tram ride, Madame Tussauds, iconic Star Ferry experience, and the Symphony of Lights Show. Overnight: Hong Kong." },
+        { day: "Day 2 (20 Jan)", desc: "Disneyland Magic 🎠 – A full day of thrilling rides, magical attractions, Disney castle, character meet-and-greets, parades and unforgettable Disney moments! Overnight: Hong Kong." },
+        { day: "Day 3 (21 Jan)", desc: "Lantau Island & Shopping 🛍️ – Enjoy the Ngong Ping Cable Car, Po Lin Monastery, the majestic Tian Tan Big Buddha, and shopping at vibrant Tsim Sha Tsui. Overnight: Hong Kong." },
+        { day: "Day 4 (22 Jan)", desc: "Hong Kong to Macau 🇲🇴 • Historic City Tour – Ferry transfer to Macau, followed by a city tour covering iconic landmarks: Ruins of St. Paul’s, ancient A-Ma Temple, Lotus Square, Fisherman’s Wharf, and Macau Tower exterior views. Explore Macau’s unique blend of Portuguese heritage and modern glamour. Overnight: Macau." },
+        { day: "Day 5 (23 Jan)", desc: "Macau to Pattaya 🇹🇭 – Check out, transfer via the mega Hong Kong–Zhuhai–Macau (HZMB) Bridge and Hong Kong International Airport, then continue to Thailand as per confirmed flight arrangements. Transfer to hotel in Pattaya. Overnight: Pattaya." },
+        { day: "Day 6 (24 Jan)", desc: "Pattaya Free Day 🌴 – Relax and enjoy Pattaya’s lively holiday atmosphere. Full free day at leisure to explore tropical beaches, shopping streets, cafés, water activities or optional attractions at your own pace. Overnight: Pattaya." },
+        { day: "Day 7 (25 Jan)", desc: "Pattaya to Bangkok ✈️ Bangalore – Transfer to Bangkok, enjoy approximately two hours of shopping, then proceed to the airport for return flight to Bangalore with wonderful international memories!" }
       ],
       inclusions: [
-        "03 Nights Accommodation (2N Regency Art Macau + 1N Harbour Plaza Metropolis)",
-        "Daily Breakfast at hotels",
-        "2 Private standard vehicles for tours and transfers",
-        "HKG Airport to Macau HZMB Sea Bridge border bus tickets",
-        "04-Hour Private Macau City Tour (Ruins of St. Paul's, A-Ma Temple, Lotus Square, Fisherman's Wharf)",
-        "Macau to Hong Kong TurboJET Ferry Tickets",
-        "05-Hour Hong Kong Night Tour (Victoria Peak, Peak Tram, Star Ferry, Symphony of Lights)",
+        "6 Nights Hotel Accommodation in 7 Rooms (3N Hong Kong + 1N Macau + 2N Pattaya)",
+        "Hong Kong Stay (3 Nights): Best Western Plus Kowloon or similar (3 Star)",
+        "Macau Stay (1 Night): Regency Art (4 Star)",
+        "Pattaya Stay (2 Nights): Beverly Pattaya (4 Star)",
+        "Tours & transfers on Private Coach Basis throughout",
+        "Meals as per itinerary (including Indian lunch on Day 1)",
+        "Hong Kong Night Tour: Victoria Peak, 1-way Peak Tram, Madame Tussauds, Star Ferry, Symphony of Lights",
         "Full-Day Hong Kong Disneyland 1-Day Pass",
-        "Private departure airport transfer to HKG Airport"
+        "Lantau Island Tour: Ngong Ping Cable Car, Po Lin Monastery & Big Buddha",
+        "Hong Kong to Macau Ferry Ticket",
+        "Macau City Tour: Ruins of St. Paul's, A-Ma Temple, Lotus Square, Fisherman's Wharf, Macau Tower exterior",
+        "Hong Kong–Zhuhai–Macau (HZMB) Bridge transfer",
+        "Bangkok ~2 hours shopping stop & airport transfers",
+        "Departure from Bangalore"
       ],
       exclusions: [
-        "International flight tickets",
-        "Meals outside breakfast",
-        "Hong Kong / Macau PAR / visa fees & travel insurance",
-        "GST 5% & TCS 2% extra",
-        "Personal expenses & guide tips"
+        "International and domestic flight tickets (quoted package price excludes flights; confirm final flight inclusion status before booking)",
+        "GST and TCS (additional as applicable)",
+        "Visa / entry authorisations (Hong Kong PAR, Thailand visa)",
+        "Driver and guide tips",
+        "Personal expenses & unlisted services",
+        "Meals outside the stated itinerary"
       ],
       notes: [
-        "Curated specially for Group of 14 Adults (Ref: JP-161 / HONG KONG).",
-        "Valid for 16 – 19 January 2027 travel dates."
+        "Minimum group size: 14 adults (7 rooms).",
+        "Travel Dates: 19 – 25 January 2027. Departure: Bangalore.",
+        "Pricing: ₹1,59,890 per person | ₹1,65,450 per person with an Indian tour leader.",
+        "GST and TCS are additional.",
+        "International and domestic flight tickets are excluded from quoted package price; confirm final flight inclusion status before booking.",
+        "Visa/entry authorisations, driver and guide tips, personal expenses and unlisted services are excluded.",
+        "Meal inclusions are subject to the final confirmed itinerary.",
+        "Macau–Pattaya travel arrangements and flight connections must be reconfirmed, as the supplied itinerary does not specify a flight from Hong Kong to Bangkok on 23 January.",
+        "Specially Curated by Jovita Prince, Founder - JP Holidays (Your Journey, Our Passion! ✈️🌍)."
       ]
     },
+    "hong-kong-macau-escape": null, // Aliased to hong-kong-macau-pattaya below
     "lakshadweep-escape": {
       title: "Lakshadweep Island Escape – Agatti & Kavaratti",
       dates: "Flexible (05 Nights / 06 Days)",
@@ -712,44 +734,52 @@ document.addEventListener('DOMContentLoaded', () => {
       tripId: "JP-157/Munnar",
       dates: "17 – 20 October 2026 (Festive / Peak Season)",
       groupSize: "2 Adults (Curated for Deepika & Family)",
-      transport: "Private Swift Dzire AC Car for all 4 Days",
-      badge: "HILL STATION ESCAPE • 3 NIGHTS / 4 DAYS",
+      transport: "Dzire – Private Car for 4 Days",
+      badge: "HILL ESCAPE • 3 NIGHTS / 4 DAYS",
       img: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
       price: "₹18,175",
       unit: "Per Person (CP ₹36,350 Total) | MAP ₹38,680 Total for 2 Adults",
       phone: "7200669293",
       route: "Munnar Bus Stand / Railway Station ↔ Star Emirates Resort & Spa ↔ Top Station",
       options: [
-        { title: "CP Plan (Breakfast Only)", desc: "3 Nights luxury resort stay + daily breakfast + 4-day private car & sightseeing", price: "₹36,350/- for 2 Adults (₹18,175/person)" },
-        { title: "MAP Plan (Breakfast + Dinner)", desc: "3 Nights luxury resort stay + daily breakfast & dinner + 4-day private car & sightseeing", price: "₹38,680/- for 2 Adults (₹19,340/person)" }
+        { title: "CP Plan – Breakfast Only", desc: "3 Nights Hotel Star Emirates stay + daily breakfast + Dzire private car for 4 days & sightseeing", price: "₹36,350/- for 2 Adults (₹18,175/person)" },
+        { title: "MAP Plan – Breakfast + Dinner", desc: "3 Nights Hotel Star Emirates stay + daily breakfast & dinner + Dzire private car for 4 days & sightseeing", price: "₹38,680/- for 2 Adults (₹19,340/person)" }
       ],
       hotels: [
-        "Munnar (3 Nights): Hotel Star Emirates Luxury Resort & Spa (Luxury Room with Hill Views)"
+        "Munnar (3 Nights): Hotel Star Emirates Luxury Resort & Spa"
       ],
       itinerary: [
-        { day: "Day 1 (17 Oct)", desc: "Arrival in Munnar & Local Sightseeing 🌿 – Pickup from Munnar Bus Stand or Railway Station. Private transfer to Hotel Star Emirates Luxury Resort & Spa. Check-in and freshen up. Afternoon sightseeing: scenic tea garden viewpoints, Pothamedu View Point for panoramic vistas of tea, coffee and cardamom plantations. Leisurely stroll through Munnar town & local market. Overnight: Munnar." },
-        { day: "Day 2 (18 Oct)", desc: "Mattupetty • Echo Point • Kundala Lake 🏞️ – Breakfast at resort. Scenic full-day tour along Munnar–Top Station route: Photo Point tea estates, Mattupetty Dam & Lake (optional speedboating), high-altitude dairy pastures of Indo-Swiss farm, Echo Point natural acoustic phenomenon, and Kundala Lake & Dam surrounded by rolling hills. Return to resort. Overnight: Munnar." },
-        { day: "Day 3 (19 Oct)", desc: "Eravikulam National Park & Munnar Heritage 🦌 – Breakfast at resort. Visit Eravikulam National Park (Rajamalai), home to the endangered Nilgiri Tahr and views of Anamudi (South India's highest peak). Visit the famous Tata Tea Museum to learn the legacy of tea processing. Time for Munnar shopping: fresh spices, handmade chocolates, pure tea & oils. Overnight: Munnar." },
-        { day: "Day 4 (20 Oct)", desc: "Resort Leisure & Departure 🚗 – Relaxed morning enjoying the pleasant mountain weather and resort amenities. Breakfast at hotel, check-out. Private Dzire transfer to Munnar Bus Stand / Railway Station for onward journey." }
+        { day: "Day 1 (17 Oct)", desc: "Arrival in Munnar & Local Sightseeing 🌿 – Arrive in Munnar as per travel schedule. Private pickup from Munnar Bus Stand / Railway Station. Private transfer to Hotel Star Emirates Luxury Resort & Spa. Check-in, freshen up, relax and settle in. Munnar Local Sightseeing: 1. Tea Plantations & Tea Garden Viewpoints (scenic drive with photo stops), 2. Pothamedu View Point (panoramic views of tea, coffee and cardamom plantations), 3. Munnar Town & Local Market (tea, spices, chocolates and Kerala souvenirs). Return to hotel. Overnight Stay: Munnar." },
+        { day: "Day 2 (18 Oct)", desc: "Mattupetty • Echo Point • Kundala 🏞️ – After breakfast, full-day sightseeing along scenic Munnar–Top Station route: 1. Photo Point (tea plantations and forested hills), 2. Mattupetty Dam & Lake (spectacular reservoir views, optional boating), 3. Indo-Swiss Dairy Farm / Mattupetty Region (high-altitude pastures), 4. Echo Point (serene lake and famous natural echo phenomenon), 5. Kundala Lake & Dam (rolling hills, optional boating). Return to Munnar. Overnight Stay: Munnar." },
+        { day: "Day 3 (19 Oct)", desc: "Eravikulam National Park & Munnar Exploration 🦌 – After breakfast, exciting sightseeing: 1. Eravikulam National Park / Rajamalai (spectacular grasslands, mountain scenery & Nilgiri Tahr), 2. Anamudi View (highest peak in South India), 3. Tata Tea Museum (tea heritage, photographs, machinery and processing exhibits), 4. Munnar Town & Shopping (fresh Munnar tea, cardamom & spices, homemade chocolates, coffee & local souvenirs). Return to hotel. Overnight Stay: Munnar." },
+        { day: "Day 4 (20 Oct)", desc: "Leisure & Departure 🚗 – Relaxed Morning: leisurely morning at resort soaking in pleasant Munnar climate. Breakfast at hotel, relax and enjoy resort, photography & leisure time. Optional short local visit/shopping depending on departure schedule. Hotel check-out. Private Dzire transfer to Munnar Bus Stand / Railway Station for onward journey." }
       ],
       inclusions: [
-        "3 Nights stay at Hotel Star Emirates Luxury Resort & Spa",
-        "Meal plan as chosen (CP: Daily Breakfast | MAP: Breakfast + Dinner)",
-        "Private AC Swift Dzire car dedicated for all 4 days",
-        "Munnar Bus Stand / Railway Station round-trip transfers",
+        "3 Nights Stay at Hotel Star Emirates Luxury Resort & Spa",
+        "Meal Plan as chosen (CP: Daily Breakfast | MAP: Breakfast + Dinner)",
+        "Dzire – Private Car for all 4 Days",
+        "Private transfer from Munnar Bus Stand / Railway Station to hotel and return",
         "Complete sightseeing as detailed in the itinerary",
-        "Driver beta, fuel charges, toll & parking fees included"
+        "Driver allowance, fuel charges, toll & parking fees"
       ],
       exclusions: [
-        "Entry tickets at monuments, parks & Tata Tea Museum",
+        "Entry tickets, boating, activities and personal expenses unless specifically mentioned",
         "Boating charges at Mattupetty Dam and Kundala Lake",
+        "Eravikulam National Park and Tata Tea Museum entry fees",
         "Lunches and personal snacks",
         "Anything not specifically mentioned under inclusions"
       ],
       notes: [
-        "Curated specially for Deepika and family by JP Holidays.",
-        "Eravikulam National Park access is subject to park regulations and ticket availability.",
-        "October 17–20 falls during peak festive season; advance booking strongly advised."
+        "Specially Curated by JP Holidays for Deepika and family (REF: JP-157/Munnar).",
+        "Destination: Munnar, Kerala | Duration: 3 Nights / 4 Days | Dates: 17 – 20 October 2026 | Guests: 2 Adults.",
+        "Sightseeing is subject to weather conditions, local regulations, traffic and time availability.",
+        "Entry tickets, boating, activities and personal expenses are not included unless specifically mentioned.",
+        "Eravikulam National Park access is subject to park operating regulations and ticket availability.",
+        "Boating at Mattupetty and Kundala is subject to availability and additional charges.",
+        "Hotel check-in/check-out will be as per the hotel’s standard timings.",
+        "The package is based on 2 Adults.",
+        "17–20 October 2026 falls during the festive/peak season. Immediate booking is recommended to secure the hotel and package at the quoted rate.",
+        "Warm Regards: Jovita Prince, Founder - JP Holidays (Your Journey, Our Passion!)."
       ]
     },
     "vagamon-group-escape": {
@@ -802,30 +832,35 @@ document.addEventListener('DOMContentLoaded', () => {
     "valparai-group": {
       title: "Valparai Group Escape",
       tripId: "JP-152/VALPARAI",
-      dates: "17 – 20 October 2026",
+      dates: "17 – 20 October 2026 (Check-in: 17 Oct | Check-out: 20 Oct)",
       groupSize: "16 Adults (4 Rooms – Four Sharing)",
-      transport: "17-Seater Tempo Traveller",
+      transport: "17-Seater Tempo Traveller for 4 Days",
       badge: "GROUP ESCAPE • 3 NIGHTS / 4 DAYS",
       img: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
       price: "₹8,195",
       unit: "Per Person (Total ₹1,31,120 for 16 Adults)",
       phone: "7200669293",
       route: "Chennai → Pollachi → Valparai → Chennai (via 40 Hairpin Bends)",
+      options: [
+        { title: "🚐 17-Seater Tempo Traveller (4 Days)", desc: "Chennai – Valparai – Chennai transportation & complete sightseeing", price: "₹57,340/- Total" },
+        { title: "🏨 Hotel / Resort Stay (3 Nights)", desc: "4 Rooms, Four Sharing basis for 16 Adults (3 Nights)", price: "₹73,780/- Total" },
+        { title: "💰 Total Package Cost (16 Adults)", desc: "Complete Group Package (Vehicle + 4 Rooms Four Sharing)", price: "₹1,31,120/- (₹8,195 per person)" }
+      ],
       hotels: [
-        "Valparai (3 Nights): Premium Hill Resort / Hotel (4 Rooms – Four Sharing)"
+        "Valparai (3 Nights | 17–20 Oct): Hotel / Resort Stay (4 Rooms – Four Sharing)"
       ],
       itinerary: [
-        { day: "Day 1 (17 Oct)", desc: "Chennai ➝ Pollachi ➝ Valparai – Early morning departure from Chennai around 5:00 AM by 17-Seater Tempo Traveller. Breakfast en route. Proceed towards Valparai via Pollachi. En route sightseeing: Monkey Falls, Aliyar Dam, Loam’s View Point & famous 40 Hairpin Bends with scenic tea estate views. Check-in to resort, evening free to relax in lush tea gardens. Overnight stay: Valparai." },
-        { day: "Day 2 (18 Oct)", desc: "Valparai Sightseeing – Places covered: Nallamudi View Point, Balaji Temple, Tea Estate & Tea Factory tour*, Chinna Kallar waterfall & Sholayar Dam. Enjoy breathtaking Western Ghats panoramas and tea garden walks. Overnight stay: Valparai." },
-        { day: "Day 3 (19 Oct)", desc: "Nature • Relax • Explore – Relaxed day surrounded by misty hills. Optional experiences: Grass Hills* (subject to forest dept permission), Bird Watching, Nature Walk, Tea Estate visit, evening Campfire 🔥, group games & leisure. Overnight stay: Valparai." },
-        { day: "Day 4 (20 Oct)", desc: "Valparai ➝ Chennai – Breakfast and check-out. Begin scenic descent towards Chennai via Aliyar. Lunch en route. Reach Chennai late night with wonderful hill station memories." }
+        { day: "Day 1 (17 Oct)", desc: "Chennai → Pollachi → Valparai 🌄 – Early morning departure from Chennai around 5:00 AM by Tempo Traveller. Breakfast en route. Proceed towards Valparai via Pollachi. En route sightseeing: Monkey Falls, Aliyar Dam, Loam’s View Point, famous 40 Hairpin Bends, and scenic mountain & tea estate views. Check-in to the hotel/resort. Evening free to relax and enjoy the beautiful surroundings and tea estates. Overnight Stay: Valparai." },
+        { day: "Day 2 (18 Oct)", desc: "Valparai Sightseeing 🍃 – Sightseeing places covered: Nallamudi View Point, Balaji Temple, Tea Estate & Tea Factory*, Chinna Kallar waterfall, and Sholayar Dam. Enjoy the breathtaking Western Ghats, lush tea plantations and panoramic mountain views. Overnight Stay: Valparai." },
+        { day: "Day 3 (19 Oct)", desc: "Nature • Relax • Explore 🦋 – Enjoy a relaxed day surrounded by the beauty of Valparai. Optional experiences: Grass Hills* (subject to forest dept permission), Bird Watching, Nature Walk, Tea Estate visit, evening Campfire 🔥, group activities, leisure & relaxation. A perfect day to unwind, explore nature and enjoy quality time with your travel tribe! Overnight Stay: Valparai." },
+        { day: "Day 4 (20 Oct)", desc: "Valparai → Chennai 🚐 – Breakfast and check-out. Begin the scenic descent towards Chennai via Aliyar. Lunch en route. Reach Chennai late night with beautiful memories from the hills!" }
       ],
       inclusions: [
-        "3 Nights Hotel / Resort Stay (4 Rooms, Four Sharing)",
-        "17-Seater Tempo Traveller for the entire 4-day trip",
+        "3 Nights Hotel / Resort Stay (4 Rooms – Four Sharing)",
+        "17-Seater Tempo Traveller for the entire trip",
         "Chennai – Valparai – Chennai transportation",
         "Sightseeing as mentioned in the itinerary",
-        "Driver allowance, toll & fuel charges for included services"
+        "Driver beta, fuel charges, toll taxes for included services"
       ],
       exclusions: [
         "Food & meals",
@@ -836,9 +871,14 @@ document.addEventListener('DOMContentLoaded', () => {
         "Anything not specifically mentioned under inclusions"
       ],
       notes: [
+        "Specially Curated by JP Holidays (Trip ID: JP-152/VALPARAI).",
+        "Group Size: 16 Adults | 4 Rooms – Four Sharing | Dates: 17 – 20 October 2026.",
+        "Cost Breakdown: 17-Seater Tempo Traveller: ₹57,340/- | Hotel Stay: ₹73,780/- | Total: ₹1,31,120/- (₹8,195 per person).",
         "Tea Factory visit is subject to availability.",
-        "Grass Hills visit is subject to Forest Department permission.",
-        "Sightseeing may be adjusted depending on local weather, road permissions and operational feasibility."
+        "Grass Hills visit is subject to forest department permission.",
+        "Sightseeing may be adjusted depending on local conditions, permissions and operational feasibility.",
+        "Misty mountains • Endless tea estates • Scenic drives • Nature • Good vibes • Great memories 🌿⛰️💚",
+        "Warm Regards: JP Holidays – Travel • Explore • Create Memories ✈️🌍"
       ]
     },
     "maldives-yearend": {
@@ -2167,6 +2207,9 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     }
   };
+
+  // Backwards compatibility alias
+  tourData["hong-kong-macau-escape"] = tourData["hong-kong-macau-pattaya"];
 
   let modalBackdrop = document.getElementById('tour-modal');
   let modalContent = document.getElementById('modal-dynamic-content');
