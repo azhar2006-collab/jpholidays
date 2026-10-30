@@ -2205,6 +2205,269 @@ document.addEventListener('DOMContentLoaded', () => {
         "Private AC Sedan/SUV for entire royal circuit",
         "Amber Fort Jeep Ride & Local Monument Guides"
       ]
+    },
+    "thailand-trio-2027": {
+      title: "Thailand Trio Escape 2027 – Phuket • Krabi • Bangkok",
+      tripId: "JP-172/Thailand",
+      dates: "18 January – 23 January 2027 (5 Nights / 6 Days)",
+      groupSize: "2 Adults (1 Double Room)",
+      transport: "Private Transfers for Airport & Inter-city journeys + Shared Big Boat",
+      badge: "THAILAND TRIO • 5 NIGHTS / 6 DAYS",
+      img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80",
+      price: "₹58,450",
+      unit: "Per Person on Double-Sharing Basis (Total ₹1,16,900 for 2 Adults)",
+      phone: "7200669293",
+      route: "Phuket (2N) ➝ Krabi (2N) ➝ Bangkok (1N)",
+      hotels: [
+        "Phuket (2 Nights | 18–20 Jan): Ashlee Plaza – Superior Room (Breakfast + Indian Dinner)",
+        "Krabi (2 Nights | 20–22 Jan): Aonang Paradise Resort – Superior Room (Breakfast + Indian Dinner)",
+        "Bangkok (1 Night | 22–23 Jan): Princeton Bangkok – Superior Room (Breakfast + Dinner Cruise)"
+      ],
+      itinerary: [
+        { day: "Day 1 (18 Jan)", desc: "Arrival in Phuket 🛬 – Arrive at Phuket International Airport (HKT). Private transfer to hotel and check-in. Evening dinner at an Indian restaurant. Overnight stay in Phuket." },
+        { day: "Day 2 (19 Jan)", desc: "Phi Phi Islands Excursion 🚢 – Full-day Phi Phi Islands tour by shared big boat. Buffet lunch included during excursion. Return to Phuket. Dinner at an Indian restaurant. Overnight stay in Phuket." },
+        { day: "Day 3 (20 Jan)", desc: "Phuket to Krabi via Tiger Kingdom 🐅 – Check out and private transfer to Krabi. Visit Tiger Kingdom en route with medium tiger experience included. Check in at Aonang Paradise Resort. Indian restaurant dinner with private transfers. Overnight in Krabi." },
+        { day: "Day 4 (21 Jan)", desc: "Krabi Leisure & Beach Exploration 🏖️ – Free day at leisure to explore Ao Nang Beach, local markets, and shopping areas at your own pace. Dinner at an Indian restaurant with private transfers. Overnight in Krabi." },
+        { day: "Day 5 (22 Jan)", desc: "Krabi to Bangkok • Chao Phraya Princess Cruise 🛳️ – Private transfer to Krabi Airport (KBV) for flight to Bangkok. Private airport arrival pickup in Bangkok (BKK) to hotel. Evening Chao Phraya Princess Dinner Cruise with Indian buffet cuisine & 2-way private transfers. Overnight in Bangkok." },
+        { day: "Day 6 (23 Jan)", desc: "Departure ✈️ – Breakfast at hotel, check out. Private transfer to Bangkok Airport (BKK) for your onward flight with incredible memories of Thailand!" }
+      ],
+      inclusions: [
+        "5 nights accommodation in specified hotels (Ashlee Plaza, Aonang Paradise Resort, Princeton Bangkok)",
+        "Daily breakfast at hotels + Indian restaurant dinners as specified in itinerary",
+        "Phuket Airport private arrival transfer",
+        "Phi Phi Islands big boat excursion with lunch & National Park Fees (NPF)",
+        "Private Phuket-to-Krabi inter-hotel transfer",
+        "Tiger Kingdom visit with Medium Tiger experience included",
+        "Krabi Airport private departure transfer",
+        "Bangkok Airport private arrival transfer",
+        "Chao Phraya Princess Dinner Cruise with Indian cuisine",
+        "Two-way private transfers for the cruise and scheduled journeys"
+      ],
+      exclusions: [
+        "Domestic & international air tickets",
+        "Visa fees and travel insurance",
+        "2% TCS applicable as specified by supplier",
+        "Personal expenses, tips, laundry, telephone calls & beverages",
+        "Meals other than those specifically mentioned"
+      ],
+      notes: [
+        "All hotels, transfers, tours and rates are subject to availability at confirmation.",
+        "Standard check-in 14:00–15:00, check-out 12:00 noon.",
+        "SIC excursions operate on shared basis; airport and inter-hotel journeys on private basis."
+      ]
+    },
+    "thailand-vibes-2027": {
+      title: "Thailand Vibes 2027 – Bangkok City Lights & Phuket Paradise",
+      dates: "11 – 15 March 2027 (4 Nights / 5 Days)",
+      groupSize: "4 Adults + 1 Child (No Bed)",
+      transport: "Private Scheduled Airport Transfers + Shared SIC Excursions",
+      badge: "FAMILY VIBES • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+      price: "₹1,45,350",
+      unit: "Grand Total for 5 Pax (USD 1,230: USD 960 for 4 Adults + USD 150 Child)",
+      phone: "7200669293",
+      route: "Bangkok (2N) ➝ Phuket (2N)",
+      hotels: [
+        "Bangkok (2 Nights): The Ecotel Hotel ⭐⭐⭐ – Superior Room (Daily Breakfast)",
+        "Phuket (2 Nights): Ashlee Hub Patong ⭐⭐⭐ – Deluxe Room (Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (11 Mar)", desc: "Hello Bangkok! 🛬 – Private airport pickup. Explore Golden Buddha Temple, Wat Maha Phruettharam (Mini Reclining Buddha) & Gems Gallery visit. Hotel check-in & overnight in Bangkok." },
+        { day: "Day 2 (12 Mar)", desc: "Safari World & Marine Park 🦒 – Full-day adventure with buffet lunch included: Safari Park wildlife drive, Giraffe Terrace, Dolphin & Sea Lion shows, Cowboy stunt show & Spy War. Shared transfers included. Overnight in Bangkok." },
+        { day: "Day 3 (13 Mar)", desc: "Bangkok ➝ Phuket ✈️ – Breakfast at hotel, private transfer to Bangkok Airport. Fly to Phuket. Phuket City Tour featuring scenic viewpoints, Chalong Temple & elephant farm photo stop. Check in at Ashlee Hub Patong. Overnight in Phuket." },
+        { day: "Day 4 (14 Mar)", desc: "Phi Phi Island Big Boat Magic 🚢 – Discover spectacular scenery: Maya Bay, Loh Samah Bay, Pileh Lagoon, Viking Cave, snorkeling, swimming & free time at Tonsai Village. Buffet lunch & shared transfers included. Overnight in Phuket." },
+        { day: "Day 5 (15 Mar)", desc: "Bye-bye Phuket! ✈️ – Breakfast at hotel, check out. Private airport drop to Phuket International Airport for your return flight." }
+      ],
+      inclusions: [
+        "4 nights stay in 3-star hotels (The Ecotel Hotel Bangkok & Ashlee Hub Patong)",
+        "Daily buffet breakfast at hotels",
+        "Bangkok Temple Tour (Golden Buddha & Mini Reclining Buddha)",
+        "Safari World & Marine Park full-day tickets with buffet lunch",
+        "Bangkok airport pickup & drop transfers",
+        "Phuket airport pickup & drop transfers",
+        "Phuket City Tour with Chalong Temple & viewpoints",
+        "Phi Phi Island big boat tour with buffet lunch & hotel transfers"
+      ],
+      exclusions: [
+        "Domestic and international flights",
+        "Phi Phi National Park fee (THB 400/adult, THB 200/child payable directly)",
+        "Tonsai Pier fee (THB 20/person)",
+        "Drinks, tips, personal expenses & elephant farm photo fees"
+      ]
+    },
+    "shirdi-aurangabad-mumbai": {
+      title: "Shirdi • Aurangabad • Mumbai – Spiritual & Historic Circuit",
+      dates: "Flexible Dates (Elite & Budget Options)",
+      groupSize: "Custom Family / Group",
+      transport: "Private AC Innova / Ertiga throughout trip",
+      badge: "DIVINE CIRCUIT • MULTI-CITY",
+      img: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80",
+      price: "₹98,760",
+      unit: "Elite Package Total | Budget Options from ₹68,340",
+      phone: "7200669293",
+      route: "Shirdi ↔ Aurangabad (Ajanta & Ellora) ↔ Mumbai",
+      options: [
+        { title: "🌟 Option 1 — Elite Package (Featured)", desc: "Private Innova throughout, Premium Stays (Shirdi 4★, Aurangabad 3★, Mumbai 3★), VIP Darshan at Shirdi Sai Baba & Siddhivinayak Temple, Entry Tickets to Ellora, Ajanta & Bibi Ka Maqbara, Dedicated Tour Guide throughout", price: "₹98,760/- Total Package" },
+        { title: "🚙 Option 2A — Innova with Hindi Driver", desc: "Private Innova from Shirdi, hotel transfers & sightseeing. (Guide & entry tickets on direct payment)", price: "₹78,650/- Total" },
+        { title: "🚙 Option 2B — Innova with Tamil Driver", desc: "Private Innova from Mumbai with Tamil-speaking chauffeur. (Guide & entry tickets on direct payment)", price: "₹82,780/- Total" },
+        { title: "🚘 Option 2C — Ertiga with English Driver", desc: "Private Maruti Ertiga from Shirdi with English-speaking chauffeur. (Guide & entry tickets on direct payment)", price: "₹68,340/- Total" }
+      ],
+      hotels: [
+        "Shirdi: 4-Star Hotel ⭐⭐⭐⭐ with Daily Breakfast",
+        "Aurangabad: 3-Star Hotel ⭐⭐⭐ with Daily Breakfast",
+        "Mumbai: 3-Star Hotel ⭐⭐⭐ with Daily Breakfast"
+      ],
+      itinerary: [
+        { day: "Shirdi Blessings", desc: "Arrival and private transfer to 4-star hotel in Shirdi. Experience the deeply divine VIP Darshan at Shri Sai Baba Temple. Visit sacred Gurusthan, Dwarkamai, Chavadi & Lendi Garden." },
+        { day: "Aurangabad Heritage", desc: "Proceed to Aurangabad. Explore UNESCO World Heritage Ellora Caves with its monolithic Kailasa Temple, Bibi Ka Maqbara ('Taj of the Deccan') and historic Daulatabad Fort." },
+        { day: "Ajanta Caves Excursion", desc: "Full-day excursion to the world-renowned UNESCO Ajanta Caves, featuring exquisite Buddhist rock-cut temples, mural paintings and ancient sculptures dating back to the 2nd century BCE." },
+        { day: "Mumbai Iconic Sights", desc: "Transfer to Mumbai. Blessed VIP Darshan at Shree Siddhivinayak Ganapati Temple. Visit Gateway of India, Marine Drive Queen’s Necklace & local Mumbai markets before departure." }
+      ],
+      inclusions: [
+        "Private AC Innova throughout the journey (Elite Package)",
+        "Premium hotel accommodations with daily breakfast (Shirdi 4★, Aurangabad 3★, Mumbai 3★)",
+        "VIP Darshan at Shri Sai Baba Temple Shirdi",
+        "VIP Darshan at Siddhivinayak Temple Mumbai",
+        "Indian entry tickets for Ajanta Caves, Ellora Caves & Bibi Ka Maqbara",
+        "Dedicated professional tour guide from start to departure drop",
+        "Driver allowances, toll charges, fuel and parking fees"
+      ],
+      exclusions: [
+        "Air / Train tickets to/from starting point",
+        "Lunch and dinner meals",
+        "Personal expenses, temple offerings and camera fees",
+        "For Option 2: guide services and monument entry tickets excluded"
+      ]
+    },
+    "japan-family-2027": {
+      title: "Japan Family Escape 2027 – Osaka • Kyoto • Nara • Tokyo • Hakone",
+      tripId: "Shivani & Family Curated Tour",
+      dates: "31 January – 06 February 2027 (6 Nights / 7 Days)",
+      groupSize: "7 Adults + 2 Infants (Infants Complimentary / FOC)",
+      transport: "Private Vehicles throughout (10-hr daily service) + Reserved Shinkansen Bullet Train",
+      badge: "JAPAN FAMILY ESCAPE • 6 NIGHTS / 7 DAYS",
+      img: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80",
+      price: "USD 1,372",
+      unit: "Per Adult (Total USD 9,604 for 7 Adults | 2 Infants FOC)",
+      phone: "7200669293",
+      route: "Osaka (3N) ➝ Kyoto & Nara ➝ Shinkansen ➝ Tokyo (3N) ➝ Mt. Fuji & Hakone",
+      hotels: [
+        "Osaka (3 Nights | 31 Jan – 03 Feb): Comfort Hotel Osaka Shinsaibashi ⭐⭐⭐ (2 Double Rooms + 1 Triple Room, Daily Breakfast)",
+        "Tokyo (3 Nights | 03 – 06 Feb): Sotetsu Grand Fresa Tokyo – Bay Ariake ⭐⭐⭐ (2 Double Rooms + 1 Triple Room, Daily Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1 (31 Jan)", desc: "Touchdown Osaka • Universal Studios Japan 🎢 – Private airport pickup to hotel. Head for high-energy adventure at Universal Studios Japan with 1-Day Studio Pass included and private return transfers. Overnight in Osaka." },
+        { day: "Day 2 (01 Feb)", desc: "Osaka Old Meets New 🏯 – Full-day private vehicle (10 hours): Osaka Castle, Kuromon Ichiba Market, Shitennoji Temple, shopping at Shinsaibashi & vibrant Dotonbori neon canal. Overnight in Osaka." },
+        { day: "Day 3 (02 Feb)", desc: "Kyoto & Nara • Japan's Timeless Soul ⛩️ – Full-day private excursion from Osaka: Fushimi Inari Taisha (torii gates), Kiyomizu-dera Temple, Sannenzaka & Ninenzaka, Gion geisha quarter, Arashiyama Bamboo Grove, Kinkaku-ji (Golden Pavilion) and Nara Park friendly deer. Overnight in Osaka." },
+        { day: "Day 4 (03 Feb)", desc: "Shinkansen Bullet Train to Tokyo 🚄 – Private hotel transfer to station. Experience the high-speed Shinkansen Bullet Train from Osaka to Tokyo (Ordinary Class Reserved Seating). Private Tokyo station transfer to Sotetsu Grand Fresa. Overnight in Tokyo." },
+        { day: "Day 5 (04 Feb)", desc: "Tokyo Highlights & teamLab 🗼 – Full-day private vehicle (10 hours): Asakusa Senso-ji Temple & Nakamise street, iconic Shibuya Crossing, Harajuku & Takeshita Street, luxury Ginza and futuristic teamLab digital art experience. Overnight in Tokyo." },
+        { day: "Day 6 (05 Feb)", desc: "Mt. Fuji & Hakone Magic 🗻 – Private excursion from Tokyo to Hakone & Mt. Fuji: volcanic Owakudani Valley, Lake Ashi Sightseeing Cruise, Hakone Ropeway round-trip & scenic Mt. Fuji viewpoint. Return to Tokyo. Overnight in Tokyo." },
+        { day: "Day 7 (06 Feb)", desc: "Tokyo Departure ✈️ – Check out from hotel, private airport transfer for return flight. Arigato, Japan!" }
+      ],
+      inclusions: [
+        "3 Nights Comfort Hotel Osaka Shinsaibashi (2 Doubles + 1 Triple Room)",
+        "3 Nights Sotetsu Grand Fresa Tokyo Bay Ariake (2 Doubles + 1 Triple Room)",
+        "Daily breakfast at both hotels",
+        "Universal Studios Japan 1-Day Studio Pass + return private transfer",
+        "Osaka Castle entry tickets",
+        "Tokyo teamLab admission tickets",
+        "Lake Ashi Sightseeing Cruise & Hakone Ropeway round-trip tickets",
+        "Shinkansen Bullet Train tickets (Osaka → Tokyo, Reserved Ordinary Class)",
+        "Dedicated private vehicles for all scheduled tours (10-hr daily itinerary service)",
+        "Airport transfers (Osaka arrival & Tokyo departure)",
+        "Driver accommodation, driver meals, fuel, tolls & parking"
+      ],
+      exclusions: [
+        "Hotel city taxes (payable directly at hotels)",
+        "Driver tips",
+        "Water bottles and meals other than breakfast",
+        "Personal expenses and additional vehicle usage beyond 10-hour service"
+      ]
+    },
+    "andaman-family-nov26": {
+      title: "Andaman Island Family Escape – Havelock • Neil Island • Port Blair",
+      dates: "07 – 11 November 2026 (4 Nights / 5 Days)",
+      groupSize: "02 Adults + 02 Children (1 Extra Bed + 1 Child No Bed)",
+      transport: "Exclusive AC Vehicle throughout + Nautika Luxury Ferry Transfers",
+      badge: "ANDAMAN FAMILY ESCAPE • 4 NIGHTS / 5 DAYS",
+      img: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&q=80",
+      price: "₹1,12,500",
+      unit: "Total Package for 4 Pax (2 Adults + 2 Children) | GST & TCS Extra",
+      phone: "7200669293",
+      route: "Port Blair ➝ Havelock (2N) ➝ Neil Island (1N) ➝ Port Blair (1N)",
+      hotels: [
+        "Havelock (2 Nights | 07–08 Nov): Hotel Havelock Gateway / Similar 3★ (1 Deluxe Room, MAP: Breakfast + Dinner)",
+        "Neil Island (1 Night | 09 Nov): Hotel C S Empire / Similar 3★ (1 Premium Room, MAP: Breakfast + Dinner)",
+        "Port Blair (1 Night | 10 Nov): Hotel The White Coral / Similar 3★ (1 Deluxe Room, MAP: Breakfast + Dinner)"
+      ],
+      itinerary: [
+        { day: "Day 1 (07 Nov)", desc: "Port Blair ➝ Havelock Island • Radhanagar Sunset 🌅 – Welcome at Port Blair Airport, transfer to Haddo Jetty. Board Nautika Luxury Ferry to Havelock. Check in at hotel. Sunset at world-famous Radhanagar Beach (Beach No. 7) with complimentary photo shoot. Overnight in Havelock." },
+        { day: "Day 2 (08 Nov)", desc: "Elephant Beach Coral Adventure 🐠 – Speed boat excursion to Elephant Beach. White sands, optional water sports (scuba diving, sea walk, parasailing, jet ski), and complimentary 5-min snorkelling experience (subject to operator). Overnight in Havelock." },
+        { day: "Day 3 (09 Nov)", desc: "Havelock ➝ Neil Island (Shaheed Dweep) 🏝️ – Check out and board Nautika / Makruzz cruise to Neil Island. Check in at hotel. Explore Bharatpur Beach, fascinating Natural Rock Bridge (Howrah Bridge) and peaceful Laxmanpur Beach sunset. Overnight in Neil Island." },
+        { day: "Day 4 (10 Nov)", desc: "Neil Island ➝ Port Blair • Chidiya Tapu Sunset 🌴 – Luxury cruise back to Port Blair. Hotel check-in. Afternoon excursion to Chidiya Tapu (famous sunset point of Andaman) amidst lush coastal forests. Evening free for shopping in Port Blair markets. Overnight in Port Blair." },
+        { day: "Day 5 (11 Nov)", desc: "Port Blair Departure ✈️ – Breakfast at hotel, check out. Private transfer to Port Blair Airport for your onward journey." }
+      ],
+      inclusions: [
+        "4 nights accommodation in 3★ hotels (Havelock, Neil Island, Port Blair)",
+        "MAP Meal Plan (Daily Breakfast + Daily Dinner included)",
+        "1 room configuration for 2 Adults + 1 Extra Bed Child + 1 Child No Bed",
+        "Exclusive AC vehicle for all transfers and sightseeing",
+        "Luxury Ferry tickets (Port Blair → Havelock → Neil → Port Blair on Nautika)",
+        "Entry permits, parking charges & boat/ferry tickets",
+        "Dedicated tour coordinator & on-ground ferry assistance",
+        "Special Complimentary Cake on arrival day at Port Blair",
+        "Special Complimentary Photo Shoot at Radhanagar Beach",
+        "Complimentary welcome drink & 5-minute Elephant Beach snorkelling"
+      ],
+      exclusions: [
+        "Airfare / ship fare to Port Blair",
+        "GST and TCS",
+        "Optional water activities (scuba, sea walk, parasailing, jet ski)",
+        "Personal expenses, tips, telephone calls, camera fees",
+        "Guide charges & Cellular Jail guide fee"
+      ]
+    },
+    "laos-luang-prabang": {
+      title: "Laos Escape – Luang Prabang (Mr. Karthik & Family)",
+      dates: "Flexible Dates (3 Nights / 4 Days)",
+      groupSize: "2 Adults (Family Getaway)",
+      transport: "Private Airport Transfers + Scheduled Sightseeing Transport + Mekong Cruise Boat",
+      badge: "LAOS HIDDEN GEM • 3 NIGHTS / 4 DAYS",
+      img: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1200&q=80",
+      price: "USD 796",
+      unit: "Option 1 (3★ / 2 Adults) | ₹1,19,560 (Option 2 4★ / 2 Adults)",
+      phone: "7200669293",
+      route: "Luang Prabang ↔ Kuang Si Falls ↔ Mekong River & Pak Ou Caves",
+      options: [
+        { title: "🌿 Option 1 — 3-Star Comfort", desc: "Hotel Sadakham Royal View, Deluxe Room (3 Nights), Daily Breakfast, Private Transfers & Guide", price: "USD 796 for 2 Adults" },
+        { title: "✨ Option 2 — 4-Star Comfort", desc: "Hotel Choasis, Deluxe Room (3 Nights), Daily Breakfast, Private Transfers & Guide", price: "₹1,19,560/- for 2 Adults" }
+      ],
+      hotels: [
+        "Option 1 (3★ Comfort): Hotel Sadakham Royal View – Deluxe Room (3 Nights, Breakfast)",
+        "Option 2 (4★ Comfort): Hotel Choasis – Deluxe Room (3 Nights, Breakfast)"
+      ],
+      itinerary: [
+        { day: "Day 1", desc: "Arrive & Unwind 🇱🇦 – Welcome at Luang Prabang Airport. Private airport transfer to hotel. Check-in, relax and enjoy leisure time exploring the UNESCO town." },
+        { day: "Day 2", desc: "Waterfall Wonders 💦 – Visit Royal Palace Museum, Hmong Village for authentic cultural interactions, Bear Rescue Centre and the mesmerizing turquoise cascade pools of Kuang Si Waterfall." },
+        { day: "Day 3", desc: "Culture & Mekong Magic 🚤 – Discover Wat Xieng Thong with sweeping roofs, browse the colorful Morning Market, embark on a scenic Mekong River Cruise, explore sacred Pak Ou Caves packed with thousands of Buddha statues, and catch optional Mount Phousi sunset views." },
+        { day: "Day 4", desc: "Farewell Laos ✈️ – Breakfast at hotel, check out. Private transfer to Luang Prabang Airport for your onward flight." }
+      ],
+      inclusions: [
+        "3 nights hotel stay in chosen category (Hotel Sadakham Royal View or Hotel Choasis)",
+        "Daily breakfast at the hotel",
+        "Private airport pickup and drop transfers",
+        "Scheduled sightseeing transportation",
+        "English-speaking local guide throughout tours",
+        "Scenic Mekong River cruise boat",
+        "All listed sightseeing activities and entrance fees",
+        "Complimentary mineral water during tour journeys"
+      ],
+      exclusions: [
+        "International flights to/from Laos",
+        "Visa fees and travel insurance",
+        "Lunches, dinners and personal expenses",
+        "Applicable Indian taxes and remittance charges"
+      ]
     }
   };
 
